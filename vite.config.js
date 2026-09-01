@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/katHS/',
   build: {
-    outDir: 'docs'
+    outDir: 'dist'
   }
 })
