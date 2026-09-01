@@ -1,30 +1,47 @@
 import React, { useState, useEffect } from 'react';
-import { CheckCircle2, RotateCcw } from 'lucide-react';
+import { CheckCircle2, RotateCcw, ChevronRight, ChevronLeft } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { speakChinese } from '../../utils/speech';
 
 export const MatchMode = ({ vocabulary = [] }) => {
+  const ITEMS_PER_PAGE = 5;
+
+  const [currentPage, setCurrentPage] = useState(0);
   const [matchedIds, setMatchedIds] = useState([]);
   const [selectedLeft, setSelectedLeft] = useState(null);
   const [selectedRight, setSelectedRight] = useState(null);
   const [leftItems, setLeftItems] = useState([]);
   const [rightItems, setRightItems] = useState([]);
 
+  const totalPages = Math.ceil(vocabulary.length / ITEMS_PER_PAGE) || 1;
+
   useEffect(() => {
-    resetMatchGame();
+    resetGame();
   }, [vocabulary]);
 
-  const resetMatchGame = () => {
+  useEffect(() => {
+    loadPageData(currentPage);
+  }, [currentPage, vocabulary]);
+
+  const resetGame = () => {
     setMatchedIds([]);
+    setCurrentPage(0);
+    loadPageData(0);
+  };
+
+  const loadPageData = (pageIndex) => {
     setSelectedLeft(null);
     setSelectedRight(null);
 
-    // Shuffle left items
-    const left = [...vocabulary].sort(() => Math.random() - 0.5);
-    // Shuffle right items separately
-    const right = [...vocabulary].sort(() => Math.random() - 0.5);
+    const startIndex = pageIndex * ITEMS_PER_PAGE;
+    const pageItems = vocabulary.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
-    const letterKeys = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G'];
+    // Shuffle left items
+    const left = [...pageItems].sort(() => Math.random() - 0.5);
+    // Shuffle right items separately
+    const right = [...pageItems].sort(() => Math.random() - 0.5);
+
+    const letterKeys = ['Q', 'W', 'E', 'R', 'T'];
 
     setLeftItems(left);
     setRightItems(right.map((item, index) => ({
@@ -55,16 +72,28 @@ export const MatchMode = ({ vocabulary = [] }) => {
   const checkMatch = (left, right) => {
     if (left.id === right.id) {
       // Correct Match!
-      const updated = [...matchedIds, left.id];
-      setMatchedIds(updated);
+      const updatedMatched = [...matchedIds, left.id];
+      setMatchedIds(updatedMatched);
       setSelectedLeft(null);
       setSelectedRight(null);
 
-      if (updated.length === vocabulary.length) {
-        confetti({ particleCount: 80, spread: 60, origin: { y: 0.6 } });
+      // Check if current page is cleared (all 5 items matched)
+      const startIndex = currentPage * ITEMS_PER_PAGE;
+      const currentPageItems = vocabulary.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+      const isPageCleared = currentPageItems.every(item => updatedMatched.includes(item.id));
+
+      if (isPageCleared) {
+        if (currentPage + 1 < totalPages) {
+          setTimeout(() => {
+            setCurrentPage(prev => prev + 1);
+          }, 600);
+        } else {
+          // All pages finished!
+          confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+        }
       }
     } else {
-      // Wrong Match - reset selection after brief delay
+      // Wrong Match - reset selection
       setTimeout(() => {
         setSelectedLeft(null);
         setSelectedRight(null);
@@ -78,9 +107,15 @@ export const MatchMode = ({ vocabulary = [] }) => {
         <div className="progress-indicator">
           TIẾN ĐỘ: <strong>{matchedIds.length}/{vocabulary.length}</strong>
         </div>
-        <button className="btn-reset-match" onClick={resetMatchGame}>
-          <RotateCcw size={16} /> Chơi lại
-        </button>
+
+        <div className="match-header-right">
+          <div className="page-pill-badge">
+            TRANG {currentPage + 1} / {totalPages}
+          </div>
+          <button className="btn-reset-match" onClick={resetGame}>
+            <RotateCcw size={16} /> Chơi lại
+          </button>
+        </div>
       </div>
 
       <div className="match-grid-container">
@@ -126,6 +161,29 @@ export const MatchMode = ({ vocabulary = [] }) => {
           })}
         </div>
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="match-pagination-bar">
+          <button 
+            className="btn-page-arrow" 
+            onClick={() => setCurrentPage(p => Math.max(0, p - 1))}
+            disabled={currentPage === 0}
+          >
+            <ChevronLeft size={18} /> Trang trước
+          </button>
+          
+          <span className="page-num-text">Trang {currentPage + 1} / {totalPages}</span>
+
+          <button 
+            className="btn-page-arrow" 
+            onClick={() => setCurrentPage(p => Math.min(totalPages - 1, p + 1))}
+            disabled={currentPage === totalPages - 1}
+          >
+            Trang sau <ChevronRight size={18} />
+          </button>
+        </div>
+      )}
     </div>
   );
 };

@@ -1540,18 +1540,62 @@ body {
   letter-spacing: 0.5px;
 }
 
-.btn-reset-match {
+.match-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-pill-badge {
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--border-color);
+}
+
+.match-pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.btn-page-arrow {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: #f1f5f9;
+  background: #ffffff;
   border: 1px solid var(--border-color);
-  padding: 6px 14px;
+  padding: 8px 16px;
   border-radius: var(--radius-sm);
   font-size: 0.85rem;
   font-weight: 600;
   color: #334155;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-page-arrow:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.btn-page-arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-num-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
 }
 
 .match-grid-container {
