@@ -5,6 +5,7 @@ import { LessonHeader } from './components/LessonHeader';
 import { VocabularyTab } from './components/VocabularyTab';
 import { DialogueTab } from './components/DialogueTab';
 import { GrammarTab } from './components/GrammarTab';
+import { TransferTestTab } from './components/TransferTestTab';
 import { ExerciseTab } from './components/ExerciseTab';
 import { hskLessons } from './data/hskData';
 
@@ -82,6 +83,10 @@ export function App() {
 
         {activeTab === 'grammar' && (
           <GrammarTab grammar={currentLesson.grammar} />
+        )}
+
+        {activeTab === 'transferTest' && (
+          <TransferTestTab />
         )}
 
         {activeTab === 'exercise' && (

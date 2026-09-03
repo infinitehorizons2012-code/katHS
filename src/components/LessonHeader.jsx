@@ -13,6 +13,7 @@ export const LessonHeader = ({
     { id: 'vocabulary', label: 'Từ vựng' },
     { id: 'dialogue', label: 'Bài khóa' },
     { id: 'grammar', label: 'Ngữ pháp' },
+    { id: 'transferTest', label: 'Transfer Test' },
     { id: 'exercise', label: 'Bài tập' }
   ];
 
