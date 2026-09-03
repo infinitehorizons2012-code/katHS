@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Volume2, Lightbulb, Sparkles, BookOpen, Layers } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Volume2, BookOpen } from 'lucide-react';
 import { speakChinese } from '../../utils/speech';
 import HanziWriter from 'hanzi-writer';
 
 export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) => {
   const [activeId, setActiveId] = useState(selectedWordId || (vocabulary[0] ? vocabulary[0].id : 1));
-  const writerRef = React.useRef(null);
-  const containerRef = React.useRef(null);
+  const writerRef = useRef(null);
+  const containerRef = useRef(null);
 
   const currentWord = vocabulary.find(v => v.id === activeId) || vocabulary[0];
 
@@ -21,12 +21,12 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
       const writer = HanziWriter.create(containerRef.current, charToDraw, {
         width: 140,
         height: 140,
-        padding: 5,
+        padding: 6,
         strokeAnimationSpeed: 1,
         delayBetweenStrokes: 150,
-        strokeColor: '#1e293b',
-        radicalColor: '#e53e3e',
-        outlineColor: '#e2e8f0',
+        strokeColor: '#2563eb', // Blue strokes
+        radicalColor: '#e53e3e', // Red radical strokes
+        outlineColor: '#f1f5f9',
         showOutline: true
       });
       writerRef.current = writer;
@@ -40,13 +40,13 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
 
   return (
     <div className="detail-mode-container">
-      {/* Left Column: Word Selection List */}
+      {/* Left Column: Word List */}
       <div className="detail-sidebar-list">
         <div className="sidebar-header-text">
           <BookOpen size={16} /> 15 Từ Vựng HSK 1 Bài 1
         </div>
         <div className="sidebar-items-scroll">
-          {vocabulary.map((item, index) => {
+          {vocabulary.map((item) => {
             const isSelected = item.id === currentWord.id;
             return (
               <button
@@ -69,90 +69,78 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
         </div>
       </div>
 
-      {/* Right Column: Detailed Explanation & Mnemonic (Red Circled Section from User Screenshot) */}
-      <div className="detail-main-content">
-        {/* Header Card */}
-        <div className="detail-header-row">
-          <div className="detail-title-group">
-            <h2 className="detail-hanzi">{currentWord.hanzi}</h2>
-            <span className="detail-pinyin">({currentWord.pinyin})</span>
-            {currentWord.hanViet && (
-              <span className="detail-hanviet-badge">[{currentWord.hanViet}]</span>
-            )}
-            <span className="detail-type-badge">{currentWord.type}</span>
+      {/* Right Column: Detailed Explanation matching user screenshot 100% */}
+      <div className="detail-main-content sample-style-card">
+        {/* Top Header Row: Hanzi + Pinyin on left, Speech Pill on right */}
+        <div className="sample-header-row">
+          <div className="sample-title-box">
+            <h1 className="sample-hanzi">{currentWord.hanzi}</h1>
+            <span className="sample-pinyin">({currentWord.pinyin})</span>
           </div>
 
           <button 
-            className="btn-speech-big"
+            className="sample-speech-pill"
             onClick={() => speakChinese(currentWord.hanzi)}
           >
-            <Volume2 size={20} /> Nghe Đọc Từ '{currentWord.hanzi}'
+            <Volume2 size={18} /> Nghe Đọc Từ '{currentWord.hanzi}'
           </button>
         </div>
 
-        {/* Meaning Box */}
-        <div className="detail-section-box meaning-box">
-          <div className="section-label">
-            <Sparkles size={18} className="gold-icon" /> Nghĩa Tiếng Việt:
-          </div>
-          <div className="meaning-highlight-text">{currentWord.meaning}</div>
+        {/* 1. Meaning Section (Green underline 1 in screenshot) */}
+        <div className="sample-meaning-row">
+          <span className="emoji-icon">💡</span>
+          <span className="meaning-green-text">
+            <strong>Nghĩa:</strong> {currentWord.meaning}
+          </span>
         </div>
 
-        {/* Examples Section */}
+        {/* 2. Example Section (Red underline 2 in screenshot) */}
         {currentWord.exampleHanzi && (
-          <div className="detail-section-box example-box">
-            <div className="section-label">📌 Ví dụ minh họa:</div>
-            <div className="example-content-card">
-              <div className="ex-text">
-                <span className="ex-hz">{currentWord.exampleHanzi}</span>
-                <span className="ex-py">({currentWord.examplePinyin})</span>
-                <span className="ex-vi">– {currentWord.exampleMeaning}</span>
-              </div>
-              <button 
-                className="btn-ex-speaker"
-                onClick={() => speakChinese(currentWord.exampleHanzi)}
-              >
-                <Volume2 size={16} />
-              </button>
-            </div>
+          <div className="sample-example-pill">
+            <span className="emoji-icon">📌</span>
+            <span className="example-text">
+              Ví dụ: <strong>{currentWord.exampleHanzi}</strong> ({currentWord.examplePinyin}) – {currentWord.exampleMeaning}
+            </span>
           </div>
         )}
 
-        {/* Stroke Order & Radicals Section */}
-        <div className="detail-section-box radicals-box">
-          <div className="section-label">
-            <Layers size={18} className="blue-icon" /> Chiết tự & Tô màu nét bộ thủ cho từ "{currentWord.hanzi}":
+        {/* 3. Radicals & Stroke Order Section (Red underline 3 in screenshot) */}
+        <div className="sample-radicals-section">
+          <div className="radicals-header-title">
+            <span className="emoji-icon">🎨</span>
+            <span>Chiết tự & Tô màu nét bộ thủ cho 1 chữ của từ "{currentWord.hanzi}":</span>
           </div>
-          <div className="stroke-flex-wrapper">
-            <div className="hanzi-canvas-card">
-              <div ref={containerRef} className="canvas-holder"></div>
-              <span className="canvas-caption">Nét chữ '{currentWord.hanzi.charAt(0)}'</span>
-            </div>
 
+          <div className="radical-card-box">
+            <div ref={containerRef} className="radical-canvas-holder"></div>
+            <div className="radical-card-caption">
+              Nét chữ '{currentWord.hanzi.charAt(0)}'
+            </div>
+            
+            {/* Colored Radical Circles matching screenshot (e.g. Red circle 1, Blue circle 2) */}
             {currentWord.radicals && currentWord.radicals.length > 0 && (
-              <div className="radicals-list">
-                <div className="radicals-title">Bộ thủ cấu thành:</div>
-                <div className="radicals-badges">
-                  {currentWord.radicals.map((rad, idx) => (
-                    <span key={idx} className="radical-pill">
-                      <strong className="rad-hz">{rad.hanzi}</strong> ({rad.name})
-                    </span>
-                  ))}
-                </div>
+              <div className="radical-circles-row">
+                {currentWord.radicals.map((rad, idx) => (
+                  <span key={idx} className={`rad-circle-tag ${idx === 0 ? 'red' : 'blue'}`} title={rad.name}>
+                    {rad.hanzi}
+                  </span>
+                ))}
               </div>
             )}
           </div>
         </div>
 
-        {/* Mnemonic / Mẹo Nhớ Chiết Tự (Matching user screenshot) */}
-        <div className="detail-section-box mnemonic-box">
-          <div className="mnemonic-header">
-            <Lightbulb size={20} className="bulb-green" />
-            <span>Mẹo Nhớ Chiết Tự Sinh Động (Mnemonic):</span>
+        {/* 4. Mnemonic Section (Green box at bottom in screenshot) */}
+        <div className="sample-mnemonic-box">
+          <div className="mnemonic-title-row">
+            <span className="emoji-icon">🌱</span>
+            <span className="emoji-icon">🍸</span>
+            <span className="mnemonic-title-text">APP_MNEMONIC (Mẹo Nhớ Chiết Tự Sinh Động):</span>
           </div>
-          <p className="mnemonic-body-text">
-            {currentWord.mnemonic || `Chữ '${currentWord.hanzi}' (${currentWord.hanViet} / ${currentWord.pinyin}): cấu thành từ các nét bộ thủ quen thuộc giúp bạn ghi nhớ sâu và lâu hơn trong quá trình luyện viết.`}
-          </p>
+
+          <div className="mnemonic-content-line">
+            • <strong>Chữ '{currentWord.hanzi}' ({currentWord.hanViet || currentWord.pinyin}):</strong> {currentWord.mnemonic}
+          </div>
         </div>
       </div>
     </div>
