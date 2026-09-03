@@ -6,6 +6,7 @@ import { VocabularyTab } from './components/VocabularyTab';
 import { DialogueTab } from './components/DialogueTab';
 import { GrammarTab } from './components/GrammarTab';
 import { TransferTestTab } from './components/TransferTestTab';
+import { ReadingTab } from './components/ReadingTab';
 import { ExerciseTab } from './components/ExerciseTab';
 import { hskLessons } from './data/hskData';
 
@@ -87,6 +88,10 @@ export function App() {
 
         {activeTab === 'transferTest' && (
           <TransferTestTab />
+        )}
+
+        {activeTab === 'reading' && (
+          <ReadingTab />
         )}
 
         {activeTab === 'exercise' && (

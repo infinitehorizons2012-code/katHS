@@ -14,6 +14,7 @@ export const LessonHeader = ({
     { id: 'dialogue', label: 'Bài khóa' },
     { id: 'grammar', label: 'Ngữ pháp' },
     { id: 'transferTest', label: 'Transfer Test' },
+    { id: 'reading', label: 'Reading' },
     { id: 'exercise', label: 'Bài tập' }
   ];
 
