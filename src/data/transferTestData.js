@@ -6,7 +6,7 @@ export const transferTestData = [
     questions: [
       {
         id: "1.1",
-        title: "Câu 1.1 (Theo CLO-1: Kính ngữ & Xưng hô 1-1)",
+        title: "Câu 1.1",
         content: "Từ chữ Hán nào dưới đây đại diện cho đại từ xưng hô tôn kính (\"Ngài / Thầy / Cô / Ông / Bà\")?",
         options: [
           { label: "A", text: "你 (nǐ - Nhĩ - Bạn / Anh / Chị)", isCorrect: false },
@@ -18,7 +18,7 @@ export const transferTestData = [
       },
       {
         id: "1.2",
-        title: "Câu 1.2 (Theo CLO-2: Chào tập thể & Hậu tố Số nhiều)",
+        title: "Câu 1.2",
         content: "Từ 大家 có Pinyin, Hán-Việt và Nghĩa tiếng Việt chính xác là gì?",
         options: [
           { label: "A", text: "大家 (dàjiā - Đại gia - Mọi người / Tất cả mọi người)", isCorrect: true },
@@ -30,7 +30,7 @@ export const transferTestData = [
       },
       {
         id: "1.3",
-        title: "Câu 1.3 (Theo CLO-3: Chuỗi Phản xạ Lễ nghi 3 Bước)",
+        title: "Câu 1.3",
         content: "Cụm từ chữ Hán 不客气 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
         options: [
           { label: "A", text: "再见 (zàijiàn - Tái kiến - Tạm biệt / Hẹn gặp lại)", isCorrect: false },
@@ -49,7 +49,7 @@ export const transferTestData = [
     questions: [
       {
         id: "2.1",
-        title: "Câu 2.1 (Theo CLO-1: Kính ngữ & Xưng hô 1-1)",
+        title: "Câu 2.1",
         content: "Khi gặp Tổng giám đốc đối tác 王老师 (Wáng lǎoshī - Vương lão sư) tại sảnh công ty, câu chào nào dưới đây thể hiện đúng sắc thái kính ngữ lịch sự?",
         options: [
           { label: "A", text: "你好 (nǐ hǎo - Nhĩ hảo - Xin chào bạn)", isCorrect: false },
@@ -61,7 +61,7 @@ export const transferTestData = [
       },
       {
         id: "2.2",
-        title: "Câu 2.2 (Theo CLO-2: Chào tập thể & Hậu tố Số nhiều)",
+        title: "Câu 2.2",
         content: "Cấu trúc nào dưới đây biểu đạt đúng vị trí ngữ pháp của hậu tố chỉ số nhiều 们 (men - Môn - Các)?",
         options: [
           { label: "A", text: "们同学 (men tóngxué)", isCorrect: false },
@@ -73,7 +73,7 @@ export const transferTestData = [
       },
       {
         id: "2.3",
-        title: "Câu 2.3 (Theo CLO-3: Chuỗi Phản xạ Lễ nghi 3 Bước)",
+        title: "Câu 2.3",
         content: "Khi kết thúc buổi làm việc và ra về, phát ngôn nào dưới đây thể hiện hành vi chào tạm biệt văn minh?",
         options: [
           { label: "A", text: "谢谢 (xièxie - Tạ tạ - Cảm ơn)", isCorrect: false },
@@ -92,7 +92,7 @@ export const transferTestData = [
     questions: [
       {
         id: "3.1",
-        title: "Câu 3.1 (Theo CLO-1: Kính ngữ & Xưng hô 1-1)",
+        title: "Câu 3.1",
         content: "Hãy chọn cụm từ thích hợp điền vào chỗ trống để hoàn thành thoại kính ngữ 1-1:\n\nNhân sự A: 王老师，___！ (Wáng lǎoshī, ___! - Vương lão sư, ___!)\nGiám đốc B: 你好！ (nǐ hǎo! - Nhĩ hảo! - Chào bạn!)",
         options: [
           { label: "A", text: "你好 (nǐ hǎo - Nhĩ hảo - Xin chào bạn)", isCorrect: false },
@@ -104,7 +104,7 @@ export const transferTestData = [
       },
       {
         id: "3.2",
-        title: "Câu 3.2 (Theo CLO-2: Chào tập thể & Hậu tố Số nhiều)",
+        title: "Câu 3.2",
         content: "Hãy chọn từ thích hợp điền vào chỗ trống để chào toàn thể bạn học / đồng nghiệp trước khi bắt đầu bài thuyết trình:\n\nNgười nói: ___好！ (___ hǎo! - ___ hảo! - Chào ___!)",
         options: [
           { label: "A", text: "大家 (dàjiā - Đại gia - Mọi người)", isCorrect: true },
@@ -116,7 +116,7 @@ export const transferTestData = [
       },
       {
         id: "3.3",
-        title: "Câu 3.3 (Theo CLO-3: Chuỗi Phản xạ Lễ nghi 3 Bước)",
+        title: "Câu 3.3",
         content: "Hãy sắp xếp 4 phát ngôn sau thành chuỗi giao tiếp 3 bước (Chào hỏi → Cảm ơn & Đáp lời → Tạm biệt) hoàn chỉnh:\n\n(1) 再见！ (zàijiàn! - Tái kiến! - Tạm biệt!)\n(2) 王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)\n(3) 不客气！ (bú kèqi! - Bất khách khí - Không có gì!)\n(4) 谢谢王老师！ (xièxie Wáng lǎoshī! - Tạ tạ Vương lão sư! - Cảm ơn thầy/cô Vương!)",
         options: [
           { label: "A", text: "(2) → (4) → (3) → (1)", isCorrect: true },
@@ -136,21 +136,21 @@ export const transferTestData = [
     questions: [
       {
         id: "4.1",
-        title: "Câu 4.1 (Theo CLO-1: Kính ngữ & Xưng hô 1-1 - Chẩn đoán Lỗi RCA)",
+        title: "Câu 4.1",
         content: "Tình huống: Học viên A chào cấp trên: 王老师，你好！ (Wáng lǎoshī, nǐ hǎo!).\nYêu cầu: Phân tích lỗi sai, chỉ ra nguyên nhân gốc rễ (RCA) và đưa ra phương án sửa.",
         answerTitle: "BÁO CÁO RCA:",
         answerContent: "**Lỗi sai**: Dùng đại từ thân mật 你 (nǐ) thay vì kính ngữ 您 (nín) với đối tượng là cấp trên 王老师.\n**Root Cause**: Học viên bị thói quen phản xạ câu chào chung 你好, thiếu tư duy phân cấp đối tượng giao tiếp.\n**Phương án sửa**: Thay 你 bằng 您 → 王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)."
       },
       {
         id: "4.2",
-        title: "Câu 4.2 (Theo CLO-2: Chào tập thể & Hậu tố Số nhiều - Chẩn đoán Lỗi RCA)",
+        title: "Câu 4.2",
         content: "Tình huống: Học viên B bắt đầu cuộc họp team bằng phát ngôn: 们同学，你好！ (men tóngxué, nǐ hǎo!).\nYêu cầu: Phân tích lỗi sai RCA và đưa ra câu sửa chuẩn xác.",
         answerTitle: "BÁO CÁO RCA:",
         answerContent: "**Lỗi sai**: Đặt sai vị trí hậu tố 们 (men) lên trước danh từ và dùng câu chào cá nhân 你好 cho tập thể.\n**Root Cause**: Nhầm lẫn quy tắc hậu tố chỉ số nhiều (nghĩ 们 đứng trước như từ \"các\" trong tiếng Việt).\n**Phương án sửa**: Chuyển 们 ra sau danh từ và dùng từ chào tập thể → 同学们好！ (tóngxuémen hǎo! - Đồng học môn hảo! - Chào các bạn học!) hoặc 大家好！ (dàjiā hǎo!)."
       },
       {
         id: "4.3",
-        title: "Câu 4.3 (Theo CLO-3: Chuỗi Phản xạ Lễ nghi 3 Bước - Giải quyết Tình huống Thực chiến)",
+        title: "Câu 4.3",
         content: "Tình huống: Bạn là Nhân sự Xuất nhập khẩu bàn giao xong chứng từ cho nhóm đối tác 你们 (nǐmen - Các bạn). Hãy xây dựng kịch bản thoại 3 bước hoàn chỉnh chuẩn 100% Closed Lexicon.",
         answerTitle: "KỊCH BẢN GIẢI QUYẾT TÌNH HUỐNG THỰC CHÍNH:",
         answerContent: "**Bước 1 (Chào hỏi & Bàn giao)**:\nNhân sự XNK: 你们好！ (nǐmen hǎo! - Nhĩ môn hảo! - Chào các bạn!)\n\n**Bước 2 (Cảm ơn & Đáp lời)**:\nNhân sự XNK: 谢谢你们！ (xièxie nǐmen! - Tạ tạ nhĩ môn! - Cảm ơn các bạn!)\nĐội ngũ đối tác: 不客气！ (bú kèqi! - Bất khách khí! - Không có gì / Đừng khách khí!)\n\n**Bước 3 (Tạm biệt)**:\nNhân sự XNK & Đối tác: 再见！ (zàijiàn! - Tái kiến! - Tạm biệt / Hẹn gặp lại!)"
