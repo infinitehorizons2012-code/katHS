@@ -7,14 +7,15 @@ import HanziWriter from 'hanzi-writer';
 // Sub-component for rendering stroke card for each character in word
 const SingleCharStrokeCard = ({ char, charInfo }) => {
   const containerRef = useRef(null);
+  const [writer, setWriter] = useState(null);
 
   useEffect(() => {
     if (!containerRef.current || !char) return;
     containerRef.current.innerHTML = '';
     try {
-      const writer = HanziWriter.create(containerRef.current, char, {
-        width: 125,
-        height: 125,
+      const newWriter = HanziWriter.create(containerRef.current, char, {
+        width: 140,
+        height: 140,
         padding: 4,
         strokeAnimationSpeed: 1,
         delayBetweenStrokes: 150,
@@ -23,27 +24,33 @@ const SingleCharStrokeCard = ({ char, charInfo }) => {
         outlineColor: '#f1f5f9',
         showOutline: true
       });
-      writer.animateCharacter();
+      setWriter(newWriter);
+      // Removed automatic animation to let user trigger it
     } catch (e) {
       console.error("HanziWriter error for", char, e);
     }
   }, [char]);
 
+  const handleAnimate = () => {
+    if (writer) {
+      writer.animateCharacter();
+    }
+  };
+
   return (
     <div className="radical-card-box">
-      <div ref={containerRef} className="radical-canvas-holder"></div>
-      <div className="radical-card-caption">
-        Nét chữ '{char}'
+      <div className="radical-dashed-box">
+        <div ref={containerRef} className="radical-canvas-holder"></div>
       </div>
-      
-      {/* Radical tags for this character */}
-      {charInfo?.radicals && (
-        <div className="radical-circles-row">
-          {charInfo.radicals.map((rad, idx) => (
-            <span key={idx} className={`rad-circle-tag ${idx === 0 ? 'red' : 'blue'}`} title={rad.name}>
-              {rad.hanzi}
-            </span>
-          ))}
+      <button className="btn-write-trigger" onClick={handleAnimate}>
+        ✍️ Xem cách viết
+      </button>
+
+      {charInfo && (
+        <div className="radical-info-grid">
+          <div className="grid-cell pinyin-cell">{charInfo.pinyin}</div>
+          <div className="grid-cell hanviet-cell">{charInfo.hanViet}</div>
+          <div className="grid-cell meaning-cell">{charInfo.meaning}</div>
         </div>
       )}
     </div>

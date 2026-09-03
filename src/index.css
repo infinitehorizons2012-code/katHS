@@ -1571,54 +1571,87 @@ body {
 
 .radical-card-box {
   background: #ffffff;
-  border: 1.5px solid #cbd5e1;
-  border-radius: 16px;
-  padding: 12px;
-  width: 145px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+  width: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
-.radical-canvas-holder {
-  width: 125px;
-  height: 125px;
-}
-
-.radical-card-caption {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #4f46e5;
-}
-
-.radical-circles-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 2px;
-}
-
-.rad-circle-tag {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
+.radical-dashed-box {
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  background-color: #f8fafc;
+}
+
+.radical-canvas-holder {
+  width: 140px;
+  height: 140px;
+}
+
+.btn-write-trigger {
+  background: none;
+  border: none;
+  color: #ea580c; /* Orange-ish text */
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #ffffff;
-  font-family: 'Noto Sans SC', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
 }
 
-.rad-circle-tag.red {
-  background: #e53e3e;
+.btn-write-trigger:hover {
+  text-decoration: underline;
+  color: #c2410c;
 }
 
-.rad-circle-tag.blue {
-  background: #2563eb;
+.radical-info-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-cell {
+  padding: 8px 4px;
+  text-align: center;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pinyin-cell {
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #dc2626; /* Red bold */
+  font-weight: 800;
+}
+
+.hanviet-cell {
+  border-bottom: 1px solid #e2e8f0;
+  color: #2563eb; /* Blue bold */
+  font-weight: 800;
+}
+
+.meaning-cell {
+  grid-column: 1 / -1; /* spans both columns */
+  color: #475569; /* Gray */
+  background-color: #f8fafc;
+  font-weight: 600;
 }
 
 /* Multi-Character Mnemonic Box matching ttchi.pages.dev */

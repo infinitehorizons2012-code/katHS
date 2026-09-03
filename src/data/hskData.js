@@ -3,6 +3,7 @@ export const singleCharDict = {
     hanzi: "你",
     pinyin: "nǐ",
     hanViet: "nhĩ",
+    meaning: "bạn",
     mnemonic: "bộ Nhân 亻(người) đứng cạnh 尔 (Nhĩ, gợi âm) — chỉ vào \"người\" trước mặt mà gọi \"bạn, anh\".",
     radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '尔', name: 'Nhĩ' }]
   },
@@ -10,6 +11,7 @@ export const singleCharDict = {
     hanzi: "好",
     pinyin: "hǎo",
     hanViet: "hảo",
+    meaning: "tốt, khỏe, hay",
     mnemonic: "Người mẹ (女) ôm đứa con (子) bên mình, cảnh đẹp đẽ ấy chính là \"tốt, hay\".",
     radicals: [{ hanzi: '女', name: 'Nữ' }, { hanzi: '子', name: 'Tử' }]
   },
@@ -17,6 +19,7 @@ export const singleCharDict = {
     hanzi: "王",
     pinyin: "Wáng",
     hanViet: "vương",
+    meaning: "vua, họ Vương",
     mnemonic: "Hình vẽ một chiếc rìu lễ 王 (có thuyết là bằng ngọc) đặt cạnh ngai vàng",
     radicals: [{ hanzi: '三', name: 'Tam' }, { hanzi: '丨', name: 'Sổ' }]
   },
@@ -24,6 +27,7 @@ export const singleCharDict = {
     hanzi: "老",
     pinyin: "lǎo",
     hanViet: "lão",
+    meaning: "già, kinh nghiệm",
     mnemonic: "Hình ông lão tóc dài (老) chống cây gậy — dáng người già lụ khụ",
     radicals: [{ hanzi: '耂', name: 'Lão' }, { hanzi: '匕', name: 'Trủy' }]
   },
@@ -31,6 +35,7 @@ export const singleCharDict = {
     hanzi: "师",
     pinyin: "shī",
     hanViet: "sư",
+    meaning: "thầy, người dẫn dắt",
     mnemonic: "Gốc chỉ một \"sư\" gồm hàng nghìn quân tụ lại —> người dẫn dắt đám đông ấy thành \"thầy, bậc thầy\".",
     radicals: [{ hanzi: '丨', name: 'Sổ' }, { hanzi: '巾', name: 'Cân' }]
   },
@@ -38,6 +43,7 @@ export const singleCharDict = {
     hanzi: "大",
     pinyin: "dà",
     hanViet: "đại",
+    meaning: "to, lớn",
     mnemonic: "Một người (人) dang rộng tay chân choán cả khoảng không.Con người làm nên những chuyện lớn lao, vĩ đại là nhờ hai cánh tay này.",
     radicals: [{ hanzi: '大', name: 'Đại' }]
   },
@@ -45,6 +51,7 @@ export const singleCharDict = {
     hanzi: "家",
     pinyin: "jiā",
     hanViet: "gia",
+    meaning: "nhà, gia đình",
     mnemonic: "Dưới mái nhà 宀 của người nông dân thường chăn nuôi lợn 豕 — hình ảnh quen thuộc của một mái 'gia đình'",
     radicals: [{ hanzi: '宀', name: 'Miên' }, { hanzi: '豕', name: 'Thỉ' }]
   },
@@ -52,6 +59,7 @@ export const singleCharDict = {
     hanzi: "学",
     pinyin: "xué",
     hanViet: "học",
+    meaning: "học tập",
     mnemonic: "Đứa trẻ 子 dưới sự dìu dắt của bàn tay người lớn  𦥑 dưới mái 冖  thì đó chính là cảnh học tập.",
     radicals: [{ hanzi: '冖', name: 'Mịch' }, { hanzi: '子', name: 'Tử' }]
   },
@@ -59,6 +67,7 @@ export const singleCharDict = {
     hanzi: "生",
     pinyin: "shēng",
     hanViet: "sinh",
+    meaning: "sinh ra, sống",
     mnemonic: "Mầm cây 屮 nhú lên từ mặt đất 一, biểu thị sự 'sinh ra, nảy mầm, sống'",
     radicals: [{ hanzi: '生', name: 'Sinh' }]
   },
@@ -66,6 +75,7 @@ export const singleCharDict = {
     hanzi: "们",
     pinyin: "men",
     hanViet: "môn",
+    meaning: "các (hậu tố số nhiều)",
     mnemonic: "nhiều người (亻) cùng bước qua một cửa (门); biến \"tôi, anh\" thành \"chúng tôi, các anh\".",
     radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '门', name: 'Môn' }]
   },
@@ -73,6 +83,7 @@ export const singleCharDict = {
     hanzi: "您",
     pinyin: "nín",
     hanViet: "nhẫn",
+    meaning: "ngài, ông (kính ngữ)",
     mnemonic: "Gọi 'bạn' (你) bằng cả tấm lòng (心) kính trọng — đó là cách thưa 'ngài', 'quý vị'.",
     radicals: [{ hanzi: '你', name: 'Nhĩ' }, { hanzi: '心', name: 'Tâm' }]
   },
@@ -80,6 +91,7 @@ export const singleCharDict = {
     hanzi: "谢",
     pinyin: "xiè",
     hanViet: "tạ",
+    meaning: "cảm ơn",
     mnemonic: "Lời cảm ơn hay lời xin lỗi có giá trị nhất là khi con người biết điều chỉnh Thân 身 phải ngay thẳng và cái Tâm phải có chừng mực 寸 và phát ra bằng sự chân thành từ tâm trí (Ngôn 讠).",
     radicals: [{ hanzi: '讠', name: 'Ngôn' }, { hanzi: '身', name: 'Thân' }, { hanzi: '寸', name: 'Thốn' }]
   },
@@ -87,6 +99,7 @@ export const singleCharDict = {
     hanzi: "不",
     pinyin: "bù",
     hanViet: "bất",
+    meaning: "không, chẳng",
     mnemonic: "Hình vẽ mầm cây chưa nhú lên mặt đất, biểu thị sự phủ định \"không, chưa\".",
     radicals: [{ hanzi: '一', name: 'Nhất' }]
   },
@@ -94,6 +107,7 @@ export const singleCharDict = {
     hanzi: "客",
     pinyin: "kè",
     hanViet: "khách",
+    meaning: "khách",
     mnemonic: "Chữ 各 vốn vẽ một bàn chân đi vào nơi nào đó, nên cũng gợi ý 'người từ nơi khác đến'. Tổ hợp 宀 + Các nên nghĩa 'người khách từ nơi khác đến được đón tiếp dưới mái nhà ta',",
     radicals: [{ hanzi: '宀', name: 'Miên' }, { hanzi: '各', name: 'Các' }]
   },
@@ -101,6 +115,7 @@ export const singleCharDict = {
     hanzi: "气",
     pinyin: "qì",
     hanViet: "khí",
+    meaning: "không khí, khí",
     mnemonic: "Ba nét uốn như luồng không khí lưu thông trong không trung",
     radicals: [{ hanzi: '气', name: 'Khí' }]
   },
@@ -108,6 +123,7 @@ export const singleCharDict = {
     hanzi: "同",
     pinyin: "tóng",
     hanViet: "đồng",
+    meaning: "cùng nhau",
     mnemonic: "Mọi người 口 sống trong cùng một khu vực (Quynh) phải đoàn kết thống nhất Nhất (số 1) mới có đủ sức mạnh chống lại kẻ thù.",
     radicals: [{ hanzi: '冂', name: 'Quynh' }, { hanzi: '口', name: 'Khẩu' }]
   },
@@ -115,6 +131,7 @@ export const singleCharDict = {
     hanzi: "再",
     pinyin: "zài",
     hanViet: "tái",
+    meaning: "lại, nữa",
     mnemonic: "cái giỏ  冓 đan lặp đi lặp lại một 一 lần nữa",
     radicals: [{ hanzi: '冂', name: 'Quynh' }, { hanzi: '一', name: 'Nhất' }]
   },
@@ -122,6 +139,7 @@ export const singleCharDict = {
     hanzi: "见",
     pinyin: "jiàn",
     hanViet: "kiến",
+    meaning: "thấy, gặp",
     mnemonic: "Người 儿 dùng mắt 目 để nhìn, thấy",
     radicals: [{ hanzi: '目', name: 'Mục' }, { hanzi: '儿', name: 'Nhi' }]
   }
