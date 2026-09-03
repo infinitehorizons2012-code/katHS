@@ -9,6 +9,24 @@ const SingleCharStrokeCard = ({ char, charInfo }) => {
   const containerRef = useRef(null);
   const [writer, setWriter] = useState(null);
 
+  const customCss = React.useMemo(() => {
+    if (!charInfo || !charInfo.radicals) return '';
+    let css = '';
+    charInfo.radicals.forEach(rad => {
+      if (rad.strokes && rad.color) {
+        rad.strokes.forEach(idx => {
+          css += `
+            .custom-hanzi-colors-${char} svg path:nth-child(${idx + 1}) {
+              fill: ${rad.color} !important;
+              stroke: ${rad.color} !important;
+            }
+          `;
+        });
+      }
+    });
+    return css;
+  }, [charInfo, char]);
+
   useEffect(() => {
     if (!containerRef.current || !char) return;
     containerRef.current.innerHTML = '';
@@ -19,13 +37,12 @@ const SingleCharStrokeCard = ({ char, charInfo }) => {
         padding: 4,
         strokeAnimationSpeed: 1,
         delayBetweenStrokes: 150,
-        strokeColor: '#2563eb', // Blue primary strokes
-        radicalColor: '#e53e3e', // Red radical strokes
+        strokeColor: '#2563eb', // Default blue for undefined strokes
+        radicalColor: null, // Disable default HanziWriter radical
         outlineColor: '#f1f5f9',
         showOutline: true
       });
       setWriter(newWriter);
-      // Removed automatic animation to let user trigger it
     } catch (e) {
       console.error("HanziWriter error for", char, e);
     }
@@ -39,7 +56,8 @@ const SingleCharStrokeCard = ({ char, charInfo }) => {
 
   return (
     <div className="radical-card-box">
-      <div className="radical-dashed-box">
+      <div className={`radical-dashed-box custom-hanzi-colors-${char}`}>
+        <style>{customCss}</style>
         <div ref={containerRef} className="radical-canvas-holder"></div>
       </div>
       <button className="btn-write-trigger" onClick={handleAnimate}>

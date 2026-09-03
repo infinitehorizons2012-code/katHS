@@ -5,7 +5,10 @@ export const singleCharDict = {
     hanViet: "nhĩ",
     meaning: "bạn",
     mnemonic: "bộ Nhân 亻(người) đứng cạnh 尔 (Nhĩ, gợi âm) — chỉ vào \"người\" trước mặt mà gọi \"bạn, anh\".",
-    radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '尔', name: 'Nhĩ' }]
+    radicals: [
+      { hanzi: '亻', name: 'Nhân đứng', color: '#e53e3e', strokes: [0, 1] },
+      { hanzi: '尔', name: 'Nhĩ', color: '#2563eb', strokes: [2, 3, 4, 5, 6] }
+    ]
   },
   "好": {
     hanzi: "好",
@@ -13,7 +16,10 @@ export const singleCharDict = {
     hanViet: "hảo",
     meaning: "tốt, khỏe, hay",
     mnemonic: "Người mẹ (女) ôm đứa con (子) bên mình, cảnh đẹp đẽ ấy chính là \"tốt, hay\".",
-    radicals: [{ hanzi: '女', name: 'Nữ' }, { hanzi: '子', name: 'Tử' }]
+    radicals: [
+      { hanzi: '女', name: 'Nữ', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '子', name: 'Tử', color: '#2563eb', strokes: [3, 4, 5] }
+    ]
   },
   "王": {
     hanzi: "王",
@@ -21,7 +27,10 @@ export const singleCharDict = {
     hanViet: "vương",
     meaning: "vua, họ Vương",
     mnemonic: "Hình vẽ một chiếc rìu lễ 王 (có thuyết là bằng ngọc) đặt cạnh ngai vàng",
-    radicals: [{ hanzi: '三', name: 'Tam' }, { hanzi: '丨', name: 'Sổ' }]
+    radicals: [
+      { hanzi: '三', name: 'Tam', color: '#e53e3e', strokes: [0, 1, 3] },
+      { hanzi: '丨', name: 'Sổ', color: '#2563eb', strokes: [2] }
+    ]
   },
   "老": {
     hanzi: "老",
@@ -29,7 +38,10 @@ export const singleCharDict = {
     hanViet: "lão",
     meaning: "già, kinh nghiệm",
     mnemonic: "Hình ông lão tóc dài (老) chống cây gậy — dáng người già lụ khụ",
-    radicals: [{ hanzi: '耂', name: 'Lão' }, { hanzi: '匕', name: 'Trủy' }]
+    radicals: [
+      { hanzi: '耂', name: 'Lão', color: '#e53e3e', strokes: [0, 1, 2, 3] },
+      { hanzi: '匕', name: 'Trủy', color: '#2563eb', strokes: [4, 5] }
+    ]
   },
   "师": {
     hanzi: "师",
@@ -37,7 +49,10 @@ export const singleCharDict = {
     hanViet: "sư",
     meaning: "thầy, người dẫn dắt",
     mnemonic: "Gốc chỉ một \"sư\" gồm hàng nghìn quân tụ lại —> người dẫn dắt đám đông ấy thành \"thầy, bậc thầy\".",
-    radicals: [{ hanzi: '丨', name: 'Sổ' }, { hanzi: '巾', name: 'Cân' }]
+    radicals: [
+      { hanzi: '𠂤', name: 'Sư (trái)', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '巾', name: 'Cân', color: '#2563eb', strokes: [3, 4, 5] }
+    ]
   },
   "大": {
     hanzi: "大",
@@ -45,7 +60,9 @@ export const singleCharDict = {
     hanViet: "đại",
     meaning: "to, lớn",
     mnemonic: "Một người (人) dang rộng tay chân choán cả khoảng không.Con người làm nên những chuyện lớn lao, vĩ đại là nhờ hai cánh tay này.",
-    radicals: [{ hanzi: '大', name: 'Đại' }]
+    radicals: [
+      { hanzi: '大', name: 'Đại', color: '#2563eb', strokes: [0, 1, 2] }
+    ]
   },
   "家": {
     hanzi: "家",
@@ -53,7 +70,10 @@ export const singleCharDict = {
     hanViet: "gia",
     meaning: "nhà, gia đình",
     mnemonic: "Dưới mái nhà 宀 của người nông dân thường chăn nuôi lợn 豕 — hình ảnh quen thuộc của một mái 'gia đình'",
-    radicals: [{ hanzi: '宀', name: 'Miên' }, { hanzi: '豕', name: 'Thỉ' }]
+    radicals: [
+      { hanzi: '宀', name: 'Miên', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '豕', name: 'Thỉ', color: '#2563eb', strokes: [3, 4, 5, 6, 7, 8, 9] }
+    ]
   },
   "学": {
     hanzi: "学",
@@ -61,7 +81,10 @@ export const singleCharDict = {
     hanViet: "học",
     meaning: "học tập",
     mnemonic: "Đứa trẻ 子 dưới sự dìu dắt của bàn tay người lớn  𦥑 dưới mái 冖  thì đó chính là cảnh học tập.",
-    radicals: [{ hanzi: '冖', name: 'Mịch' }, { hanzi: '子', name: 'Tử' }]
+    radicals: [
+      { hanzi: '⺍冖', name: 'Đầu', color: '#e53e3e', strokes: [0, 1, 2, 3, 4] },
+      { hanzi: '子', name: 'Tử', color: '#2563eb', strokes: [5, 6, 7] }
+    ]
   },
   "生": {
     hanzi: "生",
@@ -69,7 +92,9 @@ export const singleCharDict = {
     hanViet: "sinh",
     meaning: "sinh ra, sống",
     mnemonic: "Mầm cây 屮 nhú lên từ mặt đất 一, biểu thị sự 'sinh ra, nảy mầm, sống'",
-    radicals: [{ hanzi: '生', name: 'Sinh' }]
+    radicals: [
+      { hanzi: '生', name: 'Sinh', color: '#2563eb', strokes: [0, 1, 2, 3, 4] }
+    ]
   },
   "们": {
     hanzi: "们",
@@ -77,7 +102,10 @@ export const singleCharDict = {
     hanViet: "môn",
     meaning: "các (hậu tố số nhiều)",
     mnemonic: "nhiều người (亻) cùng bước qua một cửa (门); biến \"tôi, anh\" thành \"chúng tôi, các anh\".",
-    radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '门', name: 'Môn' }]
+    radicals: [
+      { hanzi: '亻', name: 'Nhân đứng', color: '#e53e3e', strokes: [0, 1] },
+      { hanzi: '门', name: 'Môn', color: '#2563eb', strokes: [2, 3, 4] }
+    ]
   },
   "您": {
     hanzi: "您",
@@ -85,7 +113,10 @@ export const singleCharDict = {
     hanViet: "nhẫn",
     meaning: "ngài, ông (kính ngữ)",
     mnemonic: "Gọi 'bạn' (你) bằng cả tấm lòng (心) kính trọng — đó là cách thưa 'ngài', 'quý vị'.",
-    radicals: [{ hanzi: '你', name: 'Nhĩ' }, { hanzi: '心', name: 'Tâm' }]
+    radicals: [
+      { hanzi: '你', name: 'Nhĩ', color: '#e53e3e', strokes: [0, 1, 2, 3, 4, 5, 6] },
+      { hanzi: '心', name: 'Tâm', color: '#2563eb', strokes: [7, 8, 9, 10] }
+    ]
   },
   "谢": {
     hanzi: "谢",
@@ -93,7 +124,11 @@ export const singleCharDict = {
     hanViet: "tạ",
     meaning: "cảm ơn",
     mnemonic: "Lời cảm ơn hay lời xin lỗi có giá trị nhất là khi con người biết điều chỉnh Thân 身 phải ngay thẳng và cái Tâm phải có chừng mực 寸 và phát ra bằng sự chân thành từ tâm trí (Ngôn 讠).",
-    radicals: [{ hanzi: '讠', name: 'Ngôn' }, { hanzi: '身', name: 'Thân' }, { hanzi: '寸', name: 'Thốn' }]
+    radicals: [
+      { hanzi: '讠', name: 'Ngôn', color: '#e53e3e', strokes: [0, 1] },
+      { hanzi: '身', name: 'Thân', color: '#2563eb', strokes: [2, 3, 4, 5, 6, 7, 8] },
+      { hanzi: '寸', name: 'Thốn', color: '#16a34a', strokes: [9, 10, 11] }
+    ]
   },
   "不": {
     hanzi: "不",
@@ -101,7 +136,9 @@ export const singleCharDict = {
     hanViet: "bất",
     meaning: "không, chẳng",
     mnemonic: "Hình vẽ mầm cây chưa nhú lên mặt đất, biểu thị sự phủ định \"không, chưa\".",
-    radicals: [{ hanzi: '一', name: 'Nhất' }]
+    radicals: [
+      { hanzi: '不', name: 'Bất', color: '#2563eb', strokes: [0, 1, 2, 3] }
+    ]
   },
   "客": {
     hanzi: "客",
@@ -109,7 +146,10 @@ export const singleCharDict = {
     hanViet: "khách",
     meaning: "khách",
     mnemonic: "Chữ 各 vốn vẽ một bàn chân đi vào nơi nào đó, nên cũng gợi ý 'người từ nơi khác đến'. Tổ hợp 宀 + Các nên nghĩa 'người khách từ nơi khác đến được đón tiếp dưới mái nhà ta',",
-    radicals: [{ hanzi: '宀', name: 'Miên' }, { hanzi: '各', name: 'Các' }]
+    radicals: [
+      { hanzi: '宀', name: 'Miên', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '各', name: 'Các', color: '#2563eb', strokes: [3, 4, 5, 6, 7, 8] }
+    ]
   },
   "气": {
     hanzi: "气",
@@ -117,7 +157,9 @@ export const singleCharDict = {
     hanViet: "khí",
     meaning: "không khí, khí",
     mnemonic: "Ba nét uốn như luồng không khí lưu thông trong không trung",
-    radicals: [{ hanzi: '气', name: 'Khí' }]
+    radicals: [
+      { hanzi: '气', name: 'Khí', color: '#2563eb', strokes: [0, 1, 2, 3] }
+    ]
   },
   "同": {
     hanzi: "同",
@@ -125,7 +167,10 @@ export const singleCharDict = {
     hanViet: "đồng",
     meaning: "cùng nhau",
     mnemonic: "Mọi người 口 sống trong cùng một khu vực (Quynh) phải đoàn kết thống nhất Nhất (số 1) mới có đủ sức mạnh chống lại kẻ thù.",
-    radicals: [{ hanzi: '冂', name: 'Quynh' }, { hanzi: '口', name: 'Khẩu' }]
+    radicals: [
+      { hanzi: '冂', name: 'Quynh', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '口', name: 'Khẩu', color: '#2563eb', strokes: [3, 4, 5] }
+    ]
   },
   "再": {
     hanzi: "再",
@@ -133,7 +178,10 @@ export const singleCharDict = {
     hanViet: "tái",
     meaning: "lại, nữa",
     mnemonic: "cái giỏ  冓 đan lặp đi lặp lại một 一 lần nữa",
-    radicals: [{ hanzi: '冂', name: 'Quynh' }, { hanzi: '一', name: 'Nhất' }]
+    radicals: [
+      { hanzi: '一', name: 'Nhất', color: '#e53e3e', strokes: [0] },
+      { hanzi: '冉', name: 'Nhiễm', color: '#2563eb', strokes: [1, 2, 3, 4, 5] }
+    ]
   },
   "见": {
     hanzi: "见",
@@ -141,7 +189,10 @@ export const singleCharDict = {
     hanViet: "kiến",
     meaning: "thấy, gặp",
     mnemonic: "Người 儿 dùng mắt 目 để nhìn, thấy",
-    radicals: [{ hanzi: '目', name: 'Mục' }, { hanzi: '儿', name: 'Nhi' }]
+    radicals: [
+      { hanzi: '冂', name: 'Quynh', color: '#e53e3e', strokes: [0, 1] },
+      { hanzi: '儿', name: 'Nhi', color: '#2563eb', strokes: [2, 3] }
+    ]
   }
 };
 
