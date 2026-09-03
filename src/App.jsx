@@ -101,10 +101,6 @@ export function App() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="app-footer">
-        <p>© {new Date().getFullYear()} KatHS - Nền tảng học Tiếng Trung HSK trực tuyến. GitHub: infinitehorizons2012-code/katHS</p>
-      </footer>
     </div>
   );
 }
