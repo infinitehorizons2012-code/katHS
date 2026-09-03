@@ -9,10 +9,10 @@ export const transferTestData = [
         title: "Câu 1.1",
         content: "Từ chữ Hán nào dưới đây đại diện cho đại từ xưng hô tôn kính (\"Ngài / Thầy / Cô / Ông / Bà\")?",
         options: [
-          { label: "A", text: "你 (nǐ - Nhĩ - Bạn / Anh / Chị)", isCorrect: false },
-          { label: "B", text: "您 (nín - Nhẫn - Ngài / Thầy / Cô - tôn kính)", isCorrect: true },
-          { label: "C", text: "们 (men - Môn - Các / Hậu tố số nhiều)", isCorrect: false },
-          { label: "D", text: "好 (hǎo - Hảo - Tốt / Khỏe)", isCorrect: false }
+          { label: "A", text: "你", isCorrect: false },
+          { label: "B", text: "您", isCorrect: true },
+          { label: "C", text: "们", isCorrect: false },
+          { label: "D", text: "好", isCorrect: false }
         ],
         explanation: "您 (nín - Nhẫn - Ngài / Thầy / Cô) là đại từ xưng hô tôn kính dùng cho cấp trên, thầy cô hoặc đối tác. 你 (nǐ - Nhĩ - Bạn) dùng cho đối tượng ngang hàng."
       },
@@ -21,24 +21,24 @@ export const transferTestData = [
         title: "Câu 1.2",
         content: "Từ 大家 có Pinyin, Hán-Việt và Nghĩa tiếng Việt chính xác là gì?",
         options: [
-          { label: "A", text: "大家 (dàjiā - Đại gia - Mọi người / Tất cả mọi người)", isCorrect: true },
-          { label: "B", text: "学生 (xuéshēng - Học sinh - Học sinh / Sinh viên)", isCorrect: false },
-          { label: "C", text: "同学 (tóngxué - Đồng học - Bạn học)", isCorrect: false },
-          { label: "D", text: "老师 (lǎoshī - Lão sư - Giáo viên / Thầy cô)", isCorrect: false }
+          { label: "A", text: "dàjiā - Đại gia - Mọi người / Tất cả mọi người", isCorrect: true },
+          { label: "B", text: "xuéshēng - Học sinh - Học sinh / Sinh viên", isCorrect: false },
+          { label: "C", text: "tóngxué - Đồng học - Bạn học", isCorrect: false },
+          { label: "D", text: "lǎoshī - Lão sư - Giáo viên / Thầy cô", isCorrect: false }
         ],
-        explanation: "大家 (dàjiā - Đại gia - Mọi người / Tất cả mọi người) là đại từ tập thể chỉ toàn bộ những người có mặt trong ngữ cảnh giao tiếp."
+        explanation: "dàjiā - Đại gia - Mọi người / Tất cả mọi người là đại từ tập thể chỉ toàn bộ những người có mặt trong ngữ cảnh giao tiếp."
       },
       {
         id: "1.3",
         title: "Câu 1.3",
         content: "Cụm từ chữ Hán 不客气 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
         options: [
-          { label: "A", text: "再见", isCorrect: false },
-          { label: "B", text: "谢谢", isCorrect: false },
-          { label: "C", text: "你好 (nǐ hǎo - Nhĩ hảo - Xin chào)", isCorrect: false },
-          { label: "D", text: "不客气 (bú kèqi - Bất khách khí - Không có gì / Đừng khách khí)", isCorrect: true }
+          { label: "A", text: "zàijiàn - Tái kiến - Tạm biệt / Hẹn gặp lại", isCorrect: false },
+          { label: "B", text: "xièxie - Tạ tạ - Cảm ơn", isCorrect: false },
+          { label: "C", text: "nǐ hǎo - Nhĩ hảo - Xin chào", isCorrect: false },
+          { label: "D", text: "bú kèqi - Bất khách khí - Không có gì / Đừng khách khí", isCorrect: true }
         ],
-        explanation: "不客气 (bú kèqi - Bất khách khí - Không có gì / Đừng khách khí) là đáp lời lịch sự chuẩn xác khi nhận được lời cảm ơn 谢谢 (xièxie)."
+        explanation: "bú kèqi - Bất khách khí - Không có gì / Đừng khách khí là đáp lời lịch sự chuẩn xác khi nhận được lời cảm ơn 谢谢 (xièxie)."
       }
     ]
   },
