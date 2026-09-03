@@ -33,8 +33,8 @@ export const transferTestData = [
         title: "Câu 1.3",
         content: "Cụm từ chữ Hán 不客气 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
         options: [
-          { label: "A", text: "再见 (zàijiàn - Tái kiến - Tạm biệt / Hẹn gặp lại)", isCorrect: false },
-          { label: "B", text: "谢谢 (xièxie - Tạ tạ - Cảm ơn)", isCorrect: false },
+          { label: "A", text: "再见", isCorrect: false },
+          { label: "B", text: "谢谢", isCorrect: false },
           { label: "C", text: "你好 (nǐ hǎo - Nhĩ hảo - Xin chào)", isCorrect: false },
           { label: "D", text: "不客气 (bú kèqi - Bất khách khí - Không có gì / Đừng khách khí)", isCorrect: true }
         ],
@@ -50,24 +50,24 @@ export const transferTestData = [
       {
         id: "2.1",
         title: "Câu 2.1",
-        content: "Khi gặp Tổng giám đốc đối tác 王老师 (Wáng lǎoshī - Vương lão sư) tại sảnh công ty, câu chào nào dưới đây thể hiện đúng sắc thái kính ngữ lịch sự?",
+        content: "Khi gặp Tổng giám đốc đối tác 王老师 tại sảnh công ty, câu chào nào dưới đây thể hiện đúng sắc thái kính ngữ lịch sự?",
         options: [
           { label: "A", text: "你好", isCorrect: false },
-          { label: "B", text: "王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)", isCorrect: true },
+          { label: "B", text: "王老师，您好！", isCorrect: true },
           { label: "C", text: "大家好", isCorrect: false },
-          { label: "D", text: "再见 (zàijiàn - Tái kiến - Tạm biệt)", isCorrect: false }
+          { label: "D", text: "再见", isCorrect: false }
         ],
         explanation: "Câu chào kính ngữ trang trọng kết hợp [Danh từ/Chức danh] + 您好 → 王老师，您好！ (Wáng lǎoshī, nín hǎo!)."
       },
       {
         id: "2.2",
         title: "Câu 2.2",
-        content: "Cấu trúc nào dưới đây biểu đạt đúng vị trí ngữ pháp của hậu tố chỉ số nhiều 们 (men - Môn - Các)?",
+        content: "Cấu trúc nào dưới đây biểu đạt đúng vị trí ngữ pháp của hậu tố chỉ số nhiều 们?",
         options: [
-          { label: "A", text: "们同学 (men tóngxué)", isCorrect: false },
-          { label: "B", text: "同学们 (tóngxuémen - Đồng học môn - Các bạn học)", isCorrect: true },
-          { label: "C", text: "们你们 (men nǐmen)", isCorrect: false },
-          { label: "D", text: "好们 (hǎo men)", isCorrect: false }
+          { label: "A", text: "们同学", isCorrect: false },
+          { label: "B", text: "同学们", isCorrect: true },
+          { label: "C", text: "们你们", isCorrect: false },
+          { label: "D", text: "好们", isCorrect: false }
         ],
         explanation: "Theo quy tắc ngữ pháp phẳng [Danh từ / Đại từ chỉ người] + 们, hậu tố 们 (men) bắt buộc đứng sau danh từ chỉ người 同学 (tóngxué - Bạn học) → 同学们 (tóngxuémen - Các bạn học)."
       },
@@ -76,12 +76,12 @@ export const transferTestData = [
         title: "Câu 2.3",
         content: "Khi kết thúc buổi làm việc và ra về, phát ngôn nào dưới đây thể hiện hành vi chào tạm biệt văn minh?",
         options: [
-          { label: "A", text: "谢谢 (xièxie - Tạ tạ - Cảm ơn)", isCorrect: false },
+          { label: "A", text: "谢谢", isCorrect: false },
           { label: "B", text: "不客气", isCorrect: false },
-          { label: "C", text: "再见 (zàijiàn - Tái kiến - Tạm biệt / Hẹn gặp lại)", isCorrect: true },
-          { label: "D", text: "您好 (nín hǎo - Nhẫn hảo - Xin chào ngài)", isCorrect: false }
+          { label: "C", text: "再见", isCorrect: true },
+          { label: "D", text: "您好", isCorrect: false }
         ],
-        explanation: "再见 (zàijiàn - Tái kiến - Tạm biệt) là thuật ngữ khép lại cuộc giao tiếp."
+        explanation: "再见 là thuật ngữ khép lại cuộc giao tiếp."
       }
     ]
   },
@@ -139,7 +139,7 @@ export const transferTestData = [
         title: "Câu 4.1",
         content: "Tình huống: Học viên A chào cấp trên: 王老师，你好！ (Wáng lǎoshī, nǐ hǎo!).\nYêu cầu: Phân tích lỗi sai, chỉ ra nguyên nhân gốc rễ (RCA) và đưa ra phương án sửa.",
         answerTitle: "BÁO CÁO RCA:",
-        answerContent: "**Lỗi sai**: Dùng đại từ thân mật 你 (nǐ) thay vì kính ngữ 您 (nín) với đối tượng là cấp trên 王老师.\n**Root Cause**: Học viên bị thói quen phản xạ câu chào chung 你好, thiếu tư duy phân cấp đối tượng giao tiếp.\n**Phương án sửa**: Thay 你 bằng 您 → 王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)."
+        answerContent: "**Lỗi sai**: Dùng đại từ thân mật 你 (nǐ) thay vì kính ngữ 您 (nín) với đối tượng là cấp trên 王老师.\n**Root Cause**: Học viên bị thói quen phản xạ câu chào chung 你好, thiếu tư duy phân cấp đối tượng giao tiếp.\n**Phương án sửa**: Thay 你 bằng 您 → 王老师，您好！."
       },
       {
         id: "4.2",
