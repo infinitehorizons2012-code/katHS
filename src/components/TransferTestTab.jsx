@@ -3,6 +3,7 @@ import { transferTestData } from '../data/transferTestData';
 import { CheckCircle, XCircle, Info, FileText } from 'lucide-react';
 
 export function TransferTestTab() {
+  const [activeLevel, setActiveLevel] = useState(1);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showExplanation, setShowExplanation] = useState({});
 
@@ -22,8 +23,20 @@ export function TransferTestTab() {
         <p className="tab-subtitle">Đánh giá năng lực vận dụng toàn diện từ Nhận biết đến Thực chiến</p>
       </div>
 
+      <div className="level-tabs">
+        {transferTestData.map(levelData => (
+          <button
+            key={levelData.level}
+            className={`level-tab-btn ${activeLevel === levelData.level ? 'active' : ''}`}
+            onClick={() => setActiveLevel(levelData.level)}
+          >
+            Cấp độ {levelData.level}
+          </button>
+        ))}
+      </div>
+
       <div className="transfer-test-levels">
-        {transferTestData.map((levelData) => (
+        {transferTestData.filter(l => l.level === activeLevel).map((levelData) => (
           <div key={levelData.level} className="level-section">
             <div className="level-header">
               <div className="level-title-row">
@@ -54,7 +67,6 @@ export function TransferTestTab() {
                         <div className="essay-answer-box slide-down">
                           <h5 className="answer-title">{q.answerTitle}</h5>
                           <div className="answer-content" style={{ whiteSpace: 'pre-line' }}>
-                            {/* Render bold text simply by simple parse if needed, but whiteSpace: pre-line is fine. We can do simple bold replacement */}
                             {q.answerContent.split('**').map((text, i) => (
                               i % 2 === 1 ? <strong key={i}>{text}</strong> : text
                             ))}
