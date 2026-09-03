@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { List, Volume2, PenTool, Search, Gamepad2 } from 'lucide-react';
+import { List, Volume2, PenTool, Search, Gamepad2, BookOpenText } from 'lucide-react';
 import { speakChinese } from '../utils/speech';
 import { StrokeOrderModal } from './StrokeOrderModal';
 import { FlashcardMode } from './vocabModes/FlashcardMode';
 import { MatchMode } from './vocabModes/MatchMode';
 import { QuizMode } from './vocabModes/QuizMode';
 import { TypingMode } from './vocabModes/TypingMode';
+import { DetailMode } from './vocabModes/DetailMode';
 
 export const VocabularyTab = ({ vocabulary = [] }) => {
   const [activeWordForStroke, setActiveWordForStroke] = useState(null);
   const [filterText, setFilterText] = useState('');
+  const [selectedWordId, setSelectedWordId] = useState(1);
 
-  // Mode Selection: 'list' | 'flashcard' | 'match' | 'quiz' | 'typing'
+  // Mode Selection: 'list' | 'detail' | 'flashcard' | 'match' | 'quiz' | 'typing'
   const [activeViewMode, setActiveViewMode] = useState('list'); 
 
   // Badge color helper
@@ -56,6 +58,12 @@ export const VocabularyTab = ({ vocabulary = [] }) => {
             📋 Danh sách
           </button>
           <button 
+            className={`btn-mode-pill ${activeViewMode === 'detail' ? 'active-detail' : ''}`}
+            onClick={() => setActiveViewMode('detail')}
+          >
+            📖 Chi tiết & Chiết tự
+          </button>
+          <button 
             className={`btn-mode-pill ${activeViewMode === 'flashcard' ? 'active-flashcard' : ''}`}
             onClick={() => setActiveViewMode('flashcard')}
           >
@@ -83,6 +91,13 @@ export const VocabularyTab = ({ vocabulary = [] }) => {
       </div>
 
       {/* Render Active View */}
+      {activeViewMode === 'detail' && (
+        <DetailMode 
+          vocabulary={vocabulary} 
+          selectedWordId={selectedWordId}
+          onSelectWord={setSelectedWordId}
+        />
+      )}
       {activeViewMode === 'flashcard' && <FlashcardMode vocabulary={vocabulary} />}
       {activeViewMode === 'match' && <MatchMode vocabulary={vocabulary} />}
       {activeViewMode === 'quiz' && <QuizMode vocabulary={vocabulary} />}
@@ -117,7 +132,14 @@ export const VocabularyTab = ({ vocabulary = [] }) => {
               <div key={item.id || index} className="vocab-item-row">
                 <div className="vocab-index-circle">{index + 1}</div>
 
-                <div className="vocab-main-col" onClick={() => setActiveWordForStroke(item)} title="Xem nét vẽ">
+                <div 
+                  className="vocab-main-col" 
+                  onClick={() => {
+                    setSelectedWordId(item.id);
+                    setActiveViewMode('detail');
+                  }} 
+                  title="Xem chi tiết & Chiết tự"
+                >
                   <div className="hanzi-text">{item.hanzi}</div>
                   <div className="pinyin-text">{item.pinyin}</div>
                 </div>
@@ -151,10 +173,13 @@ export const VocabularyTab = ({ vocabulary = [] }) => {
                   </button>
                   <button 
                     className="btn-icon-stroke"
-                    onClick={() => setActiveWordForStroke(item)}
-                    title="Xem thứ tự nét vẽ"
+                    onClick={() => {
+                      setSelectedWordId(item.id);
+                      setActiveViewMode('detail');
+                    }}
+                    title="Xem giải thích & chiết tự"
                   >
-                    <PenTool size={16} />
+                    <BookOpenText size={18} />
                   </button>
                 </div>
               </div>

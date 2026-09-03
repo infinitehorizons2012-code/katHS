@@ -1371,10 +1371,337 @@ body {
   border-color: #a855f7;
 }
 
-.btn-mode-pill.active-typing {
-  background: #f97316;
+.btn-mode-pill.active-detail {
+  background: #2563eb;
   color: #ffffff;
-  border-color: #f97316;
+  border-color: #2563eb;
+}
+
+/* Detail Mode Component matching ttchi.pages.dev */
+.detail-mode-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.detail-sidebar-list {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+  max-height: 680px;
+}
+
+.sidebar-header-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-items-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.detail-word-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.detail-word-card:hover {
+  border-color: #93c5fd;
+  background: #f8fafc;
+}
+
+.detail-word-card.active {
+  background: #eff6ff;
+  border-color: #2563eb;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.12);
+}
+
+.word-card-left {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.word-card-left .word-hanzi {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.word-card-left .word-pinyin {
+  font-size: 0.82rem;
+  color: var(--pinyin-blue);
+  font-weight: 600;
+}
+
+.word-meaning-short {
+  font-size: 0.82rem;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+/* Detail Main Content Column (Red Circled Section) */
+.detail-main-content {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.detail-title-group {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.detail-hanzi {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.detail-pinyin {
+  font-size: 1.25rem;
+  color: var(--pinyin-blue);
+  font-weight: 700;
+}
+
+.detail-hanviet-badge {
+  font-size: 1.05rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.detail-type-badge {
+  background: #e0e7ff;
+  color: #4338ca;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.btn-speech-big {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.btn-speech-big:hover {
+  transform: translateY(-1px);
+}
+
+/* Detail Section Boxes */
+.detail-section-box {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+
+.section-label {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.gold-icon {
+  color: #eab308;
+}
+
+.meaning-highlight-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.example-content-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ex-text {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.ex-hz {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ex-py {
+  color: var(--pinyin-blue);
+  font-weight: 600;
+}
+
+.ex-vi {
+  color: #475569;
+}
+
+.btn-ex-speaker {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.btn-ex-speaker:hover {
+  color: #2563eb;
+}
+
+.stroke-flex-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.hanzi-canvas-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.canvas-holder {
+  width: 140px;
+  height: 140px;
+}
+
+.canvas-caption {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.radicals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radicals-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.radicals-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.radical-pill {
+  background: #ffffff;
+  border: 1px solid #bfdbfe;
+  color: #1e3a8a;
+  font-size: 0.88rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+.radical-pill .rad-hz {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1rem;
+  color: #e53e3e;
+}
+
+/* Mnemonic Box matching ttchi.pages.dev */
+.mnemonic-box {
+  background: #f0fdf4;
+  border: 1.5px solid #86efac;
+}
+
+.mnemonic-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.bulb-green {
+  color: #16a34a;
+}
+
+.mnemonic-body-text {
+  font-size: 0.95rem;
+  color: #15803d;
+  line-height: 1.6;
+  font-weight: 500;
 }
 
 /* Shared Wrapper for Modes */

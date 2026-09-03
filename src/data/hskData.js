@@ -14,7 +14,12 @@ export const hskLessons = [
         hanViet: "Nhĩ",
         type: "Đại từ",
         typeColor: "blue",
-        meaning: "Bạn / Anh / Chị"
+        meaning: "Bạn / Anh / Chị (ngôi thứ 2 số ít)",
+        mnemonic: "Chữ '你' (nhĩ / nǐ): bộ Nhân (亻 - người) đứng cạnh 尔 (Nhĩ, gợi âm) — chỉ vào 'người' trước mặt mà gọi 'bạn, anh, chị'.",
+        radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '尔', name: 'Nhĩ' }],
+        exampleHanzi: "你好！",
+        examplePinyin: "Nǐ hǎo!",
+        exampleMeaning: "Xin chào bạn!"
       },
       {
         id: 2,
@@ -23,7 +28,12 @@ export const hskLessons = [
         hanViet: "Hảo",
         type: "Tính từ",
         typeColor: "purple",
-        meaning: "Tốt / An / Khỏe"
+        meaning: "Tốt / An / Khỏe",
+        mnemonic: "Chữ '好' (hảo / hǎo): gồm bộ Nữ (女 - người mẹ) đứng cạnh bộ Tử (子 - đứa con) — người mẹ bế đứa con nhỏ trên tay là hình ảnh dịu dàng, tốt đẹp nhất.",
+        radicals: [{ hanzi: '女', name: 'Nữ' }, { hanzi: '子', name: 'Tử' }],
+        exampleHanzi: "很好！",
+        examplePinyin: "Hěn hǎo!",
+        exampleMeaning: "Rất tốt!"
       },
       {
         id: 3,
@@ -32,7 +42,12 @@ export const hskLessons = [
         hanViet: "Nhĩ hảo",
         type: "Cụm từ",
         typeColor: "gray",
-        meaning: "Xin chào"
+        meaning: "Xin chào",
+        mnemonic: "Cụm từ '你好' ghép từ đại từ 你 (bạn) và tính từ 好 (tốt) — mang ý nghĩa gốc chúc bạn luôn an lành, khỏe mạnh; là câu chào hỏi phổ biến nhất.",
+        radicals: [{ hanzi: '你', name: 'Nhĩ' }, { hanzi: '好', name: 'Hảo' }],
+        exampleHanzi: "你好！",
+        examplePinyin: "Nǐ hǎo!",
+        exampleMeaning: "Xin chào!"
       },
       {
         id: 4,
@@ -41,7 +56,12 @@ export const hskLessons = [
         hanViet: "Vương",
         type: "Danh từ",
         typeColor: "green",
-        meaning: "Họ Vương"
+        meaning: "Họ Vương",
+        mnemonic: "Chữ '王' (vương / Wáng): gồm 3 nét ngang (Thiên - Địa - Nhân) được kết nối bởi 1 nét sổ dọc (丨) — người nối liền Trời, Đất và Lòng người chính là vị Vương (vua).",
+        radicals: [{ hanzi: '三', name: 'Tam' }, { hanzi: '丨', name: 'Sổ' }],
+        exampleHanzi: "王老师",
+        examplePinyin: "Wáng lǎoshī",
+        exampleMeaning: "Thầy/Cô giáo Vương"
       },
       {
         id: 5,
@@ -50,7 +70,12 @@ export const hskLessons = [
         hanViet: "Lão sư",
         type: "Danh từ",
         typeColor: "green",
-        meaning: "Giáo viên / Thầy cô giáo"
+        meaning: "Giáo viên / Thầy cô giáo",
+        mnemonic: "Từ '老师' (lão sư): 老 (Lão) chỉ người giàu kinh nghiệm và sự từng trải, 师 (Sư) là bậc thầy truyền dạy tri thức và đạo lý.",
+        radicals: [{ hanzi: '老', name: 'Lão' }, { hanzi: '师', name: 'Sư' }],
+        exampleHanzi: "王老师好！",
+        examplePinyin: "Wáng lǎoshī hǎo!",
+        exampleMeaning: "Em chào thầy/cô Vương ạ!"
       },
       {
         id: 6,
@@ -59,7 +84,12 @@ export const hskLessons = [
         hanViet: "Vương lão sư",
         type: "Danh từ",
         typeColor: "green",
-        meaning: "Thầy/Cô giáo Vương"
+        meaning: "Thầy/Cô giáo Vương",
+        mnemonic: "Danh xưng '王老师': Kết hợp họ 王 (Vương) đứng trước danh xưng 老师 (Thầy cô) — quy tắc xưng hô lịch sự trong tiếng Trung.",
+        radicals: [{ hanzi: '王', name: 'Vương' }, { hanzi: '老', name: 'Lão' }, { hanzi: '师', name: 'Sư' }],
+        exampleHanzi: "王老师，您好！",
+        examplePinyin: "Wáng lǎoshī, nín hǎo!",
+        exampleMeaning: "Chào thầy Vương ạ!"
       },
       {
         id: 7,
@@ -68,7 +98,12 @@ export const hskLessons = [
         hanViet: "Đại gia",
         type: "Đại từ",
         typeColor: "blue",
-        meaning: "Mọi người / Tất cả mọi người"
+        meaning: "Mọi người / Tất cả mọi người",
+        mnemonic: "Từ '大家' (đại gia): 大 (Đại - lớn) + 家 (Gia - nhà) — nghĩa gốc là 'mái nhà chung lớn', mở rộng ra là tất cả mọi người.",
+        radicals: [{ hanzi: '大', name: 'Đại' }, { hanzi: '家', name: 'Gia' }],
+        exampleHanzi: "大家好！",
+        examplePinyin: "Dàjiā hǎo!",
+        exampleMeaning: "Chào mọi người!"
       },
       {
         id: 8,
@@ -77,7 +112,12 @@ export const hskLessons = [
         hanViet: "Học sinh",
         type: "Danh từ",
         typeColor: "green",
-        meaning: "Học sinh / Sinh viên"
+        meaning: "Học sinh / Sinh viên",
+        mnemonic: "Từ '学生' (học sinh): 学 (Học - học tập dưới mái trường) + 生 (Sinh - mầm sống) — mầm non đang lớn lên thông qua con đường học vấn.",
+        radicals: [{ hanzi: '学', name: 'Học' }, { hanzi: '生', name: 'Sinh' }],
+        exampleHanzi: "我是学生。",
+        examplePinyin: "Wǒ shì xuéshēng.",
+        exampleMeaning: "Tôi là học sinh."
       },
       {
         id: 9,
@@ -86,7 +126,12 @@ export const hskLessons = [
         hanViet: "Môn",
         type: "Trợ từ",
         typeColor: "orange",
-        meaning: "Các / Hậu tố số nhiều chỉ người"
+        meaning: "Các / Hậu tố số nhiều chỉ người",
+        mnemonic: "Chữ '们' (môn / men): gồm bộ Nhân (亻 - người) đứng trước bộ Môn (门 - cánh cửa) — tượng trưng cho nhiều người cùng tụ họp trước cửa ➔ Hậu tố số nhiều chỉ người.",
+        radicals: [{ hanzi: '亻', name: 'Nhân đứng' }, { hanzi: '门', name: 'Môn' }],
+        exampleHanzi: "同学们",
+        examplePinyin: "Tóngxuémen",
+        exampleMeaning: "Các bạn học"
       },
       {
         id: 10,
@@ -95,7 +140,12 @@ export const hskLessons = [
         hanViet: "Nhẫn",
         type: "Đại từ",
         typeColor: "blue",
-        meaning: "Ngài / Ông / Bà / Thầy / Cô (tôn kính)"
+        meaning: "Ngài / Ông / Bà / Thầy / Cô (tôn kính)",
+        mnemonic: "Chữ '您' (nhẫn / nín): gồm chữ 你 (bạn) ở trên và bộ Tâm (心 - trái tim) ở dưới — đặt sự thành kính từ trái tim dưới lời chào xưng hô với người lớn tuổi.",
+        radicals: [{ hanzi: '你', name: 'Nhĩ' }, { hanzi: '心', name: 'Tâm' }],
+        exampleHanzi: "您好！",
+        examplePinyin: "Nín hǎo!",
+        exampleMeaning: "Kính chào ông/bà/thầy/cô!"
       },
       {
         id: 11,
@@ -104,7 +154,12 @@ export const hskLessons = [
         hanViet: "Nhĩ môn",
         type: "Đại từ",
         typeColor: "blue",
-        meaning: "Các bạn"
+        meaning: "Các bạn",
+        mnemonic: "Từ '你们' (nhĩ môn): Ghép 你 (bạn - số ít) + 们 (hậu tố số nhiều) ➔ Đại từ ngôi thứ hai số nhiều (các bạn).",
+        radicals: [{ hanzi: '你', name: 'Nhĩ' }, { hanzi: '们', name: 'Môn' }],
+        exampleHanzi: "你们好！",
+        examplePinyin: "Nǐmen hǎo!",
+        exampleMeaning: "Chào các bạn!"
       },
       {
         id: 12,
@@ -113,7 +168,12 @@ export const hskLessons = [
         hanViet: "Tạ tạ",
         type: "Động từ",
         typeColor: "red",
-        meaning: "Cảm ơn"
+        meaning: "Cảm ơn",
+        mnemonic: "Chữ '谢' (tạ / xiè): gồm bộ Ngôn (言 - lời nói) + Thân (身 - thân thể) + Thốn (寸 - tấc lòng) — dùng lời nói chân thành cúi mình bày tỏ sự cảm ơn.",
+        radicals: [{ hanzi: '言', name: 'Ngôn' }, { hanzi: '身', name: 'Thân' }, { hanzi: '寸', name: 'Thốn' }],
+        exampleHanzi: "谢谢你！",
+        examplePinyin: "Xièxie nǐ!",
+        exampleMeaning: "Cảm ơn bạn!"
       },
       {
         id: 13,
@@ -122,7 +182,12 @@ export const hskLessons = [
         hanViet: "Bất khách khí",
         type: "Cụm từ",
         typeColor: "gray",
-        meaning: "Không có gì / Đừng khách khí"
+        meaning: "Không có gì / Đừng khách khí",
+        mnemonic: "Cụm từ '不客气' (bất khách khí): 不 (phủ định) + 客 (khách) + 气 (thái độ) — không cần coi nhau như người khách xa lạ ➔ Đừng khách khí, không có gì đâu!",
+        radicals: [{ hanzi: '不', name: 'Bất' }, { hanzi: '客', name: 'Khách' }, { hanzi: '气', name: 'Khí' }],
+        exampleHanzi: "不客气！",
+        examplePinyin: "Bú kèqi!",
+        exampleMeaning: "Không có gì đâu!"
       },
       {
         id: 14,
@@ -131,7 +196,12 @@ export const hskLessons = [
         hanViet: "Đồng học",
         type: "Danh từ",
         typeColor: "green",
-        meaning: "Bạn học"
+        meaning: "Bạn học",
+        mnemonic: "Từ '同学' (đồng học): 同 (Đồng - cùng nhau) + 学 (Học - học tập) — những người cùng nhau học tập dưới một mái trường.",
+        radicals: [{ hanzi: '同', name: 'Đồng' }, { hanzi: '学', name: 'Học' }],
+        exampleHanzi: "同学们好！",
+        examplePinyin: "Tóngxuémen hǎo!",
+        exampleMeaning: "Chào các em học sinh!"
       },
       {
         id: 15,
@@ -140,7 +210,12 @@ export const hskLessons = [
         hanViet: "Tái kiến",
         type: "Động từ",
         typeColor: "red",
-        meaning: "Tạm biệt / Hẹn gặp lại"
+        meaning: "Tạm biệt / Hẹn gặp lại",
+        mnemonic: "Từ '再见' (tái kiến): 再 (Tái - lần nữa) + 见 (Kiến - gặp mặt) — hẹn gặp lại nhau thêm một lần nữa.",
+        radicals: [{ hanzi: '再', name: 'Tái' }, { hanzi: '见', name: 'Kiến' }],
+        exampleHanzi: "明天再见！",
+        examplePinyin: "Míngtiān zàijiàn!",
+        exampleMeaning: "Ngày mai gặp lại!"
       }
     ],
     dialogues: [
