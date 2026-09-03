@@ -185,6 +185,46 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
             })}
           </div>
         </div>
+
+        {/* Cultural & Structural Etymology Section */}
+        {(currentWord.culturalThinking || currentWord.structuralEtymology) && (
+          <div className="cultural-box-wrapper">
+            <div className="cultural-title-main">
+              <span className="emoji-icon">🧩</span>
+              <span className="emoji-icon">✳️</span>
+              CẤU TRÚC CHIẾT TỰ & TƯ DUY VĂN HÓA TRUNG HOA:
+            </div>
+            
+            <div className="cultural-inner-card">
+              <div className="cultural-inner-subtitle">
+                <span className="badge-cn">CN</span>
+                Chiết Tự & Tư Duy Văn Hóa Cho Từ Vựng "{currentWord.hanzi}" ({currentWord.pinyin}):
+              </div>
+
+              {currentWord.culturalThinking && (
+                <div className="cultural-section">
+                  <div className="cultural-section-header">
+                    <span className="emoji-icon">🏮</span> Tư duy & Văn hóa Trung Hoa:
+                  </div>
+                  <div className="cultural-text-body">
+                    {currentWord.culturalThinking}
+                  </div>
+                </div>
+              )}
+
+              {currentWord.structuralEtymology && (
+                <div className="cultural-section">
+                  <div className="cultural-section-header">
+                    <span className="emoji-icon">🧩</span> Kết cấu Chiết tự từ vựng:
+                  </div>
+                  <div className="cultural-text-body">
+                    {currentWord.structuralEtymology}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

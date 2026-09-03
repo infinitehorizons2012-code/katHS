@@ -146,7 +146,9 @@ export const hskLessons = [
         meaning: "Bạn, cậu, anh, chị (ngôi thứ 2 số ít)",
         exampleHanzi: "你好！",
         examplePinyin: "Nǐ hǎo!",
-        exampleMeaning: "Xin chào bạn!"
+        exampleMeaning: "Xin chào bạn!",
+        culturalThinking: "Trong văn hóa Trung Hoa cổ đại, việc xưng hô phản ánh trực tiếp mối quan hệ giữa người với người. Chữ \"Bạn\" (你) đại diện cho sự ngang hàng, bình đẳng và gần gũi trong giao tiếp thường ngày.",
+        structuralEtymology: "Ghép từ bộ Nhân 亻 (người) chỉ ý và chữ Nhĩ 尔 (gợi âm). Chỉ sự hiện diện của một người cụ thể đang đứng đối diện, giao tiếp trực tiếp với mình."
       },
       {
         id: 2,
@@ -158,7 +160,9 @@ export const hskLessons = [
         meaning: "Tốt / An / Khỏe",
         exampleHanzi: "很好！",
         examplePinyin: "Hěn hǎo!",
-        exampleMeaning: "Rất tốt!"
+        exampleMeaning: "Rất tốt!",
+        culturalThinking: "Quan niệm truyền thống Á Đông coi gia đình là gốc rễ của xã hội. Một gia đình có mẹ (phụ nữ) bế con cái khỏe mạnh là hình ảnh viên mãn, bình an và tốt đẹp nhất.",
+        structuralEtymology: "Ghép từ chữ 女 (Nữ: người phụ nữ, người mẹ) và chữ 子 (Tử: đứa con). Hai yếu tố cốt lõi tạo nên sự sinh sôi, tốt lành."
       },
       {
         id: 3,
@@ -170,7 +174,9 @@ export const hskLessons = [
         meaning: "Xin chào",
         exampleHanzi: "你好！",
         examplePinyin: "Nǐ hǎo!",
-        exampleMeaning: "Xin chào!"
+        exampleMeaning: "Xin chào!",
+        culturalThinking: "Lời chào cơ bản nhất của người Trung Quốc không mang tính chất thời gian (như Good morning của phương Tây) mà mang tính chất chúc phúc: Cầu chúc cho người đối diện luôn được bình an và tốt lành.",
+        structuralEtymology: "Ghép từ 你 (Bạn) và 好 (Tốt lành). Mang ý nghĩa gốc là \"Chúc bạn mọi điều tốt đẹp\"."
       },
       {
         id: 4,
@@ -182,7 +188,9 @@ export const hskLessons = [
         meaning: "Họ Vương",
         exampleHanzi: "王老师",
         examplePinyin: "Wáng lǎoshī",
-        exampleMeaning: "Thầy/Cô giáo Vương"
+        exampleMeaning: "Thầy/Cô giáo Vương",
+        culturalThinking: "Biểu tượng của quyền lực tối cao trong xã hội phong kiến. Người xưa tin rằng bậc đế vương là \"Thiên tử\", người nhận mệnh trời để kết nối và cai trị muôn dân.",
+        structuralEtymology: "Ba nét ngang (三) tượng trưng cho Thiên (Trời), Địa (Đất) và Nhân (Người). Nét sổ dọc (丨) xuyên qua ở giữa tượng trưng cho vị Vua - người kết nối cả ba thế giới."
       },
       {
         id: 5,
@@ -194,7 +202,9 @@ export const hskLessons = [
         meaning: "Giáo viên / Thầy cô giáo",
         exampleHanzi: "王老师好！",
         examplePinyin: "Wáng lǎoshī hǎo!",
-        exampleMeaning: "Em chào thầy/cô Vương ạ!"
+        exampleMeaning: "Em chào thầy/cô Vương ạ!",
+        culturalThinking: "Truyền thống \"Tôn sư trọng đạo\". Chữ \"Lão\" (老) ở đây không phán xét về tuổi tác, mà thể hiện sự tôn kính đối với bề dày kinh nghiệm, sự từng trải và trí tuệ uyên thâm của người thầy.",
+        structuralEtymology: "Ghép từ chữ 老 (Lão: kinh nghiệm, tôn kính) và chữ 师 (Sư: người truyền dạy tri thức). Chỉ bậc thầy đáng kính dẫn dắt học trò."
       },
       {
         id: 6,
@@ -206,7 +216,9 @@ export const hskLessons = [
         meaning: "Thầy/Cô giáo Vương",
         exampleHanzi: "王老师，您好！",
         examplePinyin: "Wáng lǎoshī, nín hǎo!",
-        exampleMeaning: "Chào thầy Vương ạ!"
+        exampleMeaning: "Chào thầy Vương ạ!",
+        culturalThinking: "Quy tắc xưng hô trọng thứ bậc của văn hóa Á Đông: Họ (đại diện cho gia tộc/cá nhân) luôn luôn được đặt trước Chức danh (đại diện cho địa vị xã hội) để thể hiện sự tôn trọng tuyệt đối.",
+        structuralEtymology: "Cấu trúc [Họ 王] + [Chức danh 老师]. Khác biệt với phương Tây (ví dụ: Teacher Wang), tiếng Trung xếp từ định danh cá nhân gốc đến chức vụ."
       },
       {
         id: 7,
@@ -218,7 +230,9 @@ export const hskLessons = [
         meaning: "Mọi người / Tất cả mọi người",
         exampleHanzi: "大家好！",
         examplePinyin: "Dàjiā hǎo!",
-        exampleMeaning: "Chào mọi người!"
+        exampleMeaning: "Chào mọi người!",
+        culturalThinking: "Xuất phát từ triết lý \"Thiên hạ nhất gia\" (天下一家) của văn hóa Trung Hoa. Khi cất tiếng chào 大家好!, người nói coi tất cả mọi người có mặt trong hội trường hay lớp học như những người thân thuộc về cùng một gia đình lớn (大家).",
+        structuralEtymology: "Ghép từ chữ 大 (Đại: to lớn, rộng khắp) + chữ 家 (Gia: mái nhà ấm cúng). Mọi người cùng chung sống dưới một mái nhà lớn = Tất cả mọi người."
       },
       {
         id: 8,
@@ -230,7 +244,9 @@ export const hskLessons = [
         meaning: "Học sinh / Sinh viên",
         exampleHanzi: "我是学生。",
         examplePinyin: "Wǒ shì xuéshēng.",
-        exampleMeaning: "Tôi là học sinh."
+        exampleMeaning: "Tôi là học sinh.",
+        culturalThinking: "Quan niệm về sự sinh trưởng thông qua giáo dục. Con người khi sinh ra chỉ là mầm sống non nớt, phải thông qua quá trình không ngừng học tập, rèn luyện mới thực sự \"thành nhân\" (trưởng thành).",
+        structuralEtymology: "Ghép từ chữ 学 (Học: tiếp thu kiến thức) và chữ 生 (Sinh: mầm sống, sự sinh trưởng). Người đang trong quá trình học tập để lớn khôn."
       },
       {
         id: 9,
@@ -240,9 +256,11 @@ export const hskLessons = [
         type: "Trợ từ",
         typeColor: "orange",
         meaning: "Các / Hậu tố số nhiều chỉ người",
-        exampleHanzi: "同學們",
+        exampleHanzi: "同学们",
         examplePinyin: "Tóngxuémen",
-        exampleMeaning: "Các bạn học"
+        exampleMeaning: "Các bạn học",
+        culturalThinking: "Tính tập thể trong xã hội phương Đông. Khi một người bước qua cánh cửa hòa vào cộng đồng, cái \"tôi\" cá nhân (ngôi số ít) sẽ chuyển hóa thành cái \"chúng ta\" (ngôi số nhiều) mang tính liên kết chặt chẽ.",
+        structuralEtymology: "Ghép từ bộ Nhân 亻 (người) chỉ ý và chữ Môn 门 (cánh cửa) chỉ âm. Hình ảnh nhiều người cùng bước qua một ngưỡng cửa."
       },
       {
         id: 10,
@@ -254,7 +272,9 @@ export const hskLessons = [
         meaning: "Ngài / Ông / Bà / Cô / Thầy (kính ngữ tôn trọng)",
         exampleHanzi: "您好！",
         examplePinyin: "Nín hǎo!",
-        exampleMeaning: "Kính chào ông/bà/thầy/cô!"
+        exampleMeaning: "Kính chào ông/bà/thầy/cô!",
+        culturalThinking: "Đỉnh cao của sự lễ độ và văn hóa kính lão đắc thọ. Khi giao tiếp với bề trên, không chỉ dùng lời nói mà phải dùng cả \"trái tim\" thành kính để xưng hô.",
+        structuralEtymology: "Ghép từ chữ 你 (Nhĩ: bạn) ở trên và bộ Tâm 心 (trái tim) ở dưới. Đặt chữ Bạn lên trên chữ Tâm biểu thị sự tôn kính tuyệt đối từ tận đáy lòng."
       },
       {
         id: 11,
@@ -266,7 +286,9 @@ export const hskLessons = [
         meaning: "Các bạn, các anh, các chị (ngôi thứ 2 số nhiều)",
         exampleHanzi: "你们好！",
         examplePinyin: "Nǐmen hǎo!",
-        exampleMeaning: "Chào các bạn!"
+        exampleMeaning: "Chào các bạn!",
+        culturalThinking: "Sự mở rộng của mối quan hệ giao tiếp từ cá nhân đến một nhóm tập thể đang trực tiếp lắng nghe mình.",
+        structuralEtymology: "Kết hợp đại từ 你 (Bạn - số ít) và hậu tố 们 (số nhiều chỉ người). Chỉ một nhóm người đang trực tiếp giao tiếp với người nói."
       },
       {
         id: 12,
@@ -278,7 +300,9 @@ export const hskLessons = [
         meaning: "Cảm ơn",
         exampleHanzi: "谢谢你！",
         examplePinyin: "Xièxie nǐ!",
-        exampleMeaning: "Cảm ơn bạn!"
+        exampleMeaning: "Cảm ơn bạn!",
+        culturalThinking: "Văn hóa trọng lời ăn tiếng nói và thái độ nhún nhường. Lời cảm ơn thực sự không chỉ nói bằng miệng, mà phải thể hiện qua cử chỉ cung kính của cơ thể và sự chân thành từ tâm khảm.",
+        structuralEtymology: "Ghép từ 3 thành phần: 言 (Ngôn: lời nói), 身 (Thân: cơ thể, cúi mình) và 寸 (Thốn: tấc lòng, chừng mực). Nói lời cảm ơn với tư thế cúi mình chân thành."
       },
       {
         id: 13,
@@ -290,7 +314,9 @@ export const hskLessons = [
         meaning: "Không có gì / Đừng khách khí",
         exampleHanzi: "不客气！",
         examplePinyin: "Bú kèqi!",
-        exampleMeaning: "Không có gì đâu!"
+        exampleMeaning: "Không có gì đâu!",
+        culturalThinking: "Tính cách hiếu khách và xởi lởi của người Á Đông. Khi giúp đỡ ai đó, họ coi người được giúp như người thân thiết, không muốn người kia phải giữ kẽ hay tỏ thái độ xa lạ như \"khách\".",
+        structuralEtymology: "Kết hợp 不 (Không) + 客 (Khách) + 气 (Thái độ). Ý nói: \"Đừng tỏ thái độ xa lạ như người khách, hãy cứ tự nhiên như người nhà\"."
       },
       {
         id: 14,
@@ -302,7 +328,9 @@ export const hskLessons = [
         meaning: "Bạn học, bạn cùng lớp",
         exampleHanzi: "同学们好！",
         examplePinyin: "Tóngxuémen hǎo!",
-        exampleMeaning: "Chào các em học sinh!"
+        exampleMeaning: "Chào các em học sinh!",
+        culturalThinking: "Tình bằng hữu đồng môn. Những người cùng chung chí hướng, cùng chia sẻ thời gian dưới một mái trường được coi là mối quan hệ gắn bó khăng khít chỉ sau gia đình.",
+        structuralEtymology: "Ghép từ chữ 同 (Đồng: cùng nhau, chung) và chữ 学 (Học: học tập). Những người cùng nhau học tập dưới một mái trường."
       },
       {
         id: 15,
@@ -314,7 +342,9 @@ export const hskLessons = [
         meaning: "Tạm biệt / Hẹn gặp lại",
         exampleHanzi: "明天再见！",
         examplePinyin: "Míngtiān zàijiàn!",
-        exampleMeaning: "Ngày mai gặp lại!"
+        exampleMeaning: "Ngày mai gặp lại!",
+        culturalThinking: "Quan niệm về sự luân hồi và tính tuần hoàn của thời gian. Cuộc chia ly không phải là kết thúc vĩnh viễn, mà luôn ẩn chứa niềm hy vọng và lời hẹn ước cho một lần hội ngộ trong tương lai.",
+        structuralEtymology: "Ghép từ chữ 再 (Tái: thêm một lần nữa, lặp lại) và chữ 见 (Kiến: gặp mặt, nhìn thấy). Lời chào mang hàm ý: \"Hẹn một ngày không xa sẽ lại được nhìn thấy nhau\"."
       }
     ],
     dialogues: [
