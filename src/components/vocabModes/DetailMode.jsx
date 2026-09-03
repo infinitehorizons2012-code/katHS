@@ -1,27 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Volume2, BookOpen, Play } from 'lucide-react';
+import { Volume2, BookOpen } from 'lucide-react';
 import { speakChinese } from '../../utils/speech';
+import { singleCharDict } from '../../data/hskData';
 import HanziWriter from 'hanzi-writer';
 
-export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) => {
-  const [activeId, setActiveId] = useState(selectedWordId || (vocabulary[0] ? vocabulary[0].id : 1));
-  const writerRef = useRef(null);
+// Sub-component for rendering stroke card for each character in word
+const SingleCharStrokeCard = ({ char, charInfo }) => {
   const containerRef = useRef(null);
 
-  const currentWord = vocabulary.find(v => v.id === activeId) || vocabulary[0];
-
   useEffect(() => {
-    if (!containerRef.current || !currentWord) return;
-
+    if (!containerRef.current || !char) return;
     containerRef.current.innerHTML = '';
-    const cleanHanzi = currentWord.hanzi.replace(/[^\u4e00-\u9fa5]/g, '');
-    const charToDraw = cleanHanzi.charAt(0) || currentWord.hanzi;
-
     try {
-      const writer = HanziWriter.create(containerRef.current, charToDraw, {
-        width: 140,
-        height: 140,
-        padding: 6,
+      const writer = HanziWriter.create(containerRef.current, char, {
+        width: 125,
+        height: 125,
+        padding: 4,
         strokeAnimationSpeed: 1,
         delayBetweenStrokes: 150,
         strokeColor: '#2563eb', // Blue primary strokes
@@ -29,20 +23,44 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
         outlineColor: '#f1f5f9',
         showOutline: true
       });
-      writerRef.current = writer;
       writer.animateCharacter();
     } catch (e) {
-      console.error("HanziWriter init error:", e);
+      console.error("HanziWriter error for", char, e);
     }
-  }, [activeId, currentWord]);
+  }, [char]);
 
-  const handlePlayStroke = () => {
-    if (writerRef.current) {
-      writerRef.current.animateCharacter();
-    }
-  };
+  return (
+    <div className="radical-card-box">
+      <div ref={containerRef} className="radical-canvas-holder"></div>
+      <div className="radical-card-caption">
+        Nét chữ '{char}'
+      </div>
+      
+      {/* Radical tags for this character */}
+      {charInfo?.radicals && (
+        <div className="radical-circles-row">
+          {charInfo.radicals.map((rad, idx) => (
+            <span key={idx} className={`rad-circle-tag ${idx === 0 ? 'red' : 'blue'}`} title={rad.name}>
+              {rad.hanzi}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
-  // Helper to render inline red Chinese radical characters matching Screenshot B
+export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) => {
+  const [activeId, setActiveId] = useState(selectedWordId || (vocabulary[0] ? vocabulary[0].id : 1));
+
+  const currentWord = vocabulary.find(v => v.id === activeId) || vocabulary[0];
+
+  if (!currentWord) return null;
+
+  const cleanHanzi = currentWord.hanzi.replace(/[^\u4e00-\u9fa5]/g, '');
+  const charList = cleanHanzi.split('');
+
+  // Helper to render inline red Chinese radical characters matching ttchi.pages.dev
   const renderMnemonicWithRedRadicals = (text) => {
     if (!text) return null;
     const parts = text.split(/([\u4e00-\u9fa5]{1,2})/g);
@@ -57,8 +75,6 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
       return part;
     });
   };
-
-  if (!currentWord) return null;
 
   return (
     <div className="detail-mode-container">
@@ -126,27 +142,47 @@ export const DetailMode = ({ vocabulary = [], selectedWordId, onSelectWord }) =>
           </div>
         )}
 
-        {/* 1. Khoanh đỏ 1 (Lấy từ Khoanh đỏ A - da-chiet-tu.pages.dev) */}
+        {/* Multi-Character Radicals & Stroke Order Section */}
         <div className="sample-radicals-section">
           <div className="radicals-header-title">
             <span className="emoji-icon">🎨</span>
-            <span>Chiết tự & Tô màu nét bộ thủ cho 1 chữ của từ "{currentWord.hanzi}":</span>
+            <span>Chiết tự & Tô màu nét bộ thủ cho {charList.length} chữ của từ "{currentWord.hanzi}":</span>
           </div>
 
-          {/* Box A design: Dashed border card + "✍️ Xem cách viết" link below */}
-          <div className="box-a-container">
-            <div ref={containerRef} className="box-a-canvas"></div>
-            <button className="box-a-stroke-btn" onClick={handlePlayStroke}>
-              ✍️ Xem cách viết
-            </button>
+          <div className="multi-char-cards-row">
+            {charList.map((char, index) => (
+              <SingleCharStrokeCard
+                key={`${char}-${index}`}
+                char={char}
+                charInfo={singleCharDict[char]}
+              />
+            ))}
           </div>
         </div>
 
-        {/* 2. Khoanh đỏ 2 (Lấy từ Khoanh đỏ B - da-chiet-tu.pages.dev) */}
-        <div className="box-b-mnemonic-container">
-          <div className="box-b-header-title">APP_MNEMONIC</div>
-          <div className="box-b-content-body">
-            {renderMnemonicWithRedRadicals(currentWord.mnemonic)}
+        {/* Multi-Character APP_MNEMONIC Section */}
+        <div className="sample-mnemonic-box">
+          <div className="mnemonic-title-row">
+            <span className="emoji-icon">🌱</span>
+            <span className="emoji-icon">🍸</span>
+            <span className="mnemonic-title-text">APP_MNEMONIC (Mẹo Nhớ Chiết Tự Sinh Động):</span>
+          </div>
+
+          <div className="mnemonic-bullets-wrapper">
+            {charList.map((char, idx) => {
+              const charInfo = singleCharDict[char];
+              if (!charInfo) return null;
+              return (
+                <div key={idx} className="mnemonic-bullet-block">
+                  <div className="mnemonic-bullet-title">
+                    • Chữ <strong>'{char}'</strong> ({charInfo.hanViet} / {charInfo.pinyin}):
+                  </div>
+                  <div className="mnemonic-content-line">
+                    {renderMnemonicWithRedRadicals(charInfo.mnemonic)}
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
