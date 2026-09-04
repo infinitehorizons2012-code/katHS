@@ -384,6 +384,54 @@ export const OverviewTab = () => {
             </tbody>
           </table>
         </div>
+
+        <div className="mt-8">
+          <h3 style={{ fontSize: '1.2rem', color: '#1e293b', marginBottom: '1rem', fontWeight: 'bold' }}>5.2 Ba Tình huống Ứng dụng Thực chiến tại Doanh nghiệp FDI / Xuất nhập khẩu / Nhân sự</h3>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🏢 Tình huống 1: Bộ phận Lễ tân / Trợ lý Doanh nghiệp FDI đón tiếp Giám đốc/Chuyên gia người Trung Quốc</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Chuyên gia 王老师 (Wáng lǎoshī - Vương lão sư) vừa bước vào văn phòng công ty. Nhân sự Lễ tân thực hiện quy trình đón tiếp.</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Lễ tân:</strong> 王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)</li>
+                <li><strong>Chuyên gia:</strong> 你好！ (nǐ hǎo! - Nhĩ hảo! - Chào bạn!)</li>
+                <li><strong>Lễ tân:</strong> 谢谢您！ (xièxie nín! - Tạ tạ nhẫn! - Cảm ơn thầy/cô!)</li>
+                <li><strong>Chuyên gia:</strong> 不客气！ (bú kèqi! - Bất khách khí! - Không có gì!)</li>
+                <li style={{ marginTop: '0.5rem', color: '#64748b' }}><em>Khi Chuyên gia ra về:</em> 王老师，再见！ (Wáng lǎoshī, zàijiàn! - Vương lão sư, Tái kiến! - Tạm biệt thầy/cô Vương!)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>👥 Tình huống 2: Trưởng nhóm Nhân sự (HR Manager) khai mạc Buổi Đào tạo / Workshop Nội bộ</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Trưởng nhóm đứng trước toàn thể nhân viên và học viên Trung Quốc - Việt Nam để bắt đầu buổi workshop.</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>HR Manager:</strong> 大家好！ (dàjiā hǎo! - Đại gia hảo! - Chào mọi người!)</li>
+                <li><strong>Toàn thể phòng:</strong> 老师好！ (lǎoshī hǎo! - Lão sư hảo! - Chào thầy/cô!)</li>
+                <li><strong>HR Manager:</strong> 同学们好！ (tóngxuémen hǎo! - Đồng học môn hảo! - Chào các bạn học!)</li>
+                <li><strong>Toàn thể phòng:</strong> 谢谢老师！ (xièxie lǎoshī! - Tạ tạ lão sư! - Cảm ơn thầy/cô!)</li>
+                <li><strong>HR Manager:</strong> 不客气！ (bú kèqi! - Bất khách khí! - Không có gì!)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📦 Tình huống 3: Nhân sự Xuất Nhập khẩu Bàn giao Hồ sơ và Tạm biệt Đội ngũ Đối tác</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Nhân sự XNK bàn giao xong chứng từ giao nhận hàng hóa cho nhóm đại diện đối tác 你们 (nǐmen - Nhĩ môn - Các bạn).</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Nhân sự XNK:</strong> 谢谢你们！ (xièxie nǐmen! - Tạ tạ nhĩ môn! - Cảm ơn các bạn!)</li>
+                <li><strong>Đội ngũ đối tác:</strong> 不客气！ (bú kèqi! - Bất khách khí! - Không có gì!)</li>
+                <li><strong>Nhân sự XNK:</strong> 再见！ (zàijiàn! - Tái kiến! - Tạm biệt / Hẹn gặp lại!)</li>
+                <li><strong>Đội ngũ đối tác:</strong> 再见！ (zàijiàn! - Tái kiến! - Tạm biệt!)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* SECTION 3: ADAPTIVE QUESTION BANK */}
