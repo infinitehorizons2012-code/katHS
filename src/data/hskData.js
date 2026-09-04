@@ -821,38 +821,37 @@ export const hskLessons = [
     ],
     dialogues: [
       {
-        id: "d1", clo: "clo1",
+        id: "l2_d1", clo: "clo1",
         title: "课文 1",
-        subtitle: "Bài khóa 1: NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
-        context: "Văn cảnh: 开学第一天，在办公室里，王一飞和AI助教小语打招呼。(On the first day of school, in the office, Wang Yifei was greeting the AI assistant Xiaoyu).",
+        subtitle: "NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
+        context: "Văn cảnh: 在教室里，王一飞在认识学生。(Wang Yifei was getting to know the students in the classroom).",
         lines: [
-          { speaker: "👤 王一飞", hanzi: "AI小语，你好！", pinyin: "AI Xiǎoyǔ, nǐ hǎo!", vietnamese: "Xin chào AI Tiểu Ngữ!" },
-          { speaker: "🤖 小语", hanzi: "王老师，你好！", pinyin: "Wáng lǎoshī, nǐ hǎo!", vietnamese: "Xin chào thầy/cô Vương!" }
+          { speaker: "👤 王一飞", hanzi: "请问，你叫什么名字？", pinyin: "Qǐngwèn, nǐ jiào shénme míngzi?", vietnamese: "Xin hỏi, bạn tên là gì?" },
+          { speaker: "👤 陈天中", hanzi: "我叫陈天中。", pinyin: "Wǒ jiào Chén Tiānzhōng.", vietnamese: "Tôi tên là Trần Thiên Trung." }
         ]
       },
       {
-        id: "d2", clo: "clo2",
+        id: "l2_d2", clo: "clo2",
         title: "课文 2",
-        subtitle: "Bài khóa 2: NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
-        context: "Văn cảnh: 开学第一天，课堂上，学生们学习打招呼用语。(On the first day of school, in class, the students were learning greeting expressions).",
-        tips: "Mẹo Tiểu Ngữ (小语助力 - Xiaoyu's Tip): “您”，敬称，对年长者或尊敬的人使用。 (\"您\" is an honorific pronoun used to address elders or individuals you respect).",
+        subtitle: "NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
+        context: "Văn cảnh: 在校园里，陈天中和白家月打招呼时认错了人。(On campus, Chen Tianzhong greeted Bai Jiayue but mistook her for someone else).",
         lines: [
-          { speaker: "👤 王一飞", hanzi: "大家好！", pinyin: "Dàjiā hǎo!", vietnamese: "Chào mọi người!" },
-          { speaker: "👥 学生们", hanzi: "老师，您好！", pinyin: "Lǎoshī, nín hǎo!", vietnamese: "Chào thầy/cô!" },
-          { speaker: "🤖 小语", hanzi: "你们好！", pinyin: "Nǐmen hǎo!", vietnamese: "Chào các bạn!" },
-          { speaker: "👥 学生们", hanzi: "你好，小语！", pinyin: "Nǐ hǎo, Xiǎoyǔ!", vietnamese: "Chào Tiểu Ngữ!" }
+          { speaker: "👤 陈天中", hanzi: "你好，安妮！", pinyin: "Nǐ hǎo, Ānní!", vietnamese: "Xin chào, Annie!" },
+          { speaker: "👤 白家月", hanzi: "你好，陈天中！我不是安妮，我是白家月。", pinyin: "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānní, wǒ shì Bái Jiāyuè.", vietnamese: "Xin chào Trần Thiên Trung! Tôi không phải là Annie, tôi là Bạch Gia Nguyệt." },
+          { speaker: "👤 陈天中", hanzi: "对不起！", pinyin: "Duìbuqǐ!", vietnamese: "Xin lỗi!" },
+          { speaker: "👤 白家月", hanzi: "没关系！", pinyin: "Méi guānxi!", vietnamese: "Không sao!" }
         ]
       },
       {
-        id: "d3", clo: "clo3",
+        id: "l2_d3", clo: "clo3",
         title: "课文 3",
-        subtitle: "Bài khóa 3: NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
-        context: "Văn cảnh: 开学第一天，课堂上，学生们学习致谢语、告别语。(On the first day of school, in class, the students were learning expressions of gratitude and farewell).",
+        subtitle: "NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
+        context: "Văn cảnh: 在校园里，李文和白家月第一次相遇。(Li Wen and Bai Jiayue met for the first time on campus).",
         lines: [
-          { speaker: "👥 学生们", hanzi: "谢谢！", pinyin: "Xièxie!", vietnamese: "Cảm ơn!" },
-          { speaker: "🤖 小语", hanzi: "不客气！", pinyin: "Bú kèqi!", vietnamese: "Không có gì!" },
-          { speaker: "👤 王一飞", hanzi: "同学们，再见！", pinyin: "Tóngxuémen, zàijiàn!", vietnamese: "Chào tạm biệt các bạn học!" },
-          { speaker: "👥 学生们", hanzi: "老师，再见！", pinyin: "Lǎoshī, zàijiàn!", vietnamese: "Chào tạm biệt thầy/cô!" }
+          { speaker: "👤 李文", hanzi: "你好！我叫李文。", pinyin: "Nǐ hǎo! Wǒ jiào Lǐ Wén.", vietnamese: "Xin chào! Tôi tên là Lý Văn." },
+          { speaker: "👤 白家月", hanzi: "你好！我叫白家月。", pinyin: "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.", vietnamese: "Xin chào! Tôi tên là Bạch Gia Nguyệt." },
+          { speaker: "👤 李文", hanzi: "很高兴认识你。", pinyin: "Hěn gāoxìng rènshi nǐ.", vietnamese: "Rất vui được quen biết bạn." },
+          { speaker: "👤 白家月", hanzi: "认识你我也很高兴。", pinyin: "Rènshi nǐ wǒ yě hěn gāoxìng.", vietnamese: "Quen biết bạn tôi cũng rất vui." }
         ]
       }
     ],

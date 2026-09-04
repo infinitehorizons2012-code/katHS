@@ -642,8 +642,8 @@ const Lesson2Overview = () => {
                     请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi? - Thỉnh vấn, nhĩ khiếu thập ma danh tự? - Xin hỏi, bạn tên là gì?)
                   </div>
                   <div>
-                    <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
-                    我叫李文。 (Wǒ jiào Lǐ Wén. - Ngã khiếu Lý Văn. - Tôi tên là Lý Văn.)
+                    <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
+                    我叫陈天中。 (Wǒ jiào Chén Tiānzhōng. - Ngã khiếu Trần Thiên Trung. - Tôi tên là Trần Thiên Trung.)
                   </div>
                 </div>
               </div>
@@ -741,11 +741,19 @@ const Lesson2Overview = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                   <div>
                     <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
+                    你好，安妮！ (Nǐ hǎo, Ānní! - Nhĩ hảo, An Ni! - Xin chào, Annie!)
+                  </div>
+                  <div>
+                    <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
+                    你好，陈天中！我不是安妮，我是白家月。 (Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānní, wǒ shì Bái Jiāyuè. - Nhĩ hảo, Trần Thiên Trung! Ngã bất thị An Ni, ngã thị Bạch Gia Nguyệt. - Xin chào Trần Thiên Trung! Tôi không phải là Annie, tôi là Bạch Gia Nguyệt.)
+                  </div>
+                  <div>
+                    <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
                     对不起！ (Duìbuqǐ! - Đối bất khởi! - Xin lỗi!)
                   </div>
                   <div>
                     <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
-                    没关系！ (Méi guānxi! - Một quan hệ! - Không sao!) / 没事！ (Méishì! - Một sự! - Không sao!)
+                    没关系！ (Méi guānxi! - Một quan hệ! - Không sao!)
                   </div>
                 </div>
               </div>
@@ -843,15 +851,19 @@ const Lesson2Overview = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
                   <div>
                     <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
-                    你好！我叫李文。 (Nǐ hǎo! Wǒ jiào Lǐ Wén.)
+                    你好！我叫李文。 (Nǐ hǎo! Wǒ jiào Lǐ Wén. - Xin chào! Tôi tên là Lý Văn.)
                   </div>
                   <div>
                     <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
-                    你好！我叫白家月。很高兴认识你！ (Nǐ hǎo! Wǒ jiào Bái Jiāyuè. Hěn gāoxìng rènshi nǐ!)
+                    你好！我叫白家月。 (Nǐ hǎo! Wǒ jiào Bái Jiāyuè. - Xin chào! Tôi tên là Bạch Gia Nguyệt.)
                   </div>
                   <div>
                     <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
-                    我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ!)
+                    很高兴认识你。 (Hěn gāoxìng rènshi nǐ. - Rất vui được quen biết bạn.)
+                  </div>
+                  <div>
+                    <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
+                    认识你我也很高兴。 (Rènshi nǐ wǒ yě hěn gāoxìng. - Quen biết bạn tôi cũng rất vui.)
                   </div>
                 </div>
               </div>
