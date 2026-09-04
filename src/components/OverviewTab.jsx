@@ -507,6 +507,78 @@ const Lesson1Overview = () => {
             </tbody>
           </table>
         </div>
+
+        <div className="closed-lexicon-box mt-8 fade-in" style={{ background: '#fff1f2', border: '1px solid #fda4af', borderRadius: '8px', padding: '1.5rem' }}>
+          <h3 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem' }}>
+            <Lock size={20} /> 🔒 CLOSED LEXICON KHẾP KÍN & DANH MỤC CẤU TRÚC NGỮ PHÁP (BẮT BUỘC TUÂN THỦ DÀNH CHO NGÂN HÀNG ĐỀ THI)
+          </h3>
+          <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#881337', fontSize: '0.95rem' }}>
+            <strong>Ghi chú bắt buộc:</strong> Ngân hàng đề thi phải chú ý tuân thủ tuyệt đối danh mục từ vựng và mẫu câu dưới đây vì người mới học từ số 0 chỉ có vốn liếng tích lũy như sau:
+          </p>
+
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.5rem' }}>1.1 Danh mục Tập đóng Từ vựng Tích lũy (Lesson 1 Closed Lexicon)</h4>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', fontSize: '0.9rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng các bài cũ:</p>
+                <p style={{ fontStyle: 'italic', color: '#64748b' }}>[Không có - Bài 1 là bài khởi đầu]</p>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng bài mới (Bài 1 - Core Lexicon 15 đơn vị):</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#4c0519', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <li><strong>你</strong> (nǐ - Nhĩ - Bạn / Anh / Chị)</li>
+                  <li><strong>好</strong> (hǎo - Hảo - Tốt / Khỏe)</li>
+                  <li><strong>你好</strong> (nǐ hǎo - Nhĩ hảo - Xin chào)</li>
+                  <li><strong>王</strong> (Wáng - Vương - Họ Vương)</li>
+                  <li><strong>老师</strong> (lǎoshī - Lão sư - Thầy/Cô giáo)</li>
+                  <li><strong>王老师</strong> (Wáng lǎoshī - Vương lão sư - Thầy/Cô giáo Vương)</li>
+                  <li><strong>大家</strong> (dàjiā - Đại gia - Mọi người)</li>
+                  <li><strong>学生</strong> (xuéshēng - Học sinh)</li>
+                  <li><strong>们</strong> (men - Môn - Các / Hậu tố số nhiều)</li>
+                  <li><strong>您</strong> (nín - Nhẫn - Ngài / Thầy / Cô)</li>
+                  <li><strong>你们</strong> (nǐmen - Nhĩ môn - Các bạn)</li>
+                  <li><strong>谢谢</strong> (xièxie - Tạ tạ - Cảm ơn)</li>
+                  <li><strong>不客气</strong> (bú kèqi - Bất khách khí - Không có gì)</li>
+                  <li><strong>同学</strong> (tóngxué - Đồng học - Bạn học)</li>
+                  <li><strong>再见</strong> (zàijiàn - Tái kiến - Tạm biệt)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.75rem' }}>1.2 Danh mục Cấu trúc Ngữ pháp Khép kín</h4>
+            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem', color: '#4c0519' }}>Tất cả các mô hình câu được giới hạn hoàn toàn trong các công thức toán học phẳng dưới đây:</p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 1: Cấu trúc Chào hỏi Cơ bản & Kính ngữ]</h5>
+                <code>[Đối tượng nhận lời chào] + 好</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 你好<br/>- 您好<br/>- 大家好<br/>- 王老师好<br/>- 同学们好</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 2: Hậu tố Biểu đạt Số nhiều Chỉ người]</h5>
+                <code>[Đại từ / Danh từ] + 们</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 你们 (Các bạn)<br/>- 同学们 (Các bạn học)</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 3: Chuỗi Thoại Cảm ơn & Đáp lời Khách khí]</h5>
+                <code>Lượt 1 (Cảm ơn): 谢谢 / 谢谢你 / 谢谢大家 / 谢谢你们</code><br/>
+                <code>Lượt 2 (Đáp lời): 不客气</code>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 4: Cụm Thoại Kết thúc Giao tiếp / Tạm biệt]</h5>
+                <code>再见 (Tạm biệt / Hẹn gặp lại)</code>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );
