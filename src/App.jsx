@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Breadcrumb } from './components/Breadcrumb';
 import { LessonHeader } from './components/LessonHeader';
+import { OverviewTab } from './components/OverviewTab';
 import { VocabularyTab } from './components/VocabularyTab';
 import { DialogueTab } from './components/DialogueTab';
 import { GrammarTab } from './components/GrammarTab';
@@ -13,7 +14,7 @@ import { hskLessons } from './data/hskData';
 
 export function App() {
   const [currentLessonId, setCurrentLessonId] = useState('hsk1-lesson1');
-  const [activeTab, setActiveTab] = useState('vocabulary'); // 'vocabulary', 'dialogue', 'grammar', 'exercise'
+  const [activeTab, setActiveTab] = useState('overview'); // 'vocabulary', 'dialogue', 'grammar', 'exercise'
   const [completedLessons, setCompletedLessons] = useState(() => {
     try {
       const saved = localStorage.getItem('katHS_completed_lessons');
@@ -74,6 +75,11 @@ export function App() {
           }}
         />
 
+        <div className="tab-content">
+        {activeTab === 'overview' && (
+          <OverviewTab />
+        )}
+
         {/* Tab Content Renderer */}
         {activeTab === 'vocabulary' && (
           <VocabularyTab vocabulary={currentLesson.vocabulary} />
@@ -109,6 +115,7 @@ export function App() {
             }}
           />
         )}
+        </div>
       </main>
 
     </div>

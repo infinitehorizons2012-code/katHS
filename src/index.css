@@ -2929,3 +2929,262 @@ body {
 .s-actions {
   margin-left: 1rem;
 }
+/* Overview Tab CSS */
+.overview-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.overview-header-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 2rem;
+}
+
+.course-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-title h1 {
+  font-size: 1.6rem;
+  color: #0f172a;
+  margin: 0;
+  font-weight: 700;
+}
+
+.course-title h1 span {
+  font-size: 1.1rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+.overview-meta-tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.meta-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.blue-tag {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+}
+
+.purple-tag {
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+  font-size: 1.3rem;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 700;
+}
+
+.clo-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #e2e8f0;
+}
+
+.clo-header {
+  padding: 1.25rem 1.5rem;
+  color: white;
+}
+
+.clo-header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.clo-header p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.95;
+  line-height: 1.5;
+}
+
+.blue-gradient {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+.purple-gradient {
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #059669, #10b981);
+}
+
+.clo-body {
+  padding: 1.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-box {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border: 1px solid #f1f5f9;
+}
+
+.info-box-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #334155;
+  margin: 0 0 1rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.info-box p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.info-box p:last-child {
+  margin-bottom: 0;
+}
+
+.rca-box {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 1.25rem;
+  border-radius: 6px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.rca-box h4 {
+  margin: 0 0 0.75rem 0;
+  color: #92400e;
+  font-size: 1rem;
+}
+
+.rca-box ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #92400e;
+  font-size: 0.95rem;
+}
+
+.rca-box li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.rca-box li:last-child {
+  margin-bottom: 0;
+}
+
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2.5rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2.5rem; }
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+
+.credentials-table, .matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.credentials-table th, .matrix-table th {
+  background: #f8fafc;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.credentials-table td, .matrix-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.credentials-table tr:last-child td, .matrix-table tr:last-child td {
+  border-bottom: none;
+}
+
+.info-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 1.25rem;
+  border-radius: 8px;
+  color: #166534;
+  line-height: 1.6;
+}
+
+.level-cell {
+  background: #f8fafc;
+  font-weight: 600;
+  border-right: 1px solid #f1f5f9;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.level-1 { background: #dbeafe; color: #1e40af; }
+.level-2 { background: #dcfce7; color: #166534; }
+.level-3 { background: #fce7f3; color: #9d174d; }
+.level-4 { background: #fee2e2; color: #991b1b; }

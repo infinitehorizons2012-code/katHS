@@ -10,6 +10,7 @@ export const LessonHeader = ({
   onBack 
 }) => {
   const tabs = [
+    { id: 'overview', label: 'Tổng thể' },
     { id: 'vocabulary', label: 'Từ vựng' },
     { id: 'sentence', label: 'Câu' },
     { id: 'dialogue', label: 'Bài khóa' },
