@@ -63,8 +63,22 @@ export const OverviewTab = () => {
               <ul>
                 <li><strong>Đầu ra:</strong> Chào thầy/cô và cấp trên chuẩn phong thái lịch sự.</li>
                 <li><strong>Kiến thức cốt lõi:</strong> 你 (nǐ) | 好 (hǎo) | 您 (nín) | 王 (Wáng) | 老师 (lǎoshī)</li>
-                <li><strong>Mẫu câu:</strong> 王老师，您好！ (Wáng lǎoshī, nín hǎo!)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 王老师，您好！ (Wáng lǎoshī, nín hǎo! - Vương lão sư, Nhẫn hảo! - Chào thầy/cô Vương!)</li>
               </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 开学第一天，在办公室里，王一飞和AI助教小语打招呼。(On the first day of school, in the office, Wang Yifei was greeting the AI assistant Xiaoyu).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 王一飞 (Wáng Yīfēi - Vương Nhất Phi):</strong><br/>
+                    AI小语，你好！ (AI Xiǎoyǔ, nǐ hǎo! - AI Xiǎoyǔ, Nhĩ hảo! - Xin chào AI Tiểu Ngữ!)
+                  </div>
+                  <div>
+                    <strong>🤖 小语 (Xiǎoyǔ - Tiểu Ngữ):</strong><br/>
+                    王老师，你好！ (Wáng lǎoshī, nǐ hǎo! - Vương lão sư, Nhĩ hảo! - Xin chào thầy/cô Vương!)
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* RCA */}
@@ -152,8 +166,33 @@ export const OverviewTab = () => {
               <ul>
                 <li><strong>Đầu ra:</strong> Bắt đầu cuộc họp nhóm / chào tập thể bạn học.</li>
                 <li><strong>Kiến thức cốt lõi:</strong> 大家 (dàjiā) | 学生 (xuéshēng) | 同学 (tóngxué) | 们 (men)</li>
-                <li><strong>Mẫu câu:</strong> 大家好！ (dàjiā hǎo!) | 同学们好！ (tóngxuémen hǎo!)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 大家好！ (dàjiā hǎo! - Đại gia hảo! - Chào mọi người!) | 同学们好！ (tóngxuémen hǎo! - Đồng học môn hảo! - Chào các bạn học!)</li>
               </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Văn cảnh: 开学第一天，课堂上，学生们学习打招呼用语。(On the first day of school, in class, the students were learning greeting expressions).</p>
+                <p style={{ background: '#fdf4ff', padding: '0.5rem', borderRadius: '4px', fontSize: '0.85rem', marginBottom: '0.75rem', borderLeft: '3px solid #d946ef' }}>
+                  <strong>Mẹo Tiểu Ngữ (小语助力 - Xiaoyu's Tip):</strong> “您”，敬称，对年长者或尊敬的人使用。 ("您" is an honorific pronoun used to address elders or individuals you respect).
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 王一飞 (Wáng Yīfēi - Vương Nhất Phi):</strong><br/>
+                    大家好！ (Dàjiā hǎo! - Đại gia hảo! - Chào mọi người!)
+                  </div>
+                  <div>
+                    <strong>👥 学生们 (Xuéshēngmen - Học sinh môn - Các học sinh):</strong><br/>
+                    老师，您好！ (Lǎoshī, nín hǎo! - Lão sư, Nhẫn hảo! - Chào thầy/cô!)
+                  </div>
+                  <div>
+                    <strong>🤖 小语 (Xiǎoyǔ - Tiểu Ngữ):</strong><br/>
+                    你们好！ (Nǐmen hǎo! - Nhĩ môn hảo! - Chào các bạn!)
+                  </div>
+                  <div>
+                    <strong>👥 学生们 (Xuéshēngmen - Học sinh môn - Các học sinh):</strong><br/>
+                    你好，小语！ (Nǐ hǎo, Xiǎoyǔ! - Nhĩ hảo, Tiểu Ngữ! - Chào Tiểu Ngữ!)
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* RCA */}
@@ -235,9 +274,31 @@ export const OverviewTab = () => {
               <p><strong>[MÔ-ĐUN 3: THỰC THI CHUỖI CẢM ƠN, ĐÁP LỜI & TẠM BIỆT]</strong></p>
               <ul>
                 <li><strong>Đầu ra:</strong> Khép lại chuỗi giao tiếp lịch sự chuẩn văn hóa văn phòng.</li>
-                <li><strong>Kiến thức cốt lõi:</strong> 谢谢 (xièxie) | 不客气 (bú kèqi) | 再见 (zàijiàn)</li>
-                <li><strong>Mẫu câu:</strong> 谢谢大家！ → 不客气！ → 再见！</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 谢谢 (xièxie) | 不客气 (bú kèqi) | 同学 (tóngxué) | 再见 (zàijiàn)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 谢谢大家！ (xièxie dàjiā! - Tạ tạ đại gia! - Cảm ơn mọi người!) → 不客气！ (bú kèqi! - Bất khách khí! - Không có gì!) → 再见！ (zàijiàn! - Tái kiến! - Tạm biệt!)</li>
               </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 开学第一天，课堂上，学生们学习致谢语、告别语。(On the first day of school, in class, the students were learning expressions of gratitude and farewell).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👥 学生们 (Xuéshēngmen - Học sinh môn - Các học sinh):</strong><br/>
+                    谢谢！ (Xièxie! - Tạ tạ! - Cảm ơn!)
+                  </div>
+                  <div>
+                    <strong>🤖 小语 (Xiǎoyǔ - Tiểu Ngữ):</strong><br/>
+                    不客气！ (Bú kèqi! - Bất khách khí! - Không có gì!)
+                  </div>
+                  <div>
+                    <strong>👤 王一飞 (Wáng Yīfēi - Vương Nhất Phi):</strong><br/>
+                    同学们，再见！ (Tóngxuémen, zàijiàn! - Đồng học môn, Tái kiến! - Chào tạm biệt các bạn học!)
+                  </div>
+                  <div>
+                    <strong>👥 学生们 (Xuéshēngmen - Học sinh môn - Các học sinh):</strong><br/>
+                    老师，再见！ (Lǎoshī, zàijiàn! - Lão sư, Tái kiến! - Chào tạm biệt thầy/cô!)
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* RCA */}
