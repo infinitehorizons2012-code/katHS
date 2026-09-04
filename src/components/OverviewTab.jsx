@@ -530,33 +530,309 @@ const Lesson2Overview = () => {
       <div className="overview-section">
         <div className="section-title"><BrainCircuit size={24} className="purple-icon" /><h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2></div>
         
-        {/* CLO 1 */}
+        {/* ===================== CLO 1 ===================== */}
         <div className="clo-card fade-in">
-          <div className="clo-header blue-gradient"><h3>📌 CLO 01: HỎI VÀ TỰ GIỚI THIỆU HỌ TÊN TRONG GIAO TIẾP DÂN SỰ & CÔNG SỞ</h3></div>
+          <div className="clo-header blue-gradient">
+            <h3>📌 CLO 01: HỎI VÀ TỰ GIỚI THIỆU HỌ TÊN TRONG GIAO TIẾP DÂN SỰ & CÔNG SỞ</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt cấu trúc trật tự từ tiếng Trung [Chủ ngữ] + 叫 + [Tên] để hỏi tên lịch sự 请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi?) và tự giới thiệu bản thân 我叫... (Wǒ jiào...) trong môi trường công sở FDI và đối ngoại.</p>
+          </div>
           <div className="clo-body">
-            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt cấu trúc trật tự từ tiếng Trung [Chủ ngữ] + 叫 + [Tên] để hỏi tên lịch sự 请问，你叫什么名字？ và tự giới thiệu bản thân 我叫... trong môi trường công sở FDI và đối ngoại.</p>
-            <p><strong>Tình huống Giao tiếp:</strong> Bàn giao danh thiếp / làm quen đồng nghiệp mới 李文 (Lǐ Wén - Lý Văn) tại phòng họp hoặc lớp đào tạo nội bộ.</p>
-            <p><strong>Kiến thức cốt lõi:</strong> 请问 (qǐngwèn) | 你 (nǐ) | 叫 (jiào) | 什么 (shénme) | 名字 (míngzi) | 我 (wǒ)</p>
+            
+            {/* Tình huống & Giải phẫu */}
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-01)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Bàn giao danh thiếp / làm quen đồng nghiệp mới 李文 (Lǐ Wén - Lý Văn) tại phòng họp hoặc lớp đào tạo nội bộ.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn đúng ngữ điệu câu hỏi lịch sự <code>请问，你叫什么名字？</code> và đáp chuẩn phản xạ <code>我叫李文。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-01)</h4>
+                <p><strong>Tiểu năng lực:</strong> Sử dụng từ lịch sự 请问 kết hợp với đại từ nghi vấn 什么 và danh từ 名字 để đặt câu hỏi danh tính chính xác.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 请问, 叫, 什么, 名字, 我.</p>
+              </div>
+            </div>
+
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 1 - 16)</h4>
+              <p><strong>[MÔ-ĐUN 1: NGHỆ THUẬT HỎI TÊN LỊCH SỰ & TỰ GIỚI THIỆU BẢN THÂN]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Tự tin mở lời hỏi tên đồng nghiệp/đối tác và giới thiệu họ tên cá nhân chuẩn xác.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 请问 (qǐngwèn) | 你 (nǐ) | 叫 (jiào) | 什么 (shénme) | 名字 (míngzi) | 我 (wǒ)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 请问，你叫什么名字？ → 我叫李文。</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 在教室里，王一飞在认识学生。(In the classroom, Wang Yifei was getting to know the students).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 王一飞 (Wáng Yīfēi - Vương Nhất Phi):</strong><br/>
+                    请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi? - Thỉnh vấn, nhĩ khiếu thập ma danh tự? - Xin hỏi, bạn tên là gì?)
+                  </div>
+                  <div>
+                    <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
+                    我叫李文。 (Wǒ jiào Lǐ Wén. - Ngã khiếu Lý Văn. - Tôi tên là Lý Văn.)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Đặt từ nghi vấn 什么 đúng vị trí bổ ngữ trước danh từ 名字.</li>
+                <li><strong>Bẫy lỗi:</strong> Học viên bị ảnh hưởng bởi ngữ pháp tiếng Anh/Việt đặt 什么 ở cuối câu 你叫名字什么？.</li>
+                <li><strong>Root Cause:</strong> Nhầm lẫn trật tự từ bổ ngữ tiếng Trung.</li>
+                <li><strong>Khắc phục:</strong> Ép khung phản xạ cố định: <code>[Chủ ngữ] + 叫什么名字？</code>.</li>
+              </ul>
+            </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 6 từ vựng 请问, 你, 叫, 什么, 名字, 我</span>
+                <span className="step-badge">🌿 Thông hiểu: Nắm vững trật tự đại từ nghi vấn 什么 đứng trước 名字</span>
+                <span className="step-badge">🌸 Vận dụng: Đặt câu hỏi và giới thiệu bản thân trong giao tế</span>
+                <span className="step-badge">🍎 Thành thục: Tự động mở lời giao tiếp dân sự chuẩn tác phong văn minh</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>请问</strong> (qǐngwèn - Xin hỏi)</li>
+                  <li><strong>你</strong> (nǐ - Bạn / Anh / Chị)</li>
+                  <li><strong>叫</strong> (jiào - Gọi là / Tên là)</li>
+                  <li><strong>什么</strong> (shénme - Cái gì)</li>
+                  <li><strong>名字</strong> (míngzi - Tên)</li>
+                  <li><strong>我</strong> (wǒ - Tôi)</li>
+                  <li><strong>李文</strong> (Lǐ Wén - Lý Văn)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 1: Cấu trúc Hỏi và Giới thiệu Tên]</h5>
+                  <code>Hỏi: 请问 + 你/您 + 叫 + 什么 + 名字？</code><br/>
+                  <code>Đáp: 我 + 叫 + [Họ tên]</code>
+                  <p className="mt-2"><strong>Ví dụ ứng dụng:</strong></p>
+                  <ul>
+                    <li>请问，你叫什么名字？</li>
+                    <li>我叫李文。</li>
+                    <li>我叫白家月。</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* CLO 2 */}
-        <div className="clo-card fade-in">
-          <div className="clo-header purple-gradient"><h3>📌 CLO 02: BÀY TỎ PHÁN ĐOÁN KHẲNG ĐỊNH/PHỦ ĐỊNH & THỰC THI CHUỖI XIN LỖI - ĐÁP LỜI</h3></div>
-          <div className="clo-body">
+        {/* ===================== CLO 2 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header purple-gradient">
+            <h3>📌 CLO 02: BÀY TỎ PHÁN ĐOÁN KHẲNG ĐỊNH/PHỦ ĐỊNH & THỰC THI CHUỖI XIN LỖI - ĐÁP LỜI</h3>
             <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt động từ phán đoán 是 (shì - là) và dạng phủ định 不是 (bú shì - không phải là); đồng thời thực thi phản xạ cặp thoại xin lỗi 对不起 → đáp lời 没关系 / 没事 khi xảy ra nhầm lẫn trong công việc.</p>
-            <p><strong>Tình huống Giao tiếp:</strong> Nhận nhầm đồng nghiệp/đối tác 陈天中 và 白家月 tại hành lang công ty.</p>
-            <p><strong>Kiến thức cốt lõi:</strong> 不 (bù) | 是 (shì) | 对不起 (duìbuqǐ) | 没关系 (méi guānxi) | 没事 (méishì)</p>
+          </div>
+          <div className="clo-body">
+            
+            {/* Tình huống & Giải phẫu */}
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-02)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Nhận nhầm đồng nghiệp/đối tác 陈天中 và 白家月 tại hành lang công ty.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn đúng khẳng định/phủ định <code>我是学生 / 不是</code> và hoàn thành chuỗi thoại <code>对不起！</code> → <code>没关系！</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-02)</h4>
+                <p><strong>Tiểu năng lực:</strong> Thực thi phán đoán danh tính và kích hoạt chuỗi thoại xin lỗi - đáp lời khách khí.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 不, 是, 对不起, 没关系, 没事.</p>
+              </div>
+            </div>
+
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 17 - 25)</h4>
+              <p><strong>[MÔ-ĐUN 2: CẤU TRÚC PHÁN ĐOÁN "是/不是" & CHUỖI XIN LỖI "对不起 - 没关系"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Xác nhận thông tin nhân sự và xử lý nhầm lẫn lịch sự chuẩn tác phong công sở.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 不 (bù) | 是 (shì) | 对不起 (duìbuqǐ) | 没关系 (méi guānxi) | 没事 (méishì)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 对不起！ → 没关系！ / 没事！</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 在校园里，陈天中和白家月打招呼时认错了人。(On campus, Chen Tianzhong greeted Bai Jiayue but mistook her for someone else).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
+                    对不起！ (Duìbuqǐ! - Đối bất khởi! - Xin lỗi!)
+                  </div>
+                  <div>
+                    <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
+                    没关系！ (Méi guānxi! - Một quan hệ! - Không sao!) / 没事！ (Méishì! - Một sự! - Không sao!)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Phân biệt biến điệu của 不 (bù → bú trước thanh 4) và phản xạ câu đáp lại lời xin lỗi.</li>
+                <li><strong>Bẫy lỗi:</strong> Học viên quen miệng đọc bù shì sai thanh điệu hoặc im lặng không biết đáp lại.</li>
+                <li><strong>Root Cause:</strong> Quên quy tắc biến điệu phó từ phủ định 不 và thiếu cặp thoại phản xạ đóng.</li>
+                <li><strong>Khắc phục:</strong> Luyện biến điệu <code>bú shì</code> và chuỗi liên hoàn <code>对不起 → 没关系</code>.</li>
+              </ul>
+            </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 5 từ vựng 不, 是, 对不起, 没关系, 没事</span>
+                <span className="step-badge">🌿 Thông hiểu: Độc lập đọc đúng biến điệu bú shì</span>
+                <span className="step-badge">🌸 Vận dụng: Phản xạ chính xác câu đáp 没关系 / 没事</span>
+                <span className="step-badge">🍎 Thành thục: Xử lý nhầm lẫn giao tế với tác phong điềm tĩnh</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>不</strong> (bù - Không)</li>
+                  <li><strong>是</strong> (shì - Là)</li>
+                  <li><strong>对不起</strong> (duìbuqǐ - Xin lỗi)</li>
+                  <li><strong>没关系</strong> (méi guānxi - Không sao)</li>
+                  <li><strong>没事</strong> (méishì - Không sao)</li>
+                  <li><strong>陈天中</strong> (Chén Tiānzhōng)</li>
+                  <li><strong>白家月</strong> (Bái Jiāyuè)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 2: Phán đoán Khẳng định & Phủ định với 是 / 不]</h5>
+                  <code>Khẳng định: [Chủ ngữ] + 是 + [Danh từ]</code><br/>
+                  <code>Phủ định: [Chủ ngữ] + 不是 + [Danh từ]</code>
+                  <p className="mt-2"><strong>Ví dụ:</strong> 我是学生 / 我不是老师</p>
+                </div>
+                <div className="grammar-card">
+                  <h5>[Công thức 3: Chuỗi Thoại Xin lỗi & Đáp lời]</h5>
+                  <code>Lượt 1: 对不起</code><br/>
+                  <code>Lượt 2: 没关系 / 没事</code>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* CLO 3 */}
-        <div className="clo-card fade-in">
-          <div className="clo-header orange-gradient"><h3>📌 CLO 03: BIỂU ĐẠT THIỆN CHÍ QUEN BIẾT VÀ SỬ DỤNG PHÓ TỪ "很" / "也"</h3></div>
-          <div className="clo-body">
+        {/* ===================== CLO 3 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header orange-gradient">
+            <h3>📌 CLO 03: BIỂU ĐẠT THIỆN CHÍ QUEN BIẾT VÀ SỬ DỤNG PHÓ TỪ "很" / "也"</h3>
             <p><strong>Chuẩn Đầu Ra:</strong> Thực thi thành thạo mẫu câu xã giao thể hiện thiện chí khi mới quen biết 很高兴认识你！ và sử dụng phó từ 也 (yě - cũng) để phản hồi 我也很高兴认识你！.</p>
-            <p><strong>Tình huống Giao tiếp:</strong> Lần đầu gặp mặt đối tác 李文 và 白家月 tại sự kiện giao thương.</p>
-            <p><strong>Kiến thức cốt lõi:</strong> 很 (hěn) | 高兴 (gāoxìng) | 认识 (rènshi) | 也 (yě)</p>
+          </div>
+          <div className="clo-body">
+            
+            {/* Tình huống & Giải phẫu */}
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-03)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Lần đầu gặp mặt đối tác 李文 và 白家月 tại sự kiện giao thương.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn trôi chảy câu xã giao <code>很高兴认识你！</code> và đáp lại đúng phó từ 也 → <code>我也很高兴认识你！</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-03 & 04)</h4>
+                <p><strong>Tiểu năng lực:</strong> Kết hợp phó từ chỉ mức độ 很 với tính từ 高兴 và động từ 认识; sử dụng phó từ 也 đặt trước động từ/tính từ để thể hiện sự đồng điệu.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 很, 高兴, 认识, 也.</p>
+              </div>
+            </div>
+
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 27 - 36)</h4>
+              <p><strong>[MÔ-ĐUN 3: XÃ GIAO KHI MỚI QUEN "很高兴认识你" & PHÓ TỪ "很/也"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Bày tỏ sự vinh hạnh và thiện chí thiết lập mối quan hệ hợp tác ban đầu.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 很 (hěn) | 高兴 (gāoxìng) | 认识 (rènshi) | 也 (yě)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 很高兴认识你！ → 我也很高兴认识你！</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 在校园里，李文和白家月第一次相遇。(Li Wen and Bai Jiayue met for the first time on campus).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
+                    你好！我叫李文。 (Nǐ hǎo! Wǒ jiào Lǐ Wén.)
+                  </div>
+                  <div>
+                    <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
+                    你好！我叫白家月。很高兴认识你！ (Nǐ hǎo! Wǒ jiào Bái Jiāyuè. Hěn gāoxìng rènshi nǐ!)
+                  </div>
+                  <div>
+                    <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
+                    我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ!)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Vị trí phó từ 也 (yě) đứng trước phó từ 很 (hěn).</li>
+                <li><strong>Bẫy lỗi:</strong> Ghép sai trật tự phó từ kép thành 我很高兴也认识你.</li>
+                <li><strong>Root Cause:</strong> Ảnh hưởng bởi trật tự từ tiếng Việt ("Tôi rất vui cũng quen biết bạn").</li>
+                <li><strong>Khắc phục:</strong> Công thức cố định: <code>[Chủ ngữ] + 也 + 很 + [Tính từ]</code>.</li>
+              </ul>
+            </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 4 từ vựng 很, 高兴, 认识, 也</span>
+                <span className="step-badge">🌿 Thông hiểu: Hiểu trật tự phó từ 也 đứng trước 很</span>
+                <span className="step-badge">🌸 Vận dụng: Nói trôi chảy câu chào thiện chí 很高兴认识你！</span>
+                <span className="step-badge">🍎 Thành thục: Phản xạ tự nhiên chuỗi xã giao ngoại giao công sở</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>很</strong> (hěn - Rất)</li>
+                  <li><strong>高兴</strong> (gāoxìng - Vui mừng)</li>
+                  <li><strong>认识</strong> (rènshi - Quen biết)</li>
+                  <li><strong>也</strong> (yě - Cũng)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 4: Bày tỏ Vui mừng khi Quen biết]</h5>
+                  <code>Người A: 很高兴认识你！</code><br/>
+                  <code>Người B: 我也很高兴认识你！</code>
+                  <p className="mt-2"><strong>Ví dụ ứng dụng:</strong></p>
+                  <ul>
+                    <li>认识你，很高兴！ (Quen biết bạn, tôi rất vui!)</li>
+                    <li>我也很高兴认识你！ (Tôi cũng rất vui được quen biết bạn!)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -720,7 +996,6 @@ const Lesson2Overview = () => {
     </div>
   );
 };
-
 export const OverviewTab = ({ lessonId }) => {
   if (lessonId === 'hsk1-lesson2') return <Lesson2Overview />;
   return <Lesson1Overview />;
