@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { readingData } from '../data/readingData';
 import { BookOpen, Info, CheckCircle2 } from 'lucide-react';
 
-export function ReadingTab() {
+export function ReadingTab({ lessonId = 'hsk1-lesson1' }) {
   const [activeScenario, setActiveScenario] = useState(1);
 
   // Helper function to get initials for avatar
@@ -25,6 +25,8 @@ export function ReadingTab() {
     return colors[Math.abs(hash) % colors.length];
   };
 
+  const currentReadingData = readingData[lessonId] || [];
+
   return (
     <div className="tab-pane active fade-in reading-container">
       <div className="tab-header">
@@ -33,7 +35,7 @@ export function ReadingTab() {
       </div>
 
       <div className="level-tabs">
-        {readingData.map(scenario => (
+        {currentReadingData.map(scenario => (
           <button
             key={scenario.id}
             className={`level-tab-btn ${activeScenario === scenario.id ? 'active' : ''}`}
@@ -45,7 +47,7 @@ export function ReadingTab() {
       </div>
 
       <div className="scenario-content">
-        {readingData.filter(s => s.id === activeScenario).map(scenario => (
+        {currentReadingData.filter(s => s.id === activeScenario).map(scenario => (
           <div key={scenario.id} className="scenario-card fade-in">
             <h3 className="scenario-title">
               <BookOpen size={24} className="title-icon" />

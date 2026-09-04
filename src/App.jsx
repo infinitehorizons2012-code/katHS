@@ -86,7 +86,7 @@ export function App() {
           {activeTab === 'dialogue' && <DialogueTab dialogues={currentLesson.dialogues} activeCLO={activeCLO} />}
           {activeTab === 'grammar' && <GrammarTab grammar={currentLesson.grammar} />}
           {activeTab === 'transferTest' && <TransferTestTab lessonId={currentLessonId} />}
-          {activeTab === 'reading' && <ReadingTab />}
+          {activeTab === 'reading' && <ReadingTab lessonId={currentLessonId} />}
           {activeTab === 'exercise' && (
             <ExerciseTab 
               exercises={currentLesson.exercises} 
