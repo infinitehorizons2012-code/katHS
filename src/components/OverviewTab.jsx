@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   BookOpen, Users, Target, ShieldCheck, 
   GraduationCap, Briefcase, Building, ScrollText, 
-  Award, BrainCircuit, CheckCircle2 
+  Award, BrainCircuit, CheckCircle2, Layers, BookType, Code 
 } from 'lucide-react';
 
 export const OverviewTab = () => {
@@ -34,13 +34,15 @@ export const OverviewTab = () => {
           <h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2>
         </div>
 
-        {/* CLO 1 */}
+        {/* ===================== CLO 1 ===================== */}
         <div className="clo-card fade-in">
           <div className="clo-header blue-gradient">
             <h3>📌 CLO 01: KÍNH NGỮ & XƯNG HÔ 1-1 TRONG GIAO TIẾP CÔNG SỞ</h3>
             <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt chính xác và thực thi hành vi xưng hô kính ngữ giữa giao tiếp thông thường 你 (nǐ - Bạn) và giao tiếp trang trọng / kính trọng 您 (nín - Ngài/Thầy/Cô) trong môi trường công sở FDI.</p>
           </div>
           <div className="clo-body">
+            
+            {/* Tình huống & Giải phẫu */}
             <div className="info-grid">
               <div className="info-box">
                 <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-01)</h4>
@@ -54,24 +56,82 @@ export const OverviewTab = () => {
               </div>
             </div>
 
-            <div className="rca-box mt-4">
-              <h4>RCA Bẫy lỗi & Phương án khắc phục:</h4>
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 1 - 9)</h4>
+              <p><strong>[MÔ-ĐUN 1: GIỚI THIỆU & NGHỆ THUẬT CHÀO HỎI KÍNH NGỮ 1-1]</strong></p>
               <ul>
+                <li><strong>Đầu ra:</strong> Chào thầy/cô và cấp trên chuẩn phong thái lịch sự.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 你 (nǐ) | 好 (hǎo) | 您 (nín) | 王 (Wáng) | 老师 (lǎoshī)</li>
+                <li><strong>Mẫu câu:</strong> 王老师，您好！ (Wáng lǎoshī, nín hǎo!)</li>
+              </ul>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Phân biệt 你 (nǐ) vs 您 (nín).</li>
                 <li><strong>Bẫy lỗi:</strong> Học viên quen miệng dùng 你 chào người lớn/cấp trên (Vd: 王老师，你好！).</li>
-                <li><strong>Nguyên nhân gốc rễ (Root Cause):</strong> Chưa định hình tư duy vị thế văn hóa doanh nghiệp.</li>
+                <li><strong>Root Cause:</strong> Chưa định hình tư duy vị thế văn hóa doanh nghiệp.</li>
                 <li><strong>Khắc phục:</strong> Ép phản xạ công thức: <code>[Cấp trên/Họ tên + Chức danh] + 您好</code>.</li>
               </ul>
             </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Phân biệt 你 / 您</span>
+                <span className="step-badge">🌿 Thông hiểu: Ghép 王老师 + 您好</span>
+                <span className="step-badge">🌸 Vận dụng: Chào đúng kính ngữ ngữ cảnh công sở</span>
+                <span className="step-badge">🍎 Thành thục: Tự động chuyển đổi kính ngữ khi gặp cấp trên</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>你</strong> (nǐ - Nhĩ - Bạn / Anh / Chị)</li>
+                  <li><strong>好</strong> (hǎo - Hảo - Tốt / Khỏe)</li>
+                  <li><strong>你好</strong> (nǐ hǎo - Nhĩ hảo - Xin chào)</li>
+                  <li><strong>王</strong> (Wáng - Vương - Họ Vương)</li>
+                  <li><strong>老师</strong> (lǎoshī - Lão sư - Thầy/Cô giáo)</li>
+                  <li><strong>王老师</strong> (Wáng lǎoshī - Thầy/Cô giáo Vương)</li>
+                  <li><strong>您</strong> (nín - Nhẫn - Ngài / Thầy / Cô)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 1: Cấu trúc Chào hỏi Cơ bản & Kính ngữ]</h5>
+                  <code>[Đối tượng nhận lời chào] + 好</code>
+                  <p><strong>Ví dụ ứng dụng:</strong></p>
+                  <ul>
+                    <li>你好 (Xin chào)</li>
+                    <li>您好 (Xin chào ngài/thầy/cô)</li>
+                    <li>大家好 (Chào mọi người)</li>
+                    <li>王老师好 (Chào thầy/cô Vương)</li>
+                    <li>同学们好 (Chào các bạn học)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* CLO 2 */}
+        {/* ===================== CLO 2 ===================== */}
         <div className="clo-card fade-in mt-6">
           <div className="clo-header purple-gradient">
             <h3>📌 CLO 02: CHÀO HỎI TẬP THỂ & HẬU TỐ SỐ NHIỀU "们"</h3>
-            <p><strong>Chuẩn Đầu Ra:</strong> Áp dụng thành thạo hậu tố 们 (men) và từ tập thể 大家 (dàjiā) để chào hỏi nhóm, tập thể đồng nghiệp hoặc lớp học.</p>
+            <p><strong>Chuẩn Đầu Ra:</strong> Áp dụng thành thạo hậu tố 们 (men - Môn) và từ tập thể 大家 (dàjiā) để chào hỏi nhóm, tập thể đồng nghiệp hoặc lớp học.</p>
           </div>
           <div className="clo-body">
+            
+            {/* Tình huống & Giải phẫu */}
             <div className="info-grid">
               <div className="info-box">
                 <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-02)</h4>
@@ -85,24 +145,77 @@ export const OverviewTab = () => {
               </div>
             </div>
 
-            <div className="rca-box mt-4">
-              <h4>RCA Bẫy lỗi & Phương án khắc phục:</h4>
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 10 - 23)</h4>
+              <p><strong>[MÔ-ĐUN 2: CHÀO TẬP THỂ & QUY TẮC SỐ NHIỀU "们"]</strong></p>
               <ul>
+                <li><strong>Đầu ra:</strong> Bắt đầu cuộc họp nhóm / chào tập thể bạn học.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 大家 (dàjiā) | 学生 (xuéshēng) | 同学 (tóngxué) | 们 (men)</li>
+                <li><strong>Mẫu câu:</strong> 大家好！ (dàjiā hǎo!) | 同学们好！ (tóngxuémen hǎo!)</li>
+              </ul>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Sử dụng 大家 và 们.</li>
                 <li><strong>Bẫy lỗi:</strong> Học viên ghép sai vị trí 们 như 们同学 hoặc chào từng người thay vì xưng tập thể.</li>
-                <li><strong>Nguyên nhân gốc rễ (Root Cause):</strong> Nhầm lẫn vị trí hậu tố chỉ số nhiều (nghĩ 们 đứng trước như từ "các" trong tiếng Việt).</li>
+                <li><strong>Root Cause:</strong> Nhầm lẫn vị trí hậu tố chỉ số nhiều (nghĩ 们 đứng trước như từ "các" trong tiếng Việt).</li>
                 <li><strong>Khắc phục:</strong> Khung cố định: <code>[Danh từ/Đại từ chỉ người] + 们</code>.</li>
               </ul>
             </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc từ 大家 / 们</span>
+                <span className="step-badge">🌿 Thông hiểu: Nắm vị trí 们 đứng sau danh từ chỉ người</span>
+                <span className="step-badge">🌸 Vận dụng: Phát ngôn thành thạo 大家好 / 同学们好</span>
+                <span className="step-badge">🍎 Thành thục: Quản lý giao tiếp và khởi động họp nhóm</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>大家</strong> (dàjiā - Mọi người)</li>
+                  <li><strong>学生</strong> (xuéshēng - Học sinh/Sinh viên)</li>
+                  <li><strong>同学</strong> (tóngxué - Bạn học)</li>
+                  <li><strong>们</strong> (men - Các / Hậu tố số nhiều)</li>
+                  <li><strong>你们</strong> (nǐmen - Các bạn)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 2: Hậu tố Biểu đạt Số nhiều Chỉ người]</h5>
+                  <code>[Đại từ / Danh từ chỉ người] + 们</code>
+                  <p><strong>Ví dụ ứng dụng:</strong></p>
+                  <ul>
+                    <li>你们 (Các bạn)</li>
+                    <li>同学们 (Các bạn học)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        {/* CLO 3 */}
+        {/* ===================== CLO 3 ===================== */}
         <div className="clo-card fade-in mt-6">
           <div className="clo-header green-gradient">
             <h3>📌 CLO 03: CHUỖI PHẢN XẠ LỄ NGHI CẢM ƠN, ĐÁP LỜI & TẠM BIỆT</h3>
             <p><strong>Chuẩn Đầu Ra:</strong> Phản xạ tự nhiên chuỗi giao tiếp văn phòng: Chào hỏi → Cảm ơn & Đáp lời → Tạm biệt đúng ngữ cảnh văn hóa Trung Hoa.</p>
           </div>
           <div className="clo-body">
+            
+            {/* Tình huống & Giải phẫu */}
             <div className="info-grid">
               <div className="info-box">
                 <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-03)</h4>
@@ -116,14 +229,63 @@ export const OverviewTab = () => {
               </div>
             </div>
 
-            <div className="rca-box mt-4">
-              <h4>RCA Bẫy lỗi & Phương án khắc phục:</h4>
+            {/* Mô-đun Học tập */}
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 24 - 33)</h4>
+              <p><strong>[MÔ-ĐUN 3: THỰC THI CHUỖI CẢM ƠN, ĐÁP LỜI & TẠM BIỆT]</strong></p>
               <ul>
-                <li><strong>Bẫy lỗi:</strong> Im lặng khi đối phương nói 谢谢 hoặc phát âm sai thanh điệu 再见 (thành zaijian thanh nhẹ).</li>
-                <li><strong>Nguyên nhân gốc rễ (Root Cause):</strong> Thiếu phản xạ cặp thoại đóng và chưa làm chủ thanh 4 kép.</li>
+                <li><strong>Đầu ra:</strong> Khép lại chuỗi giao tiếp lịch sự chuẩn văn hóa văn phòng.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 谢谢 (xièxie) | 不客气 (bú kèqi) | 再见 (zàijiàn)</li>
+                <li><strong>Mẫu câu:</strong> 谢谢大家！ → 不客气！ → 再见！</li>
+              </ul>
+            </div>
+
+            {/* RCA */}
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Phản xạ 谢谢 → 不客气 → 再见.</li>
+                <li><strong>Bẫy lỗi:</strong> Im lặng khi đối phương nói 谢谢 hoặc phát âm sai thanh điệu 再见.</li>
+                <li><strong>Root Cause:</strong> Thiếu phản xạ cặp thoại đóng và chưa làm chủ thanh 4 kép.</li>
                 <li><strong>Khắc phục:</strong> Luyện chuỗi phản xạ 3 bước liên hoàn.</li>
               </ul>
             </div>
+
+            {/* Tiến trình Năng lực */}
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 3 cụm thoại 谢谢, 不客气, 再见</span>
+                <span className="step-badge">🌿 Thông hiểu: Hiểu logic cặp đối thoại cảm ơn - đáp lời</span>
+                <span className="step-badge">🌸 Vận dụng: Phản xạ đúng lượt thoại trong giao dịch</span>
+                <span className="step-badge">🍎 Thành thục: Giao tiếp văn minh, tự nhiên chuẩn văn hóa</span>
+              </div>
+            </div>
+
+            {/* Từ vựng & Ngữ pháp */}
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>谢谢</strong> (xièxie - Cảm ơn)</li>
+                  <li><strong>不客气</strong> (bú kèqi - Không có gì)</li>
+                  <li><strong>再见</strong> (zàijiàn - Tạm biệt)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 3: Chuỗi Thoại Cảm ơn & Đáp lời]</h5>
+                  <p>Lượt 1: 谢谢 / 谢谢你 / 谢谢大家</p>
+                  <p>Lượt 2: 不客气</p>
+                </div>
+                <div className="grammar-card">
+                  <h5>[Công thức 4: Cụm Thoại Tạm biệt]</h5>
+                  <p>再见</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
