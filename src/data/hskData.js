@@ -1131,20 +1131,10 @@ export const hskLessons = [
       "clo": "clo1",
       "title": "课文 1",
       "subtitle": "NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
-      "context": "Văn cảnh: 在教室里，王一飞在认识学生。(In the classroom, Wang Yifei was getting to know the students).",
+      "context": "Văn cảnh: 在教室里，王一飞在认识学生。(Wang Yifei was getting to know the students in the classroom).",
       "lines": [
-        {
-          "speaker": "👤 王一飞",
-          "hanzi": "请问，你叫什么名字？",
-          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
-          "vietnamese": "Xin hỏi, bạn tên là gì?"
-        },
-        {
-          "speaker": "👤 李文",
-          "hanzi": "我叫李文。",
-          "pinyin": "Wǒ jiào Lǐ Wén.",
-          "vietnamese": "Tôi tên là Lý Văn."
-        }
+        { "speaker": "👤 王一飞", "hanzi": "请问，你叫什么名字？", "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?", "vietnamese": "Xin hỏi, bạn tên là gì?" },
+        { "speaker": "👤 陈天中", "hanzi": "我叫陈天中。", "pinyin": "Wǒ jiào Chén Tiānzhōng.", "vietnamese": "Tôi tên là Trần Thiên Trung." }
       ]
     },
     {
@@ -1154,18 +1144,10 @@ export const hskLessons = [
       "subtitle": "NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
       "context": "Văn cảnh: 在校园里，陈天中和白家月打招呼时认错了人。(On campus, Chen Tianzhong greeted Bai Jiayue but mistook her for someone else).",
       "lines": [
-        {
-          "speaker": "👤 陈天中",
-          "hanzi": "对不起！",
-          "pinyin": "Duìbuqǐ!",
-          "vietnamese": "Xin lỗi!"
-        },
-        {
-          "speaker": "👤 白家月",
-          "hanzi": "没关系！",
-          "pinyin": "Méi guānxi!",
-          "vietnamese": "Không sao!"
-        }
+        { "speaker": "👤 陈天中", "hanzi": "你好，安妮！", "pinyin": "Nǐ hǎo, Ānní!", "vietnamese": "Xin chào, Annie!" },
+        { "speaker": "👤 白家月", "hanzi": "你好，陈天中！我不是安妮，我是白家月。", "pinyin": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānní, wǒ shì Bái Jiāyuè.", "vietnamese": "Xin chào Trần Thiên Trung! Tôi không phải là Annie, tôi là Bạch Gia Nguyệt." },
+        { "speaker": "👤 陈天中", "hanzi": "对不起！", "pinyin": "Duìbuqǐ!", "vietnamese": "Xin lỗi!" },
+        { "speaker": "👤 白家月", "hanzi": "没关系！", "pinyin": "Méi guānxi!", "vietnamese": "Không sao!" }
       ]
     },
     {
@@ -1175,24 +1157,10 @@ export const hskLessons = [
       "subtitle": "NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
       "context": "Văn cảnh: 在校园里，李文和白家月第一次相遇。(Li Wen and Bai Jiayue met for the first time on campus).",
       "lines": [
-        {
-          "speaker": "👤 李文",
-          "hanzi": "你好！我叫李文。",
-          "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
-          "vietnamese": "Xin chào! Tôi tên là Lý Văn."
-        },
-        {
-          "speaker": "👤 白家月",
-          "hanzi": "你好！我叫白家月。很高兴认识你！",
-          "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè. Hěn gāoxìng rènshi nǐ!",
-          "vietnamese": "Xin chào! Tôi tên là Bạch Gia Nguyệt. Rất vui được quen biết bạn!"
-        },
-        {
-          "speaker": "👤 李文",
-          "hanzi": "我也很高兴认识你！",
-          "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ!",
-          "vietnamese": "Tôi cũng rất vui được quen biết bạn!"
-        }
+        { "speaker": "👤 李文", "hanzi": "你好！我叫李文。", "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.", "vietnamese": "Xin chào! Tôi tên là Lý Văn." },
+        { "speaker": "👤 白家月", "hanzi": "你好！我叫白家月。", "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.", "vietnamese": "Xin chào! Tôi tên là Bạch Gia Nguyệt." },
+        { "speaker": "👤 李文", "hanzi": "很高兴认识你。", "pinyin": "Hěn gāoxìng rènshi nǐ.", "vietnamese": "Rất vui được quen biết bạn." },
+        { "speaker": "👤 白家月", "hanzi": "认识你我也很高兴。", "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.", "vietnamese": "Quen biết bạn tôi cũng rất vui." }
       ]
     }
   ],
