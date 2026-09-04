@@ -2,7 +2,7 @@ import React from 'react';
 import { 
   BookOpen, Users, Target, ShieldCheck, 
   GraduationCap, Briefcase, Building, ScrollText, 
-  Award, BrainCircuit, CheckCircle2, Layers, BookType, Code 
+  Award, BrainCircuit, CheckCircle2, Layers, BookType, Code, Lock 
 } from 'lucide-react';
 
 const Lesson1Overview = () => {
