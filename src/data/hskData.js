@@ -1440,4 +1440,6 @@ export const hskLessons = [
         "Bước 3 (Cảm ơn & Kết thúc giao tế):\nNhân sự XNK: 谢谢白老师！再见！ (Xièxie Bái lǎoshī! Zàijiàn! - Cảm ơn cô Bạch! Tạm biệt!)\nĐối tác: 再见！ (Zàijiàn! - Tạm biệt!)"
       ]
     }
+  ]
+}
 ];
