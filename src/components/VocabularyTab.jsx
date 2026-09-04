@@ -8,7 +8,7 @@ import { QuizMode } from './vocabModes/QuizMode';
 import { TypingMode } from './vocabModes/TypingMode';
 import { DetailMode } from './vocabModes/DetailMode';
 
-export const VocabularyTab = ({ vocabulary = [] }) => {
+export const VocabularyTab = ({ vocabulary = [], activeCLO = 'all' }) => {
   const [activeWordForStroke, setActiveWordForStroke] = useState(null);
   const [filterText, setFilterText] = useState('');
   const [selectedWordId, setSelectedWordId] = useState(1);
@@ -35,6 +35,12 @@ export const VocabularyTab = ({ vocabulary = [] }) => {
   };
 
   const filteredVocabulary = vocabulary.filter(item => {
+    // CLO Filter
+    if (activeCLO && activeCLO !== 'all' && item.clo !== activeCLO) {
+      return false;
+    }
+    
+    // Text Filter
     return item.hanzi.toLowerCase().includes(filterText.toLowerCase()) ||
            item.pinyin.toLowerCase().includes(filterText.toLowerCase()) ||
            (item.hanViet && item.hanViet.toLowerCase().includes(filterText.toLowerCase())) ||

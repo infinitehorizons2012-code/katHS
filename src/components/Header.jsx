@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { BookOpen, Search, CheckCircle, ChevronDown, Award, Globe } from 'lucide-react';
 import { hskLessons } from '../data/hskData';
 
-export const Header = ({ currentLessonId, onSelectLesson, completedLessons }) => {
+export const Header = ({ currentLessonId, onSelectLesson, completedLessons, activeCLO, setActiveCLO }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [cloDropdownOpen, setCloDropdownOpen] = useState(false);
 
   const currentLesson = hskLessons.find(l => l.id === currentLessonId) || hskLessons[0];
   const progressPercentage = Math.round((completedLessons.length / hskLessons.length) * 100);
@@ -51,6 +52,53 @@ export const Header = ({ currentLessonId, onSelectLesson, completedLessons }) =>
                   )}
                 </div>
               ))}
+            </div>
+          )}
+        </div>
+
+        {/* CLO Switcher Dropdown */}
+        <div className="lesson-switcher" style={{ marginLeft: '10px' }}>
+          <button 
+            className="switcher-button" style={{ border: '1px solid #e2e8f0' }}
+            onClick={() => setCloDropdownOpen(!cloDropdownOpen)}
+          >
+            <span className="switcher-label">CLO:</span>
+            <span className="switcher-current font-semibold text-blue-700">
+              {activeCLO === 'all' ? 'Tất cả (Cả bài)' : 
+               activeCLO === 'clo1' ? 'CLO 1: Kính ngữ' : 
+               activeCLO === 'clo2' ? 'CLO 2: Số nhiều' : 
+               'CLO 3: Lễ nghi'}
+            </span>
+            <ChevronDown size={16} className={`switcher-arrow ${cloDropdownOpen ? 'open' : ''}`} />
+          </button>
+
+          {cloDropdownOpen && (
+            <div className="switcher-menu" onClick={() => setCloDropdownOpen(false)}>
+              <div className="menu-header">Chọn Chuẩn đầu ra (CLO)</div>
+              <div 
+                className={`menu-item ${activeCLO === 'all' ? 'active' : ''}`}
+                onClick={() => setActiveCLO('all')}
+              >
+                <div className="item-title font-medium">🌟 Tất cả (Cả bài)</div>
+              </div>
+              <div 
+                className={`menu-item ${activeCLO === 'clo1' ? 'active' : ''}`}
+                onClick={() => setActiveCLO('clo1')}
+              >
+                <div className="item-title">🌱 CLO 1: Kính ngữ & Xưng hô 1-1</div>
+              </div>
+              <div 
+                className={`menu-item ${activeCLO === 'clo2' ? 'active' : ''}`}
+                onClick={() => setActiveCLO('clo2')}
+              >
+                <div className="item-title">🌿 CLO 2: Chào tập thể & Số nhiều</div>
+              </div>
+              <div 
+                className={`menu-item ${activeCLO === 'clo3' ? 'active' : ''}`}
+                onClick={() => setActiveCLO('clo3')}
+              >
+                <div className="item-title">🌸 CLO 3: Chuỗi phản xạ Lễ nghi</div>
+              </div>
             </div>
           )}
         </div>

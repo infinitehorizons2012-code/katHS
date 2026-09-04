@@ -15,6 +15,7 @@ import { hskLessons } from './data/hskData';
 export function App() {
   const [currentLessonId, setCurrentLessonId] = useState('hsk1-lesson1');
   const [activeTab, setActiveTab] = useState('overview'); // 'vocabulary', 'dialogue', 'grammar', 'exercise'
+  const [activeCLO, setActiveCLO] = useState('all'); // 'all', 'clo1', 'clo2', 'clo3'
   const [completedLessons, setCompletedLessons] = useState(() => {
     try {
       const saved = localStorage.getItem('katHS_completed_lessons');
@@ -51,8 +52,11 @@ export function App() {
         onSelectLesson={(id) => {
           setCurrentLessonId(id);
           setActiveTab('vocabulary');
+          setActiveCLO('all'); // Reset CLO when changing lesson
         }}
         completedLessons={completedLessons}
+        activeCLO={activeCLO}
+        setActiveCLO={setActiveCLO}
       />
 
       {/* Main Page Area */}
@@ -76,48 +80,25 @@ export function App() {
         />
 
         <div className="tab-content">
-        {activeTab === 'overview' && (
-          <OverviewTab />
-        )}
-
-        {/* Tab Content Renderer */}
-        {activeTab === 'vocabulary' && (
-          <VocabularyTab vocabulary={currentLesson.vocabulary} />
-        )}
-
-        {activeTab === 'sentence' && (
-          <SentenceTab />
-        )}
-
-        {activeTab === 'dialogue' && (
-          <DialogueTab dialogues={currentLesson.dialogues} />
-        )}
-
-        {activeTab === 'grammar' && (
-          <GrammarTab grammar={currentLesson.grammar} />
-        )}
-
-        {activeTab === 'transferTest' && (
-          <TransferTestTab />
-        )}
-
-        {activeTab === 'reading' && (
-          <ReadingTab />
-        )}
-
-        {activeTab === 'exercise' && (
-          <ExerciseTab 
-            exercises={currentLesson.exercises} 
-            onCompleteLesson={() => {
-              if (!isLessonCompleted) {
-                setCompletedLessons([...completedLessons, currentLessonId]);
-              }
-            }}
-          />
-        )}
+          {activeTab === 'overview' && <OverviewTab />}
+          {activeTab === 'vocabulary' && <VocabularyTab vocabulary={currentLesson.vocabulary} activeCLO={activeCLO} />}
+          {activeTab === 'sentence' && <SentenceTab activeCLO={activeCLO} />}
+          {activeTab === 'dialogue' && <DialogueTab dialogues={currentLesson.dialogues} activeCLO={activeCLO} />}
+          {activeTab === 'grammar' && <GrammarTab grammar={currentLesson.grammar} />}
+          {activeTab === 'transferTest' && <TransferTestTab />}
+          {activeTab === 'reading' && <ReadingTab />}
+          {activeTab === 'exercise' && (
+            <ExerciseTab 
+              exercises={currentLesson.exercises} 
+              onCompleteLesson={() => {
+                if (!isLessonCompleted) {
+                  setCompletedLessons([...completedLessons, currentLessonId]);
+                }
+              }}
+            />
+          )}
         </div>
       </main>
-
     </div>
   );
 }

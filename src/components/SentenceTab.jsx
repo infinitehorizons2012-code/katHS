@@ -7,12 +7,15 @@ import { QuizMode } from './vocabModes/QuizMode';
 import { TypingMode } from './vocabModes/TypingMode';
 import { sentenceData } from '../data/sentenceData';
 
-export const SentenceTab = () => {
+export const SentenceTab = ({ activeCLO = 'all' }) => {
   // Mode Selection: 'list' | 'flashcard' | 'match' | 'quiz' | 'typing'
   const [activeViewMode, setActiveViewMode] = useState('list'); 
 
+  // Filter sentence data based on CLO
+  const filteredSentenceData = sentenceData.filter(group => activeCLO === 'all' || group.clo === activeCLO);
+
   // Flatten sentences for the games
-  const allSentences = sentenceData.flatMap(group => group.sentences);
+  const allSentences = filteredSentenceData.flatMap(group => group.sentences);
 
   // Badge color helper
   const getTypeBadgeClass = (typeColor) => {
@@ -96,7 +99,7 @@ export const SentenceTab = () => {
           </div>
 
           <div className="sentence-formulas-list">
-            {sentenceData.map((group, groupIndex) => (
+            {filteredSentenceData.map((group, groupIndex) => (
               <div key={groupIndex} className="sentence-group-card">
                 <div className="sentence-group-header">
                   <h4 className="formula-title">{group.formula}</h4>

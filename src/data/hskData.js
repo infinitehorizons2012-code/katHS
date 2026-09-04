@@ -1,6 +1,7 @@
 export const singleCharDict = {
   "你": {
     hanzi: "你",
+        clo: "clo1",
     pinyin: "nǐ",
     hanViet: "nhĩ",
     meaning: "bạn",
@@ -12,6 +13,7 @@ export const singleCharDict = {
   },
   "好": {
     hanzi: "好",
+        clo: "clo1",
     pinyin: "hǎo",
     hanViet: "hảo",
     meaning: "tốt, khỏe, hay",
@@ -23,6 +25,7 @@ export const singleCharDict = {
   },
   "王": {
     hanzi: "王",
+        clo: "clo1",
     pinyin: "Wáng",
     hanViet: "vương",
     meaning: "vua, họ Vương",
@@ -99,6 +102,7 @@ export const singleCharDict = {
   },
   "们": {
     hanzi: "们",
+        clo: "clo2",
     pinyin: "men",
     hanViet: "môn",
     meaning: "các (hậu tố số nhiều)",
@@ -110,6 +114,7 @@ export const singleCharDict = {
   },
   "您": {
     hanzi: "您",
+        clo: "clo1",
     pinyin: "nín",
     hanViet: "nhẫn",
     meaning: "ngài, ông (kính ngữ)",
@@ -224,6 +229,7 @@ export const hskLessons = [
       {
         id: 2,
         hanzi: "好",
+        clo: "clo1",
         pinyin: "hǎo",
         hanViet: "Hảo",
         type: "Tính từ",
@@ -238,6 +244,7 @@ export const hskLessons = [
       {
         id: 3,
         hanzi: "你好",
+        clo: "clo1",
         pinyin: "nǐ hǎo",
         hanViet: "Nhĩ hảo",
         type: "Cụm từ",
@@ -252,6 +259,7 @@ export const hskLessons = [
       {
         id: 4,
         hanzi: "王",
+        clo: "clo1",
         pinyin: "Wáng",
         hanViet: "Vương",
         type: "Danh từ",
@@ -266,6 +274,7 @@ export const hskLessons = [
       {
         id: 5,
         hanzi: "老师",
+        clo: "clo1",
         pinyin: "lǎoshī",
         hanViet: "Lão sư",
         type: "Danh từ",
@@ -280,6 +289,7 @@ export const hskLessons = [
       {
         id: 6,
         hanzi: "王老师",
+        clo: "clo1",
         pinyin: "Wáng lǎoshī",
         hanViet: "Vương lão sư",
         type: "Danh từ",
@@ -294,6 +304,7 @@ export const hskLessons = [
       {
         id: 7,
         hanzi: "大家",
+        clo: "clo2",
         pinyin: "dàjiā",
         hanViet: "Đại gia",
         type: "Đại từ",
@@ -308,6 +319,7 @@ export const hskLessons = [
       {
         id: 8,
         hanzi: "学生",
+        clo: "clo2",
         pinyin: "xuéshēng",
         hanViet: "Học sinh",
         type: "Danh từ",
@@ -322,6 +334,7 @@ export const hskLessons = [
       {
         id: 9,
         hanzi: "们",
+        clo: "clo2",
         pinyin: "men",
         hanViet: "Môn",
         type: "Trợ từ",
@@ -336,6 +349,7 @@ export const hskLessons = [
       {
         id: 10,
         hanzi: "您",
+        clo: "clo1",
         pinyin: "nín",
         hanViet: "Nhẫn",
         type: "Đại từ",
@@ -350,6 +364,7 @@ export const hskLessons = [
       {
         id: 11,
         hanzi: "你们",
+        clo: "clo2",
         pinyin: "nǐmen",
         hanViet: "Nhĩ môn",
         type: "Đại từ",
@@ -364,6 +379,7 @@ export const hskLessons = [
       {
         id: 12,
         hanzi: "谢谢",
+        clo: "clo3",
         pinyin: "xièxie",
         hanViet: "Tạ tạ",
         type: "Động từ",
@@ -378,6 +394,7 @@ export const hskLessons = [
       {
         id: 13,
         hanzi: "不客气",
+        clo: "clo3",
         pinyin: "bú kèqi",
         hanViet: "Bất khách khí",
         type: "Cụm từ",
@@ -392,6 +409,7 @@ export const hskLessons = [
       {
         id: 14,
         hanzi: "同学",
+        clo: "clo2",
         pinyin: "tóngxué",
         hanViet: "Đồng học",
         type: "Danh từ",
@@ -406,6 +424,7 @@ export const hskLessons = [
       {
         id: 15,
         hanzi: "再见",
+        clo: "clo3",
         pinyin: "zàijiàn",
         hanViet: "Tái kiến",
         type: "Động từ",
@@ -420,7 +439,7 @@ export const hskLessons = [
     ],
     dialogues: [
       {
-        id: "d1",
+        id: "d1", clo: "clo1",
         title: "课文 1",
         subtitle: "Bài khóa 1: NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
         context: "Văn cảnh: 开学第一天，在办公室里，王一飞和AI助教小语打招呼。(On the first day of school, in the office, Wang Yifei was greeting the AI assistant Xiaoyu).",
@@ -430,7 +449,7 @@ export const hskLessons = [
         ]
       },
       {
-        id: "d2",
+        id: "d2", clo: "clo2",
         title: "课文 2",
         subtitle: "Bài khóa 2: NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
         context: "Văn cảnh: 开学第一天，课堂上，学生们学习打招呼用语。(On the first day of school, in class, the students were learning greeting expressions).",
@@ -443,7 +462,7 @@ export const hskLessons = [
         ]
       },
       {
-        id: "d3",
+        id: "d3", clo: "clo3",
         title: "课文 3",
         subtitle: "Bài khóa 3: NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
         context: "Văn cảnh: 开学第一天，课堂上，学生们学习致谢语、告别语。(On the first day of school, in class, the students were learning expressions of gratitude and farewell).",
@@ -457,7 +476,7 @@ export const hskLessons = [
     ],
     grammar: [
       {
-        id: "g1",
+        id: "g1", clo: "clo1",
         title: "1. Đại từ xưng hô: 你 (nǐ) vs 您 (nín)",
         summary: "Sử dụng '您' để thể hiện sự tôn kính với thầy cô, người lớn.",
         explanation: "Trong tiếng Trung, '你' (nǐ - Nhĩ) dùng cho bạn bè đồng lứa. Khi chào thầy cô (王老师 - Vương lão sư) hoặc người lớn tuổi, dùng '您' (nín - Nhẫn) để thể hiện sự kính trọng.",
@@ -467,7 +486,7 @@ export const hskLessons = [
         ]
       },
       {
-        id: "g2",
+        id: "g2", clo: "clo2",
         title: "2. Hậu tố số nhiều 们 (men)",
         summary: "Ghép vào sau đại từ hoặc danh từ chỉ người.",
         explanation: "Hậu tố '们' (men - Môn) dùng tạo số nhiều:",

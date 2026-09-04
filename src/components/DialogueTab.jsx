@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { BookOpen, Volume2, ChevronUp, ChevronDown, List, Play, Languages, TypeOutline } from 'lucide-react';
 import { speakChinese } from '../utils/speech';
 
-export const DialogueTab = ({ dialogues = [] }) => {
-  const [activeDialogueId, setActiveDialogueId] = useState(dialogues[0]?.id || null);
+export const DialogueTab = ({ dialogues = [], activeCLO = 'all' }) => {
+  const filteredDialogues = dialogues.filter(d => activeCLO === 'all' || d.clo === activeCLO);
+  const [activeDialogueId, setActiveDialogueId] = useState(filteredDialogues[0]?.id || null);
   const [isExpanded, setIsExpanded] = useState(true);
   
   // View Modes
@@ -17,7 +18,7 @@ export const DialogueTab = ({ dialogues = [] }) => {
   const [userInput, setUserInput] = useState('');
   const [feedback, setFeedback] = useState(null); // 'correct', 'incorrect'
 
-  const activeDialogue = dialogues.find(d => d.id === activeDialogueId) || dialogues[0];
+  const activeDialogue = filteredDialogues.find(d => d.id === activeDialogueId) || filteredDialogues[0];
 
   useEffect(() => {
     // Reset exercise state when dialogue changes
@@ -27,8 +28,15 @@ export const DialogueTab = ({ dialogues = [] }) => {
     setFeedback(null);
   }, [activeDialogueId]);
 
-  if (!activeDialogue) {
-    return <div className="p-8 text-center text-gray-500">Chưa có dữ liệu bài khóa.</div>;
+  useEffect(() => {
+    // Select first available dialogue when CLO changes
+    if (filteredDialogues.length > 0 && !filteredDialogues.find(d => d.id === activeDialogueId)) {
+        setActiveDialogueId(filteredDialogues[0].id);
+    }
+  }, [activeCLO, filteredDialogues]);
+
+  if (filteredDialogues.length === 0) {
+    return <div className="p-8 text-center text-gray-500">Không có bài khóa nào trong chuẩn đầu ra này.</div>;
   }
 
   const handlePlayLine = (text) => {
@@ -98,7 +106,7 @@ export const DialogueTab = ({ dialogues = [] }) => {
     <div className="dialogue-layout-no-sidebar">
       {/* Top Tabs */}
       <div className="dialogue-top-tabs">
-        {dialogues.map((d, idx) => (
+        {filteredDialogues.map((d, idx) => (
           <button
             key={d.id}
             className={`top-tab-item ${activeDialogueId === d.id ? 'active' : ''}`}
@@ -107,7 +115,7 @@ export const DialogueTab = ({ dialogues = [] }) => {
               setIsExpanded(true);
             }}
           >
-            Bài {idx + 1}
+            {d.title}
           </button>
         ))}
       </div>

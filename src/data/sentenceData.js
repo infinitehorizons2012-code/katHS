@@ -1,5 +1,6 @@
 export const sentenceData = [
   {
+    clo: "clo1",
     formula: "Công thức 1: Cấu trúc Chào hỏi Cơ bản & Kính ngữ",
     structure: "[Đối tượng nhận lời chào] + 好 (hǎo - Hảo - Khỏe/Tốt)",
     sentences: [
@@ -51,6 +52,7 @@ export const sentenceData = [
     ]
   },
   {
+    clo: "clo2",
     formula: "Công thức 2: Hậu tố Biểu đạt Số nhiều Chỉ người",
     structure: "[Đại từ / Danh từ chỉ người] + 们 (men - Môn - Các)",
     sentences: [
@@ -75,6 +77,7 @@ export const sentenceData = [
     ]
   },
   {
+    clo: "clo3",
     formula: "Công thức 3: Chuỗi Thoại Cảm ơn & Đáp lời Khách khí",
     structure: "Lượt 1 (Cảm ơn) / Lượt 2 (Đáp lời)",
     sentences: [
@@ -126,6 +129,7 @@ export const sentenceData = [
     ]
   },
   {
+    clo: "clo3",
     formula: "Công thức 4: Cụm Thoại Kết thúc Giao tiếp / Tạm biệt",
     structure: "Tạm biệt",
     sentences: [
