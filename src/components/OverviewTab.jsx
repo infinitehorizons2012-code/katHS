@@ -871,6 +871,99 @@ const Lesson2Overview = () => {
           </table>
         </div>
 
+        <div className="closed-lexicon-box mt-8 fade-in" style={{ background: '#fff1f2', border: '1px solid #fda4af', borderRadius: '8px', padding: '1.5rem' }}>
+          <h3 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem' }}>
+            <Lock size={20} /> 🔒 CLOSED LEXICON KHẾP KÍN & DANH MỤC CẤU TRÚC NGỮ PHÁP (BẮT BUỘC TUÂN THỦ DÀNH CHO NGÂN HÀNG ĐỀ THI BÀI 2)
+          </h3>
+          <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#881337', fontSize: '0.95rem' }}>
+            <strong>Ghi chú bắt buộc:</strong> Ngân hàng đề thi phải chú ý tuân thủ tuyệt đối danh mục từ vựng và mẫu câu tích lũy dưới đây vì người mới học từ số 0 tính đến Bài 2 chỉ có vốn liếng tích lũy khép kín như sau:
+          </p>
+
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.5rem' }}>1.1 Danh mục Tập đóng Từ vựng Tích lũy (Lessons 1 + 2 Closed Lexicon - 28 Đơn vị)</h4>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', fontSize: '0.9rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng tích lũy Bài 1 (15 đơn vị):</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#4c0519', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <li><strong>你</strong> (nǐ - Bạn)</li>
+                  <li><strong>好</strong> (hǎo - Tốt / Khỏe)</li>
+                  <li><strong>你好</strong> (nǐ hǎo - Xin chào)</li>
+                  <li><strong>王</strong> (Wáng - Họ Vương)</li>
+                  <li><strong>老师</strong> (lǎoshī - Lão sư / Thầy cô)</li>
+                  <li><strong>王老师</strong> (Wáng lǎoshī - Thầy/Cô Vương)</li>
+                  <li><strong>大家</strong> (dàjiā - Mọi người)</li>
+                  <li><strong>学生</strong> (xuéshēng - Học sinh)</li>
+                  <li><strong>们</strong> (men - Các / Hậu tố số nhiều)</li>
+                  <li><strong>您</strong> (nín - Ngài / Thầy / Cô)</li>
+                  <li><strong>你们</strong> (nǐmen - Các bạn)</li>
+                  <li><strong>谢谢</strong> (xièxie - Cảm ơn)</li>
+                  <li><strong>不客气</strong> (bú kèqi - Không có gì)</li>
+                  <li><strong>同学</strong> (tóngxué - Bạn học)</li>
+                  <li><strong>再见</strong> (zàijiàn - Tạm biệt)</li>
+                </ul>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng bài mới (Bài 2 - Core Lexicon 13 đơn vị):</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#4c0519', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <li><strong>请问</strong> (qǐngwèn - Xin hỏi)</li>
+                  <li><strong>叫</strong> (jiào - Gọi là)</li>
+                  <li><strong>什么</strong> (shénme - Cái gì)</li>
+                  <li><strong>名字</strong> (míngzi - Tên)</li>
+                  <li><strong>我</strong> (wǒ - Tôi)</li>
+                  <li><strong>不</strong> (bù - Không)</li>
+                  <li><strong>是</strong> (shì - Là)</li>
+                  <li><strong>对不起</strong> (duìbuqǐ - Xin lỗi)</li>
+                  <li><strong>没关系</strong> (méi guānxi - Không sao)</li>
+                  <li><strong>没事</strong> (méishì - Không sao)</li>
+                  <li><strong>很</strong> (hěn - Rất)</li>
+                  <li><strong>高兴</strong> (gāoxìng - Vui mừng)</li>
+                  <li><strong>认识</strong> (rènshi - Quen biết)</li>
+                  <li><strong>也</strong> (yě - Cũng)</li>
+                </ul>
+                <p style={{ marginTop: '0.75rem', fontStyle: 'italic', fontSize: '0.85rem', color: '#9f1239' }}>
+                  (Tên riêng tích lũy: 李文 Lǐ Wén, 陈天中 Chén Tiānzhōng, 白家月 Bái Jiāyuè, AI小语 AI Xiǎoyǔ)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.75rem' }}>1.2 Danh mục Cấu trúc Ngữ pháp Khép kín Bài 2</h4>
+            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem', color: '#4c0519' }}>Tất cả các mô hình câu được giới hạn hoàn toàn trong các công thức toán học phẳng dưới đây:</p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 1: Cấu trúc Hỏi và Giới thiệu Tên]</h5>
+                <code>Hỏi: 请问 + 你/您 + 叫 + 什么 + 名字？</code><br/>
+                <code>Đáp: 我 + 叫 + [Họ tên]</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 请问，你叫什么名字？<br/>- 我叫李文。</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 2: Khẳng định & Phủ định với 是/不]</h5>
+                <code>Khẳng định: [Chủ ngữ] + 是 + [Danh từ]</code><br/>
+                <code>Phủ định: [Chủ ngữ] + 不是 + [Danh từ]</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 我是学生。<br/>- 我不是老师。</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 3: Chuỗi Xin lỗi & Đáp lời]</h5>
+                <code>Lượt 1 (Xin lỗi): 对不起</code><br/>
+                <code>Lượt 2 (Đáp lời): 没关系 / 没事</code>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 4: Bày tỏ Vui mừng & Phó từ 也/很]</h5>
+                <code>Người A: 很高兴认识你！</code><br/>
+                <code>Người B: 我也很高兴认识你！</code>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
         <div className="mt-8">
           <h3 style={{ fontSize: '1.2rem', color: '#1e293b', marginBottom: '1rem', fontWeight: 'bold' }}>5.2 Ba Tình huống Ứng dụng Thực chiến tại Doanh nghiệp FDI / Xuất nhập khẩu / Nhân sự</h3>
           
