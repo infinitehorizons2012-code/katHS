@@ -65,9 +65,9 @@ export const Header = ({ currentLessonId, onSelectLesson, completedLessons, acti
             <span className="switcher-label">CLO:</span>
             <span className="switcher-current font-semibold text-blue-700">
               {activeCLO === 'all' ? 'Tất cả (Cả bài)' : 
-               activeCLO === 'clo1' ? 'CLO 1: Kính ngữ' : 
-               activeCLO === 'clo2' ? 'CLO 2: Số nhiều' : 
-               'CLO 3: Lễ nghi'}
+               activeCLO === 'clo1' ? 'CLO 1' : 
+               activeCLO === 'clo2' ? 'CLO 2' : 
+               'CLO 3'}
             </span>
             <ChevronDown size={16} className={`switcher-arrow ${cloDropdownOpen ? 'open' : ''}`} />
           </button>
@@ -85,19 +85,19 @@ export const Header = ({ currentLessonId, onSelectLesson, completedLessons, acti
                 className={`menu-item ${activeCLO === 'clo1' ? 'active' : ''}`}
                 onClick={() => setActiveCLO('clo1')}
               >
-                <div className="item-title">🌱 CLO 1: Kính ngữ & Xưng hô 1-1</div>
+                <div className="item-title">🌱 CLO 1</div>
               </div>
               <div 
                 className={`menu-item ${activeCLO === 'clo2' ? 'active' : ''}`}
                 onClick={() => setActiveCLO('clo2')}
               >
-                <div className="item-title">🌿 CLO 2: Chào tập thể & Số nhiều</div>
+                <div className="item-title">🌿 CLO 2</div>
               </div>
               <div 
                 className={`menu-item ${activeCLO === 'clo3' ? 'active' : ''}`}
                 onClick={() => setActiveCLO('clo3')}
               >
-                <div className="item-title">🌸 CLO 3: Chuỗi phản xạ Lễ nghi</div>
+                <div className="item-title">🌸 CLO 3</div>
               </div>
             </div>
           )}
