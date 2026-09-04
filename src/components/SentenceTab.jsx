@@ -103,29 +103,33 @@ export const SentenceTab = () => {
                   <div className="formula-structure">{group.structure}</div>
                 </div>
                 
-                <div className="sentence-items">
+                <div className="vocab-list">
                   {group.sentences.map((item, index) => (
-                    <div key={item.id} className="vocab-list-item">
-                      <div className="item-number">{index + 1}</div>
+                    <div key={item.id} className="vocab-item-row">
+                      <div className="vocab-index-circle">{index + 1}</div>
                       
-                      <div className="item-main">
+                      <div className="vocab-main-col">
                         <div className="hanzi-text">{item.hanzi}</div>
                         <div className="pinyin-text">{item.pinyin}</div>
                       </div>
 
-                      <div className="item-hanviet">[{item.hanViet}]</div>
+                      <div className="vocab-hanviet-col">
+                        <span className="hanviet-text">[{item.hanViet}]</span>
+                      </div>
                       
-                      <div className="item-type">
+                      <div className="vocab-type-col">
                         <span className={`type-badge ${getTypeBadgeClass(item.typeColor)}`}>
                           {item.type}
                         </span>
                       </div>
 
-                      <div className="item-meaning">{item.meaning}</div>
+                      <div className="vocab-meaning-col">
+                        <span className="meaning-text">{item.meaning}</span>
+                      </div>
 
-                      <div className="item-actions">
+                      <div className="vocab-actions-col">
                         <button 
-                          className="btn-icon action-btn play-btn"
+                          className="btn-icon-speaker"
                           onClick={() => speakChinese(item.hanzi)}
                           title="Nghe phát âm"
                         >
