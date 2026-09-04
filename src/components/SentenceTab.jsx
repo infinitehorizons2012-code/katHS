@@ -7,12 +7,12 @@ import { QuizMode } from './vocabModes/QuizMode';
 import { TypingMode } from './vocabModes/TypingMode';
 import { sentenceData } from '../data/sentenceData';
 
-export const SentenceTab = ({ activeCLO = 'all' }) => {
+export const SentenceTab = ({ activeCLO = 'all', lessonId }) => {
   // Mode Selection: 'list' | 'flashcard' | 'match' | 'quiz' | 'typing'
   const [activeViewMode, setActiveViewMode] = useState('list'); 
 
   // Filter sentence data based on CLO
-  const filteredSentenceData = sentenceData.filter(group => activeCLO === 'all' || group.clo === activeCLO);
+  const filteredSentenceData = sentenceData.filter(group => (lessonId ? group.lessonId === lessonId : true) && (activeCLO === 'all' || group.clo === activeCLO));
 
   // Flatten sentences for the games
   const allSentences = filteredSentenceData.flatMap(group => group.sentences);

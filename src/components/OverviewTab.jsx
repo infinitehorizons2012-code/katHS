@@ -5,7 +5,7 @@ import {
   Award, BrainCircuit, CheckCircle2, Layers, BookType, Code 
 } from 'lucide-react';
 
-export const OverviewTab = () => {
+const Lesson1Overview = () => {
   return (
     <div className="tab-pane active fade-in overview-container">
       {/* HEADER SECTION */}
@@ -510,4 +510,60 @@ export const OverviewTab = () => {
       </div>
     </div>
   );
+};
+
+const Lesson2Overview = () => {
+  return (
+    <div className="tab-pane active fade-in overview-container">
+      <div className="overview-header-card">
+        <div className="course-title">
+          <BookOpen size={28} className="blue-icon" />
+          <h1>Bài học: Lesson 2 <span>(《新HSK教程1》第2课 我叫李文.pptx)</span></h1>
+        </div>
+        <div className="overview-meta-tags">
+          <div className="meta-tag blue-tag"><Users size={16} /><span><strong>Đối tượng:</strong> Người học từ số 0 (Zero-Based Learners)</span></div>
+          <div className="meta-tag purple-tag"><Target size={16} /><span><strong>Khung chuẩn:</strong> HSK 3.0 Level 1</span></div>
+        </div>
+      </div>
+      
+      <div className="overview-section">
+        <div className="section-title"><BrainCircuit size={24} className="purple-icon" /><h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2></div>
+        
+        {/* CLO 1 */}
+        <div className="clo-card fade-in">
+          <div className="clo-header blue-gradient"><h3>📌 CLO 01: HỎI VÀ TỰ GIỚI THIỆU HỌ TÊN TRONG GIAO TIẾP DÂN SỰ & CÔNG SỞ</h3></div>
+          <div className="clo-body">
+            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt cấu trúc trật tự từ tiếng Trung [Chủ ngữ] + 叫 + [Tên] để hỏi tên lịch sự 请问，你叫什么名字？ và tự giới thiệu bản thân 我叫... trong môi trường công sở FDI và đối ngoại.</p>
+            <p><strong>Tình huống Giao tiếp:</strong> Bàn giao danh thiếp / làm quen đồng nghiệp mới 李文 (Lǐ Wén - Lý Văn) tại phòng họp hoặc lớp đào tạo nội bộ.</p>
+            <p><strong>Kiến thức cốt lõi:</strong> 请问 (qǐngwèn) | 你 (nǐ) | 叫 (jiào) | 什么 (shénme) | 名字 (míngzi) | 我 (wǒ)</p>
+          </div>
+        </div>
+
+        {/* CLO 2 */}
+        <div className="clo-card fade-in">
+          <div className="clo-header purple-gradient"><h3>📌 CLO 02: BÀY TỎ PHÁN ĐOÁN KHẲNG ĐỊNH/PHỦ ĐỊNH & THỰC THI CHUỖI XIN LỖI - ĐÁP LỜI</h3></div>
+          <div className="clo-body">
+            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt động từ phán đoán 是 (shì - là) và dạng phủ định 不是 (bú shì - không phải là); đồng thời thực thi phản xạ cặp thoại xin lỗi 对不起 → đáp lời 没关系 / 没事 khi xảy ra nhầm lẫn trong công việc.</p>
+            <p><strong>Tình huống Giao tiếp:</strong> Nhận nhầm đồng nghiệp/đối tác 陈天中 và 白家月 tại hành lang công ty.</p>
+            <p><strong>Kiến thức cốt lõi:</strong> 不 (bù) | 是 (shì) | 对不起 (duìbuqǐ) | 没关系 (méi guānxi) | 没事 (méishì)</p>
+          </div>
+        </div>
+
+        {/* CLO 3 */}
+        <div className="clo-card fade-in">
+          <div className="clo-header orange-gradient"><h3>📌 CLO 03: BIỂU ĐẠT THIỆN CHÍ QUEN BIẾT VÀ SỬ DỤNG PHÓ TỪ "很" / "也"</h3></div>
+          <div className="clo-body">
+            <p><strong>Chuẩn Đầu Ra:</strong> Thực thi thành thạo mẫu câu xã giao thể hiện thiện chí khi mới quen biết 很高兴认识你！ và sử dụng phó từ 也 (yě - cũng) để phản hồi 我也很高兴认识你！.</p>
+            <p><strong>Tình huống Giao tiếp:</strong> Lần đầu gặp mặt đối tác 李文 và 白家月 tại sự kiện giao thương.</p>
+            <p><strong>Kiến thức cốt lõi:</strong> 很 (hěn) | 高兴 (gāoxìng) | 认识 (rènshi) | 也 (yě)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const OverviewTab = ({ lessonId }) => {
+  if (lessonId === 'hsk1-lesson2') return <Lesson2Overview />;
+  return <Lesson1Overview />;
 };

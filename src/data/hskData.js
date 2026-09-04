@@ -194,13 +194,395 @@ export const singleCharDict = {
     hanzi: "见",
     pinyin: "jiàn",
     hanViet: "kiến",
+        clo: "clo1",
+    pinyin: "nín",
+    hanViet: "nhẫn",
+    meaning: "ngài, ông (kính ngữ)",
+    mnemonic: "Gọi 'bạn' (你) bằng cả tấm lòng (心) kính trọng — đó là cách thưa 'ngài', 'quý vị'.",
+    radicals: [
+      { hanzi: '你', name: 'Nhĩ', color: '#e53e3e', strokes: [0, 1, 2, 3, 4, 5, 6] },
+      { hanzi: '心', name: 'Tâm', color: '#2563eb', strokes: [7, 8, 9, 10] }
+    ]
+  },
+  "谢": {
+    hanzi: "谢",
+    pinyin: "xiè",
+    hanViet: "tạ",
+    meaning: "cảm ơn",
+    mnemonic: "Lời cảm ơn hay lời xin lỗi có giá trị nhất là khi con người biết điều chỉnh Thân 身 phải ngay thẳng và cái Tâm phải có chừng mực 寸 và phát ra bằng sự chân thành từ tâm trí (Ngôn 讠).",
+    radicals: [
+      { hanzi: '讠', name: 'Ngôn', color: '#e53e3e', strokes: [0, 1] },
+      { hanzi: '身', name: 'Thân', color: '#2563eb', strokes: [2, 3, 4, 5, 6, 7, 8] },
+      { hanzi: '寸', name: 'Thốn', color: '#16a34a', strokes: [9, 10, 11] }
+    ]
+  },
+  "不": {
+    hanzi: "不",
+    pinyin: "bù",
+    hanViet: "bất",
+    meaning: "không, chẳng",
+    mnemonic: "Hình vẽ mầm cây chưa nhú lên mặt đất, biểu thị sự phủ định \"không, chưa\".",
+    radicals: [
+      { hanzi: '不', name: 'Bất', color: '#2563eb', strokes: [0, 1, 2, 3] }
+    ]
+  },
+  "客": {
+    hanzi: "客",
+    pinyin: "kè",
+    hanViet: "khách",
+    meaning: "khách",
+    mnemonic: "Chữ 各 vốn vẽ một bàn chân đi vào nơi nào đó, nên cũng gợi ý 'người từ nơi khác đến'. Tổ hợp 宀 + Các nên nghĩa 'người khách từ nơi khác đến được đón tiếp dưới mái nhà ta',",
+    radicals: [
+      { hanzi: '宀', name: 'Miên', color: '#e53e3e', strokes: [0, 1, 2] },
+      { hanzi: '各', name: 'Các', color: '#2563eb', strokes: [3, 4, 5, 6, 7, 8] }
+    ]
+  },
+  "气": {
+    hanzi: "气",
+    pinyin: "qì",
+    hanViet: "khí",
+    meaning: "không khí, khí",
+    mnemonic: "Ba nét uốn như luồng không khí lưu thông trong không trung",
+    radicals: [
+      { hanzi: '气', name: 'Khí', color: '#2563eb', strokes: [0, 1, 2, 3] }
+    ]
+  },
+  "同": {
+    hanzi: "同",
+    pinyin: "tóng",
+    hanViet: "đồng",
+    meaning: "cùng nhau",
+    mnemonic: "Mọi người 口 sống trong cùng một khu vực (Quynh) phải đoàn kết thống nhất Nhất (số 1) mới có đủ sức mạnh chống lại kẻ thù.",
+    radicals: [
+      { hanzi: '口', name: 'Khẩu', color: '#e53e3e', strokes: [3, 4, 5] },
+      { hanzi: '冂', name: 'Quynh', color: '#2563eb', strokes: [0, 1] },
+      { hanzi: '一', name: 'Nhất', color: '#16a34a', strokes: [2] }
+    ]
+  },
+  "再": {
+    hanzi: "再",
+    pinyin: "zài",
+    hanViet: "tái",
+    meaning: "lại, nữa",
+    mnemonic: "cái giỏ  冓 đan lặp đi lặp lại một 一 lần nữa",
+    radicals: [
+      { hanzi: '冓', name: 'Cấu', color: '#e53e3e', strokes: [1, 2, 3, 4, 5] },
+      { hanzi: '一', name: 'Nhất', color: '#2563eb', strokes: [0] }
+    ]
+  },
+  "见": {
+    hanzi: "见",
+    pinyin: "jiàn",
+    hanViet: "kiến",
     meaning: "thấy, gặp",
     mnemonic: "Người 儿 dùng mắt 目 để nhìn, thấy",
     radicals: [
       { hanzi: '儿', name: 'Nhi', color: '#e53e3e', strokes: [2, 3] },
       { hanzi: '目', name: 'Mục', color: '#2563eb', strokes: [0, 1] }
     ]
-  }
+  },
+  "请问": {
+    "hanzi": "请问",
+    "clo": "clo1",
+    "pinyin": "qǐngwèn",
+    "hanViet": "thỉnh vấn",
+    "meaning": "xin hỏi",
+    "mnemonic": "Lời nói 言 + Lịch sự 青 = Xin (请). Miệng 口 + Trực tiếp ở cổng 门 = Hỏi (问). Xin hỏi.",
+    "radicals": [
+        {
+            "hanzi": "言",
+            "name": "Ngôn",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1
+            ]
+        },
+        {
+            "hanzi": "门",
+            "name": "Môn",
+            "color": "#2563eb",
+            "strokes": [
+                10,
+                11,
+                12
+            ]
+        }
+    ]
+},
+  "叫": {
+    "hanzi": "叫",
+    "clo": "clo1",
+    "pinyin": "jiào",
+    "hanViet": "khiếu",
+    "meaning": "gọi là, tên là",
+    "mnemonic": "Dùng miệng (口) để gọi (叫).",
+    "radicals": [
+        {
+            "hanzi": "口",
+            "name": "Khẩu",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+},
+  "什么": {
+    "hanzi": "什么",
+    "clo": "clo1",
+    "pinyin": "shénme",
+    "hanViet": "thập ma",
+    "meaning": "cái gì",
+    "mnemonic": "Ghép từ 什 và 么 để tạo từ để hỏi 'cái gì'.",
+    "radicals": [
+        {
+            "hanzi": "十",
+            "name": "Thập",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1
+            ]
+        }
+    ]
+},
+  "名字": {
+    "hanzi": "名字",
+    "clo": "clo1",
+    "pinyin": "míngzi",
+    "hanViet": "danh tự",
+    "meaning": "tên",
+    "mnemonic": "Vào buổi tối (夕) dùng miệng (口) xưng danh (名).",
+    "radicals": [
+        {
+            "hanzi": "夕",
+            "name": "Tịch",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "hanzi": "口",
+            "name": "Khẩu",
+            "color": "#2563eb",
+            "strokes": [
+                3,
+                4,
+                5
+            ]
+        }
+    ]
+},
+  "我": {
+    "hanzi": "我",
+    "clo": "clo1",
+    "pinyin": "wǒ",
+    "hanViet": "ngã",
+    "meaning": "tôi",
+    "mnemonic": "Vũ khí (戈) trong tay để bảo vệ bản thân (我).",
+    "radicals": [
+        {
+            "hanzi": "戈",
+            "name": "Qua",
+            "color": "#e53e3e",
+            "strokes": [
+                3,
+                4,
+                5,
+                6
+            ]
+        }
+    ]
+},
+  "不": {
+    "hanzi": "不",
+    "clo": "clo2",
+    "pinyin": "bù",
+    "hanViet": "bất",
+    "meaning": "không",
+    "mnemonic": "Hình rễ cây mọc đâm xuống đất, ngăn cản (Không).",
+    "radicals": [
+        {
+            "hanzi": "一",
+            "name": "Nhất",
+            "color": "#e53e3e",
+            "strokes": [
+                0
+            ]
+        }
+    ]
+},
+  "是": {
+    "hanzi": "是",
+    "clo": "clo2",
+    "pinyin": "shì",
+    "hanViet": "thị",
+    "meaning": "là",
+    "mnemonic": "Mặt trời (日) mọc đúng giờ (是).",
+    "radicals": [
+        {
+            "hanzi": "日",
+            "name": "Nhật",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ]
+},
+  "对不起": {
+    "hanzi": "对不起",
+    "clo": "clo2",
+    "pinyin": "duìbuqǐ",
+    "hanViet": "đối bất khởi",
+    "meaning": "xin lỗi",
+    "mnemonic": "Không thể (不起) đối mặt (对).",
+    "radicals": [
+        {
+            "hanzi": "寸",
+            "name": "Thốn",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+},
+  "没关系": {
+    "hanzi": "没关系",
+    "clo": "clo2",
+    "pinyin": "méi guānxi",
+    "hanViet": "một quan hệ",
+    "meaning": "không sao",
+    "mnemonic": "Không có (没) hệ quả gì (关系).",
+    "radicals": [
+        {
+            "hanzi": "氵",
+            "name": "Thủy",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+},
+  "没事": {
+    "hanzi": "没事",
+    "clo": "clo2",
+    "pinyin": "méishì",
+    "hanViet": "một sự",
+    "meaning": "không sao",
+    "mnemonic": "Không có (没) việc gì (事).",
+    "radicals": [
+        {
+            "hanzi": "氵",
+            "name": "Thủy",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+},
+  "很": {
+    "hanzi": "很",
+    "clo": "clo3",
+    "pinyin": "hěn",
+    "hanViet": "hấn",
+    "meaning": "rất",
+    "mnemonic": "Bước chân (彳) rất (很) mạnh.",
+    "radicals": [
+        {
+            "hanzi": "彳",
+            "name": "Xích",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2
+            ]
+        }
+    ]
+},
+  "高兴": {
+    "hanzi": "高兴",
+    "clo": "clo3",
+    "pinyin": "gāoxìng",
+    "hanViet": "cao hưng",
+    "meaning": "vui mừng",
+    "mnemonic": "Hưng phấn (兴) dâng cao (高).",
+    "radicals": [
+        {
+            "hanzi": "高",
+            "name": "Cao",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ]
+},
+  "认识": {
+    "hanzi": "认识",
+    "clo": "clo3",
+    "pinyin": "rènshi",
+    "hanViet": "nhận thức",
+    "meaning": "quen biết",
+    "mnemonic": "Dùng lời nói (言) để quen biết (认识).",
+    "radicals": [
+        {
+            "hanzi": "言",
+            "name": "Ngôn",
+            "color": "#e53e3e",
+            "strokes": [
+                0,
+                1
+            ]
+        }
+    ]
+},
+  "也": {
+    "hanzi": "也",
+    "clo": "clo3",
+    "pinyin": "yě",
+    "hanViet": "dã",
+    "meaning": "cũng",
+    "mnemonic": "Hình dáng cái phễu (Cũng vậy).",
+    "radicals": [
+        {
+            "hanzi": "乙",
+            "name": "Ất",
+            "color": "#e53e3e",
+            "strokes": [
+                0
+            ]
+        }
+    ]
+},
 };
 
 export const hskLessons = [
@@ -527,4 +909,503 @@ export const hskLessons = [
       }
     ]
   }
+  ,{
+  "id": "hsk1-lesson2",
+  "lessonNumber": 2,
+  "titleHanzi": "我叫李文",
+  "titleVietnamese": "Tôi tên là Lý Văn",
+  "vocabulary": [
+    {
+      "id": 16,
+      "hanzi": "请问",
+      "clo": "clo1",
+      "pinyin": "qǐngwèn",
+      "hanViet": "Thỉnh vấn",
+      "type": "Động từ",
+      "typeColor": "red",
+      "meaning": "Xin hỏi",
+      "exampleHanzi": "请问，你叫什么名字？",
+      "examplePinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "exampleMeaning": "Xin hỏi, bạn tên là gì?",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 17,
+      "hanzi": "叫",
+      "clo": "clo1",
+      "pinyin": "jiào",
+      "hanViet": "Khiếu",
+      "type": "Động từ",
+      "typeColor": "red",
+      "meaning": "Gọi là / Tên là",
+      "exampleHanzi": "我叫李文。",
+      "examplePinyin": "Wǒ jiào Lǐ Wén.",
+      "exampleMeaning": "Tôi tên là Lý Văn.",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 18,
+      "hanzi": "什么",
+      "clo": "clo1",
+      "pinyin": "shénme",
+      "hanViet": "Thập ma",
+      "type": "Đại từ",
+      "typeColor": "blue",
+      "meaning": "Cái gì",
+      "exampleHanzi": "你叫什么名字？",
+      "examplePinyin": "Nǐ jiào shénme míngzi?",
+      "exampleMeaning": "Bạn tên là gì?",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 19,
+      "hanzi": "名字",
+      "clo": "clo1",
+      "pinyin": "míngzi",
+      "hanViet": "Danh tự",
+      "type": "Danh từ",
+      "typeColor": "green",
+      "meaning": "Tên",
+      "exampleHanzi": "什么名字",
+      "examplePinyin": "Shénme míngzi",
+      "exampleMeaning": "Tên gì",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 20,
+      "hanzi": "我",
+      "clo": "clo1",
+      "pinyin": "wǒ",
+      "hanViet": "Ngã",
+      "type": "Đại từ",
+      "typeColor": "blue",
+      "meaning": "Tôi",
+      "exampleHanzi": "我叫白家月。",
+      "examplePinyin": "Wǒ jiào Bái Jiāyuè.",
+      "exampleMeaning": "Tôi tên là Bạch Gia Nguyệt.",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 21,
+      "hanzi": "不",
+      "clo": "clo2",
+      "pinyin": "bù",
+      "hanViet": "Bất",
+      "type": "Phó từ",
+      "typeColor": "orange",
+      "meaning": "Không",
+      "exampleHanzi": "不是",
+      "examplePinyin": "bú shì",
+      "exampleMeaning": "Không phải",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 22,
+      "hanzi": "是",
+      "clo": "clo2",
+      "pinyin": "shì",
+      "hanViet": "Thị",
+      "type": "Động từ",
+      "typeColor": "red",
+      "meaning": "Là",
+      "exampleHanzi": "我是学生。",
+      "examplePinyin": "Wǒ shì xuéshēng.",
+      "exampleMeaning": "Tôi là học sinh.",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 23,
+      "hanzi": "对不起",
+      "clo": "clo2",
+      "pinyin": "duìbuqǐ",
+      "hanViet": "Đối bất khởi",
+      "type": "Cụm từ",
+      "typeColor": "gray",
+      "meaning": "Xin lỗi",
+      "exampleHanzi": "对不起！",
+      "examplePinyin": "Duìbuqǐ!",
+      "exampleMeaning": "Xin lỗi!",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 24,
+      "hanzi": "没关系",
+      "clo": "clo2",
+      "pinyin": "méi guānxi",
+      "hanViet": "Một quan hệ",
+      "type": "Cụm từ",
+      "typeColor": "gray",
+      "meaning": "Không sao",
+      "exampleHanzi": "没关系！",
+      "examplePinyin": "Méi guānxi!",
+      "exampleMeaning": "Không sao!",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 25,
+      "hanzi": "没事",
+      "clo": "clo2",
+      "pinyin": "méishì",
+      "hanViet": "Một sự",
+      "type": "Cụm từ",
+      "typeColor": "gray",
+      "meaning": "Không sao",
+      "exampleHanzi": "没事！",
+      "examplePinyin": "Méishì!",
+      "exampleMeaning": "Không sao!",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 26,
+      "hanzi": "很",
+      "clo": "clo3",
+      "pinyin": "hěn",
+      "hanViet": "Hấn",
+      "type": "Phó từ",
+      "typeColor": "orange",
+      "meaning": "Rất",
+      "exampleHanzi": "很高兴",
+      "examplePinyin": "hěn gāoxìng",
+      "exampleMeaning": "rất vui",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 27,
+      "hanzi": "高兴",
+      "clo": "clo3",
+      "pinyin": "gāoxìng",
+      "hanViet": "Cao hưng",
+      "type": "Tính từ",
+      "typeColor": "purple",
+      "meaning": "Vui mừng",
+      "exampleHanzi": "很高兴认识你！",
+      "examplePinyin": "Hěn gāoxìng rènshi nǐ!",
+      "exampleMeaning": "Rất vui được quen biết bạn!",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 28,
+      "hanzi": "认识",
+      "clo": "clo3",
+      "pinyin": "rènshi",
+      "hanViet": "Nhận thức",
+      "type": "Động từ",
+      "typeColor": "red",
+      "meaning": "Quen biết",
+      "exampleHanzi": "认识你很高兴。",
+      "examplePinyin": "Rènshi nǐ hěn gāoxìng.",
+      "exampleMeaning": "Quen biết bạn rất vui.",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    },
+    {
+      "id": 29,
+      "hanzi": "也",
+      "clo": "clo3",
+      "pinyin": "yě",
+      "hanViet": "Dã",
+      "type": "Phó từ",
+      "typeColor": "orange",
+      "meaning": "Cũng",
+      "exampleHanzi": "我也很高兴。",
+      "examplePinyin": "Wǒ yě hěn gāoxìng.",
+      "exampleMeaning": "Tôi cũng rất vui.",
+      "culturalThinking": "",
+      "structuralEtymology": ""
+    }
+  ],
+  "dialogues": [
+    {
+      "id": "l2_d1",
+      "clo": "clo1",
+      "title": "课文 1",
+      "subtitle": "NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
+      "context": "Văn cảnh: 在教室里，王一飞在认识学生。(In the classroom, Wang Yifei was getting to know the students).",
+      "lines": [
+        {
+          "speaker": "👤 王一飞",
+          "hanzi": "请问，你叫什么名字？",
+          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+          "vietnamese": "Xin hỏi, bạn tên là gì?"
+        },
+        {
+          "speaker": "👤 李文",
+          "hanzi": "我叫李文。",
+          "pinyin": "Wǒ jiào Lǐ Wén.",
+          "vietnamese": "Tôi tên là Lý Văn."
+        }
+      ]
+    },
+    {
+      "id": "l2_d2",
+      "clo": "clo2",
+      "title": "课文 2",
+      "subtitle": "NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
+      "context": "Văn cảnh: 在校园里，陈天中和白家月打招呼时认错了人。(On campus, Chen Tianzhong greeted Bai Jiayue but mistook her for someone else).",
+      "lines": [
+        {
+          "speaker": "👤 陈天中",
+          "hanzi": "对不起！",
+          "pinyin": "Duìbuqǐ!",
+          "vietnamese": "Xin lỗi!"
+        },
+        {
+          "speaker": "👤 白家月",
+          "hanzi": "没关系！",
+          "pinyin": "Méi guānxi!",
+          "vietnamese": "Không sao!"
+        }
+      ]
+    },
+    {
+      "id": "l2_d3",
+      "clo": "clo3",
+      "title": "课文 3",
+      "subtitle": "NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
+      "context": "Văn cảnh: 在校园里，李文和白家月第一次相遇。(Li Wen and Bai Jiayue met for the first time on campus).",
+      "lines": [
+        {
+          "speaker": "👤 李文",
+          "hanzi": "你好！我叫李文。",
+          "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
+          "vietnamese": "Xin chào! Tôi tên là Lý Văn."
+        },
+        {
+          "speaker": "👤 白家月",
+          "hanzi": "你好！我叫白家月。很高兴认识你！",
+          "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè. Hěn gāoxìng rènshi nǐ!",
+          "vietnamese": "Xin chào! Tôi tên là Bạch Gia Nguyệt. Rất vui được quen biết bạn!"
+        },
+        {
+          "speaker": "👤 李文",
+          "hanzi": "我也很高兴认识你！",
+          "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ!",
+          "vietnamese": "Tôi cũng rất vui được quen biết bạn!"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "l2_g1",
+      "clo": "clo1",
+      "title": "1. Cấu trúc Hỏi và Giới thiệu Tên",
+      "summary": "[Chủ ngữ] + 叫 + 什么 + 名字？",
+      "explanation": "Dùng để hỏi và đáp tên.",
+      "examples": [
+        {
+          "hanzi": "请问，你叫什么名字？",
+          "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+          "vietnamese": "Xin hỏi, bạn tên là gì?"
+        },
+        {
+          "hanzi": "我叫李文。",
+          "pinyin": "Wǒ jiào Lǐ Wén.",
+          "vietnamese": "Tôi tên là Lý Văn."
+        }
+      ]
+    },
+    {
+      "id": "l2_g2",
+      "clo": "clo2",
+      "title": "2. Phán đoán Khẳng định & Phủ định với 是/不是",
+      "summary": "是 (là) và 不是 (không phải là).",
+      "explanation": "Dùng để phán đoán danh tính, nghề nghiệp.",
+      "examples": [
+        {
+          "hanzi": "我是学生。",
+          "pinyin": "Wǒ shì xuéshēng.",
+          "vietnamese": "Tôi là học sinh."
+        },
+        {
+          "hanzi": "我不是老师。",
+          "pinyin": "Wǒ bú shì lǎoshī.",
+          "vietnamese": "Tôi không phải là giáo viên."
+        }
+      ]
+    },
+    {
+      "id": "l2_g3",
+      "clo": "clo2",
+      "title": "3. Chuỗi Xin lỗi - Đáp lời",
+      "summary": "对不起 (Xin lỗi) → 没关系 / 没事 (Không sao)",
+      "explanation": "Cặp thoại phản xạ khi mắc lỗi.",
+      "examples": [
+        {
+          "hanzi": "对不起！",
+          "pinyin": "Duìbuqǐ!",
+          "vietnamese": "Xin lỗi!"
+        },
+        {
+          "hanzi": "没关系！",
+          "pinyin": "Méi guānxi!",
+          "vietnamese": "Không sao!"
+        }
+      ]
+    },
+    {
+      "id": "l2_g4",
+      "clo": "clo3",
+      "title": "4. Phó từ 很高兴认识你 / 也",
+      "summary": "Rất vui được quen biết bạn.",
+      "explanation": "Phó từ 也 (cũng) đứng trước tính từ/động từ.",
+      "examples": [
+        {
+          "hanzi": "很高兴认识你！",
+          "pinyin": "Hěn gāoxìng rènshi nǐ!",
+          "vietnamese": "Rất vui được quen biết bạn!"
+        },
+        {
+          "hanzi": "我也很高兴认识你！",
+          "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ!",
+          "vietnamese": "Tôi cũng rất vui được quen biết bạn!"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l2_q1",
+      "type": "multiple-choice",
+      "clo": "clo1",
+      "question": "Từ chữ Hán nào dưới đây đại diện cho đại từ nghi vấn mang nghĩa 'Cái gì'?",
+      "options": [
+        {
+          "id": "A",
+          "text": "名字 (míngzi)"
+        },
+        {
+          "id": "B",
+          "text": "什么 (shénme)",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "叫 (jiào)"
+        },
+        {
+          "id": "D",
+          "text": "请问 (qǐngwèn)"
+        }
+      ],
+      "explanation": "什么 (shénme - Thập ma) là đại từ nghi vấn dùng trong câu hỏi tên 你叫什么名字？."
+    },
+    {
+      "id": "l2_q2",
+      "type": "multiple-choice",
+      "clo": "clo2",
+      "question": "Cụm từ chữ Hán 对不起 có Pinyin và Nghĩa tiếng Việt chính xác là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "没关系 (méi guānxi - Không sao)"
+        },
+        {
+          "id": "B",
+          "text": "不客气 (bú kèqi - Không có gì)"
+        },
+        {
+          "id": "C",
+          "text": "对不起 (duìbuqǐ - Xin lỗi)",
+          "isCorrect": true
+        },
+        {
+          "id": "D",
+          "text": "再见 (zàijiàn - Tạm biệt)"
+        }
+      ],
+      "explanation": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi) là cụm từ xin lỗi lịch sự."
+    },
+    {
+      "id": "l2_q3",
+      "type": "multiple-choice",
+      "clo": "clo3",
+      "question": "Từ chữ Hán 高兴 được giải nghĩa tiếng Việt là gì?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Quen biết"
+        },
+        {
+          "id": "B",
+          "text": "Vui mừng",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "Rất"
+        },
+        {
+          "id": "D",
+          "text": "Cũng"
+        }
+      ],
+      "explanation": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi) là tính từ biểu thị cảm xúc."
+    },
+    {
+      "id": "l2_q4",
+      "type": "multiple-choice",
+      "clo": "clo1",
+      "question": "Cấu trúc câu hỏi tên nào dưới đây biểu đạt đúng trật tự từ trong tiếng Trung?",
+      "options": [
+        {
+          "id": "A",
+          "text": "你叫名字什么？ (Nǐ jiào míngzi shénme?)"
+        },
+        {
+          "id": "B",
+          "text": "请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi?)",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "什么名字叫你？ (Shénme míngzi jiào nǐ?)"
+        },
+        {
+          "id": "D",
+          "text": "你名字叫什么请问？ (Nǐ míngzi jiào shénme qǐngwèn?)"
+        }
+      ],
+      "explanation": "Trật tự từ chuẩn câu hỏi tên: [请问] + [你] + [叫] + [什么] + [名字]？."
+    },
+    {
+      "id": "l2_q5",
+      "type": "multiple-choice",
+      "clo": "clo2",
+      "question": "Khi một đồng nghiệp va chạm nhẹ và thốt lên 对不起！, phản xạ đáp lời nào dưới đây chuẩn xác?",
+      "options": [
+        {
+          "id": "A",
+          "text": "不客气"
+        },
+        {
+          "id": "B",
+          "text": "没关系",
+          "isCorrect": true
+        },
+        {
+          "id": "C",
+          "text": "再见"
+        },
+        {
+          "id": "D",
+          "text": "你好"
+        }
+      ],
+      "explanation": "Lời xin lỗi 对不起 đi cặp với lời đáp tỏ ý không bận tâm 没关系."
+    }
+  ]
+}
 ];

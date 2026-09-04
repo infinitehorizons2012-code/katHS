@@ -80,9 +80,9 @@ export function App() {
         />
 
         <div className="tab-content">
-          {activeTab === 'overview' && <OverviewTab />}
+          {activeTab === 'overview' && <OverviewTab lessonId={currentLessonId} />}
           {activeTab === 'vocabulary' && <VocabularyTab vocabulary={currentLesson.vocabulary} activeCLO={activeCLO} />}
-          {activeTab === 'sentence' && <SentenceTab activeCLO={activeCLO} />}
+          {activeTab === 'sentence' && <SentenceTab activeCLO={activeCLO} lessonId={currentLessonId} />}
           {activeTab === 'dialogue' && <DialogueTab dialogues={currentLesson.dialogues} activeCLO={activeCLO} />}
           {activeTab === 'grammar' && <GrammarTab grammar={currentLesson.grammar} />}
           {activeTab === 'transferTest' && <TransferTestTab />}
