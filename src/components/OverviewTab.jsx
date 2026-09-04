@@ -526,6 +526,7 @@ const Lesson2Overview = () => {
         </div>
       </div>
       
+      {/* SECTION 1 */}
       <div className="overview-section">
         <div className="section-title"><BrainCircuit size={24} className="purple-icon" /><h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2></div>
         
@@ -559,6 +560,163 @@ const Lesson2Overview = () => {
           </div>
         </div>
       </div>
+
+      {/* SECTION 2: MICRO-CREDENTIALS */}
+      <div className="overview-section mt-8">
+        <div className="section-title">
+          <Award size={24} className="orange-icon" />
+          <h2>PHẦN 2: CHỨNG CHỈ VI MÔ NỐI LIỀN THỊ TRƯỜNG LAO ĐỘNG (CREDENTIALS TO WORKFORCE)</h2>
+        </div>
+
+        <div className="table-responsive">
+          <table className="credentials-table">
+            <thead>
+              <tr>
+                <th>Huy hiệu Vi mô (Micro-Badge)</th>
+                <th>Tiêu chuẩn Kỹ năng Đạt được</th>
+                <th>Tiêu chí Xác minh (Verification Criteria)</th>
+                <th>Giá trị Ứng dụng Thị trường Lao động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>MB-03: Self-Introduction & Identity Specialist</strong></td>
+                <td>Thành thục kỹ năng hỏi tên lịch sự, tự giới thiệu danh tính và khẳng định phán đoán nghề nghiệp</td>
+                <td>Bào chế 100% thoại chính xác trong đoạn hỏi tên và giới thiệu bản thân 45 giây với đối tác</td>
+                <td>Đảm bảo tính chuẩn xác cho nhân sự Lễ tân, Trợ lý, Sales khi làm quen khách hàng và đối tác Trung Quốc.</td>
+              </tr>
+              <tr>
+                <td><strong>MB-04: Professional Courtesy & Networking Practitioner</strong></td>
+                <td>Thành thục thực thi chuỗi xin lỗi - đáp lời khách khí và phát ngôn xã giao khi mới quen biết</td>
+                <td>Thực thi đoạn hội thoại giao tế 1 phút sử dụng đúng 对不起 → 没关系 và 很高兴认识你 → 我也很高兴</td>
+                <td>Đảm bảo năng lực thiết lập quan hệ ngoại giao, tham gia networking tại các hội chợ thương mại và sự kiện FDI.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-8">
+          <h3 style={{ fontSize: '1.2rem', color: '#1e293b', marginBottom: '1rem', fontWeight: 'bold' }}>5.2 Ba Tình huống Ứng dụng Thực chiến tại Doanh nghiệp FDI / Xuất nhập khẩu / Nhân sự</h3>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>🏢 Tình huống 1: Nhân sự Lễ tân / Trợ lý Doanh nghiệp FDI Hỏi Tên và Đón Tiếp Khách Hàng</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Nhân sự Lễ tân chủ động hỏi tên khách hàng mới đến văn phòng và giới thiệu tên mình.</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Lễ tân:</strong> 您好！请问，您叫什么名字？ (Nín hǎo! Qǐngwèn, nín jiào shénme míngzi? - Xin chào ngài! Xin hỏi, ngài tên là gì?)</li>
+                <li><strong>Đối tác:</strong> 你好！我叫李文。 (Nǐ hǎo! Wǒ jiào Lǐ Wén. - Xin chào! Tôi tên là Lý Văn.)</li>
+                <li><strong>Lễ tân:</strong> 李文先生，很高兴认识你！ (Lǐ Wén xiānsheng, hěn gāoxìng rènshi nǐ! - Anh Lý Văn, rất vui được quen biết anh!)</li>
+                <li><strong>Đối tác:</strong> 我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>👥 Tình huống 2: Quản lý Nhân sự (HR) Xử lý Nhầm lẫn Thông tin Nhân sự Mới</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Quản lý HR tại phòng họp gọi tên nhân sự mới nhưng bị nhầm với người khác.</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>HR Manager:</strong> 请问，你是白家月吗？ (Qǐngwèn, nǐ shì Bái Jiāyuè ma? - Xin hỏi, bạn có phải là Bạch Gia Nguyệt không?)</li>
+                <li><strong>Nhân viên:</strong> 不是，我不是白家月，我叫李文。 (Bú shì, wǒ bú shì Bái Jiāyuè, wǒ jiào Lǐ Wén. - Không phải, tôi không phải là Bạch Gia Nguyệt, tôi tên là Lý Văn.)</li>
+                <li><strong>HR Manager:</strong> 对不起！ (Duìbuqǐ! - Xin lỗi!)</li>
+                <li><strong>Nhân viên:</strong> 没关系！ / 没事！ (Méi guānxi! / Méishì! - Không sao!)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📦 Tình huống 3: Nhân sự Xuất Nhập khẩu Kết nối Giao thương tại Hội chợ Trade Fair</h4>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#475569' }}>Kịch bản: Nhân sự XNK gặp đại diện công ty đối tác Trung Quốc 陈天中 tại gian hàng hội chợ.</p>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Nhân sự XNK:</strong> 你好！我是学生。请问，你叫什么名字？ (Nǐ hǎo! Wǒ shì xuéshēng. Qǐngwèn, nǐ jiào shénme míngzi? - Xin chào! Tôi là học sinh. Xin hỏi, bạn tên là gì?)</li>
+                <li><strong>Đối tác:</strong> 你好！我叫陈天中。 (Nǐ hǎo! Wǒ jiào Chén Tiānzhōng. - Xin chào! Tôi tên là Trần Thiên Trung.)</li>
+                <li><strong>Nhân sự XNK:</strong> 陈老师，很高兴认识你！ (Chén lǎoshī, hěn gāoxìng rènshi nǐ! - Thầy Trần, rất vui được quen biết thầy!)</li>
+                <li><strong>Đối tác:</strong> 我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 3: ADAPTIVE QUESTION BANK */}
+      <div className="overview-section mt-8 mb-8">
+        <div className="section-title">
+          <ScrollText size={24} className="red-icon" />
+          <h2>PHẦN 3: NGÂN HÀNG BÀI THI THÍCH ỨNG CHUẨN MA TRẬN 12 CÂU</h2>
+        </div>
+        
+        <div className="info-banner mb-6">
+          <ShieldCheck size={20} className="green-icon" />
+          <div>
+            <strong>Cấu trúc Ma trận Thống nhất:</strong> 4 Cấp độ Tiến trình Năng lực (Nhận biết → Thông hiểu → Vận dụng → Thành thục) × 3 Chuẩn Đầu Ra (CLO-1, CLO-2, CLO-3) = Đúng 12 Câu hỏi Thích ứng.<br/>
+            <strong>Rào cản tuyệt đối:</strong> 100% câu hỏi, đáp án tuân thủ Closed Lexicon Bài 1 + 2 (28 từ vựng).
+          </div>
+        </div>
+
+        <div className="table-responsive">
+          <table className="matrix-table">
+            <thead>
+              <tr>
+                <th>Cấp độ Tiến trình</th>
+                <th>Mã câu hỏi</th>
+                <th>Thuộc CLO</th>
+                <th>Dạng bài</th>
+                <th>Mục tiêu Đánh giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-1">🌱 Nhận biết</span></td>
+                <td>Câu 1.1</td><td>CLO-1 (Hỏi & Giới thiệu tên)</td><td>Trắc nghiệm</td><td>Nhận diện đại từ nghi vấn 什么</td>
+              </tr>
+              <tr>
+                <td>Câu 1.2</td><td>CLO-2 (Phán đoán & Xin lỗi)</td><td>Trắc nghiệm</td><td>Nhận diện cụm từ xin lỗi 对不起</td>
+              </tr>
+              <tr>
+                <td>Câu 1.3</td><td>CLO-3 (Phó từ & Quen biết)</td><td>Trắc nghiệm</td><td>Nhận diện tính từ cảm xúc 高兴</td>
+              </tr>
+              
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-2">🌿 Thông hiểu</span></td>
+                <td>Câu 2.1</td><td>CLO-1 (Hỏi & Giới thiệu tên)</td><td>Trắc nghiệm</td><td>Thông hiểu trật tự từ câu hỏi tên 叫什么名字</td>
+              </tr>
+              <tr>
+                <td>Câu 2.2</td><td>CLO-2 (Phán đoán & Xin lỗi)</td><td>Trắc nghiệm</td><td>Thông hiểu cặp thoại 对不起 → 没关系</td>
+              </tr>
+              <tr>
+                <td>Câu 2.3</td><td>CLO-3 (Phó từ & Quen biết)</td><td>Trắc nghiệm</td><td>Thông hiểu động từ giao tế 认识</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-3">🌸 Vận dụng</span></td>
+                <td>Câu 3.1</td><td>CLO-1 (Hỏi & Giới thiệu tên)</td><td>Điền từ</td><td>Vận dụng điền đại từ 什么 và 我</td>
+              </tr>
+              <tr>
+                <td>Câu 3.2</td><td>CLO-2 (Phán đoán & Xin lỗi)</td><td>Điền từ</td><td>Vận dụng điền phó từ phủ định 不 trong 不是</td>
+              </tr>
+              <tr>
+                <td>Câu 3.3</td><td>CLO-3 (Phó từ & Quen biết)</td><td>Chọn câu đáp</td><td>Vận dụng câu đáp phó từ 也 → 我也很高兴</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-4">🍎 Thành thục</span></td>
+                <td>Câu 4.1</td><td>CLO-1 (Hỏi & Giới thiệu tên)</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa lỗi trùng lặp 是叫</td>
+              </tr>
+              <tr>
+                <td>Câu 4.2</td><td>CLO-2 (Phán đoán & Xin lỗi)</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa bẫy nhầm lẫn 不客气 vs 没关系</td>
+              </tr>
+              <tr>
+                <td>Câu 4.3</td><td>CLO-3 (Phó từ & Quen biết)</td><td>Kịch bản thực chiến</td><td>Xây dựng kịch bản giao tế ngoại giao 3 bước</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     </div>
   );
 };
