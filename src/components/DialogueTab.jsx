@@ -95,7 +95,23 @@ export const DialogueTab = ({ dialogues = [] }) => {
   };
 
   return (
-    <div className="dialogue-layout">
+    <div className="dialogue-layout-no-sidebar">
+      {/* Top Tabs */}
+      <div className="dialogue-top-tabs">
+        {dialogues.map((d, idx) => (
+          <button
+            key={d.id}
+            className={`top-tab-item ${activeDialogueId === d.id ? 'active' : ''}`}
+            onClick={() => {
+              setActiveDialogueId(d.id);
+              setIsExpanded(true);
+            }}
+          >
+            Bài {idx + 1}
+          </button>
+        ))}
+      </div>
+
       {/* Main Content Area */}
       <div className="dialogue-main-content fade-in">
         <div className="dialogue-card">
@@ -280,31 +296,6 @@ export const DialogueTab = ({ dialogues = [] }) => {
 
             </div>
           )}
-        </div>
-      </div>
-
-      {/* Sidebar TOC */}
-      <div className="dialogue-sidebar">
-        <div className="toc-card">
-          <div className="toc-header">
-            <List size={18} className="blue-icon" />
-            <h3>Mục lục</h3>
-          </div>
-          <div className="toc-list">
-            {dialogues.map((d, idx) => (
-              <button
-                key={d.id}
-                className={`toc-item ${activeDialogueId === d.id ? 'active' : ''}`}
-                onClick={() => {
-                  setActiveDialogueId(d.id);
-                  setIsExpanded(true);
-                }}
-              >
-                <span className="toc-index">{idx + 1}</span>
-                <span className="toc-title">{d.title}</span>
-              </button>
-            ))}
-          </div>
         </div>
       </div>
     </div>
