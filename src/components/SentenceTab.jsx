@@ -103,31 +103,33 @@ export const SentenceTab = () => {
                   <div className="formula-structure">{group.structure}</div>
                 </div>
                 
-                <div className="vocab-list">
+                <div className="sentence-items">
                   {group.sentences.map((item, index) => (
-                    <div key={item.id} className="vocab-item-row">
-                      <div className="vocab-index-circle">{index + 1}</div>
+                    <div key={item.id} className="sentence-item-row">
+                      <div className="s-index">{index + 1}</div>
                       
-                      <div className="vocab-main-col">
-                        <div className="hanzi-text">{item.hanzi}</div>
-                        <div className="pinyin-text">{item.pinyin}</div>
+                      <div className="s-content">
+                        <div className="s-hanzi-col">
+                          <div className="s-hanzi">{item.hanzi}</div>
+                          <div className="s-pinyin">{item.pinyin}</div>
+                        </div>
+
+                        <div className="s-hanviet">
+                          [{item.hanViet}]
+                        </div>
+                        
+                        <div className="s-type">
+                          <span className={`type-badge ${getTypeBadgeClass(item.typeColor)}`}>
+                            {item.type}
+                          </span>
+                        </div>
+
+                        <div className="s-meaning">
+                          {item.meaning}
+                        </div>
                       </div>
 
-                      <div className="vocab-hanviet-col">
-                        <span className="hanviet-text">[{item.hanViet}]</span>
-                      </div>
-                      
-                      <div className="vocab-type-col">
-                        <span className={`type-badge ${getTypeBadgeClass(item.typeColor)}`}>
-                          {item.type}
-                        </span>
-                      </div>
-
-                      <div className="vocab-meaning-col">
-                        <span className="meaning-text">{item.meaning}</span>
-                      </div>
-
-                      <div className="vocab-actions-col">
+                      <div className="s-actions">
                         <button 
                           className="btn-icon-speaker"
                           onClick={() => speakChinese(item.hanzi)}

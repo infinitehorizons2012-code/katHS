@@ -2804,3 +2804,128 @@ body {
 .sentence-items .vocab-list-item:last-child {
   border-bottom: none;
 }
+/* Sentence Tab Refined CSS */
+.sentence-formulas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+.sentence-group-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  overflow: hidden;
+}
+
+.sentence-group-header {
+  background: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.formula-title {
+  color: #1e3a8a;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formula-structure {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: #eff6ff;
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #bfdbfe;
+}
+
+.sentence-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sentence-item-row {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s;
+}
+
+.sentence-item-row:hover {
+  background-color: #f8fafc;
+}
+
+.sentence-item-row:last-child {
+  border-bottom: none;
+}
+
+.s-index {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.s-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.s-hanzi-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 120px;
+}
+
+.s-hanzi {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.s-pinyin {
+  color: #3b82f6;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.s-hanviet {
+  color: #64748b;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 100px;
+}
+
+.s-type {
+  min-width: 80px;
+}
+
+.s-meaning {
+  flex: 1;
+  color: #334155;
+  font-size: 1rem;
+}
+
+.s-actions {
+  margin-left: 1rem;
+}
