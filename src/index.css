@@ -2754,3 +2754,53 @@ body {
   flex-shrink: 0;
   margin-top: 0.15rem;
 }
+/* Sentence Tab CSS */
+.sentence-formulas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.sentence-group-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.sentence-group-header {
+  background: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.formula-title {
+  color: #1e293b;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.formula-structure {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.sentence-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.sentence-items .vocab-list-item {
+  border-bottom: 1px solid #f1f5f9;
+  border-radius: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+
+.sentence-items .vocab-list-item:last-child {
+  border-bottom: none;
+}

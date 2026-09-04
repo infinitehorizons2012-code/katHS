@@ -11,6 +11,7 @@ export const LessonHeader = ({
 }) => {
   const tabs = [
     { id: 'vocabulary', label: 'Từ vựng' },
+    { id: 'sentence', label: 'Câu' },
     { id: 'dialogue', label: 'Bài khóa' },
     { id: 'grammar', label: 'Ngữ pháp' },
     { id: 'transferTest', label: 'Transfer Test' },
