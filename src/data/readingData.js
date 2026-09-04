@@ -42,10 +42,10 @@ export const readingData = {
       title: "Tình huống 1: Nhân sự Lễ tân / Trợ lý Doanh nghiệp FDI Hỏi Tên và Đón Tiếp Khách Hàng",
       context: "Nhân sự Lễ tân chủ động hỏi tên khách hàng mới đến văn phòng và giới thiệu tên mình.",
       dialogues: [
-        { speaker: "Lễ tân", text: "您好！请问，您叫什么名字？ (Nín hǎo! Qǐngwèn, nín jiào shénme míngzi? - Nhẫn hảo! Thỉnh vấn, nhẫn khiếu thập ma danh tự? - Xin chào ngài! Xin hỏi, ngài tên là gì?)" },
-        { speaker: "Đối tác", text: "你好！我叫李文。 (Nǐ hǎo! Wǒ jiào Lǐ Wén. - Nhĩ hảo! Ngã khiếu Lý Văn. - Xin chào! Tôi tên là Lý Văn.)" },
-        { speaker: "Lễ tân", text: "李文先生，很高兴认识你！ (Lǐ Wén xiānsheng, hěn gāoxìng rènshi nǐ! - Lý Văn tiên sinh, rất cao hưng nhận thức nhĩ! - Anh Lý Văn, rất vui được quen biết anh!)" },
-        { speaker: "Đối tác", text: "我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Ngã dã rất cao hưng nhận thức nhĩ! - Tôi cũng rất vui được quen biết bạn!)" }
+        { speaker: "Lễ tân", text: "您好！请问，您叫什么名字？" },
+        { speaker: "Đối tác", text: "你好！我叫李文。" },
+        { speaker: "Lễ tân", text: "李文先生，很高兴认识你！" },
+        { speaker: "Đối tác", text: "我也很高兴认识你！" }
       ]
     },
     {
@@ -53,10 +53,10 @@ export const readingData = {
       title: "Tình huống 2: Quản lý Nhân sự (HR) Xử lý Nhầm lẫn Thông tin Nhân sự Mới",
       context: "Quản lý HR tại phòng họp gọi tên nhân sự mới nhưng bị nhầm với người khác.",
       dialogues: [
-        { speaker: "HR Manager", text: "请问，你是白家月吗？ (Qǐngwèn, nǐ shì Bái Jiāyuè ma? - Thỉnh vấn, nhĩ thị Bạch Gia Nguyệt ma? - Xin hỏi, bạn có phải là Bạch Gia Nguyệt không?)" },
-        { speaker: "Nhân viên", text: "不是，我不是白家月，我叫李文。 (Bú shì, wǒ bú shì Bái Jiāyuè, wǒ jiào Lǐ Wén. - Bất thị, ngã bất thị Bạch Gia Nguyệt, ngã khiếu Lý Văn. - Không phải, tôi không phải là Bạch Gia Nguyệt, tôi tên là Lý Văn.)" },
-        { speaker: "HR Manager", text: "对不起！ (Duìbuqǐ! - Đối bất khởi! - Xin lỗi!)" },
-        { speaker: "Nhân viên", text: "没关系！ (Méi guānxi! - Một quan hệ! - Không sao!) / 没事！ (Méishì! - Một sự! - Không sao!)" }
+        { speaker: "HR Manager", text: "请问，你是白家月吗？" },
+        { speaker: "Nhân viên", text: "不是，我不是白家月，我叫李文。" },
+        { speaker: "HR Manager", text: "对不起！" },
+        { speaker: "Nhân viên", text: "没关系！ / 没事！" }
       ]
     },
     {
@@ -64,10 +64,10 @@ export const readingData = {
       title: "Tình huống 3: Nhân sự Xuất Nhập khẩu Kết nối Giao thương tại Hội chợ Trade Fair",
       context: "Nhân sự XNK gặp đại diện công ty đối tác Trung Quốc 陈天中 (Chén Tiānzhōng) tại gian hàng hội chợ.",
       dialogues: [
-        { speaker: "Nhân sự XNK", text: "你好！我是学生。请问，你叫什么名字？ (Nǐ hǎo! Wǒ shì xuéshēng. Qǐngwèn, nǐ jiào shénme míngzi? - Xin chào! Tôi là học sinh. Xin hỏi, bạn tên là gì?)" },
-        { speaker: "Đối tác", text: "你好！我叫陈天中。 (Nǐ hǎo! Wǒ jiào Chén Tiānzhōng. - Xin chào! Tôi tên là Trần Thiên Trung.)" },
-        { speaker: "Nhân sự XNK", text: "陈老师，很高兴认识你！ (Chén lǎoshī, hěn gāoxìng rènshi nǐ! - Thầy Trần, rất vui được quen biết thầy!)" },
-        { speaker: "Đối tác", text: "我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)" }
+        { speaker: "Nhân sự XNK", text: "你好！我是学生。请问，你叫什么名字？" },
+        { speaker: "Đối tác", text: "你好！我叫陈天中。" },
+        { speaker: "Nhân sự XNK", text: "陈老师，很高兴认识你！" },
+        { speaker: "Đối tác", text: "我也很高兴认识你！" }
       ]
     }
   ]
