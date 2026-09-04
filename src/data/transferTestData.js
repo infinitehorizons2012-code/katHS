@@ -225,9 +225,9 @@ export const transferTestData = {
           title: "Câu 2.2",
           content: "Khi một đồng nghiệp va chạm nhẹ và thốt lên 对不起！ (duìbuqǐ! - Xin lỗi!), phản xạ đáp lời nào dưới đây là chuẩn xác nhất?",
           options: [
-            { label: "A", text: "不客气 (bú kèqi - Bất khách khí - Không có gì)", isCorrect: false },
-            { label: "B", text: "没关系 (méi guānxi - Một quan hệ - Không sao)", "isCorrect": true },
-            { label: "C", text: "再见 (zàijiàn - Tái kiến - Tạm biệt)", isCorrect: false },
+            { label: "A", text: "不客气", isCorrect: false },
+            { label: "B", text: "没关系", "isCorrect": true },
+            { label: "C", text: "再见", isCorrect: false },
             { label: "D", text: "你好", isCorrect: false }
           ],
           explanation: "Lời xin lỗi 对不起 (duìbuqǐ) đi cặp với lời đáp tỏ ý không bận tâm 没关系 (méi guānxi) hoặc 没事 (méishì). (不客气 dùng đáp lại 谢谢)."
