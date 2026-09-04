@@ -1300,77 +1300,38 @@ export const hskLessons = [
       "clo": "clo1",
       "question": "Từ chữ Hán nào dưới đây đại diện cho đại từ nghi vấn mang nghĩa 'Cái gì'?",
       "options": [
-        {
-          "id": "A",
-          "text": "名字 (míngzi)"
-        },
-        {
-          "id": "B",
-          "text": "什么 (shénme)",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "叫 (jiào)"
-        },
-        {
-          "id": "D",
-          "text": "请问 (qǐngwèn)"
-        }
+        { "id": "A", "text": "名字 (míngzi - Danh tự - Tên)" },
+        { "id": "B", "text": "什么 (shénme - Thập ma - Cái gì)", "isCorrect": true },
+        { "id": "C", "text": "叫 (jiào - Khiếu - Gọi là / Tên là)" },
+        { "id": "D", "text": "请问 (qǐngwèn - Thỉnh vấn - Xin hỏi)" }
       ],
-      "explanation": "什么 (shénme - Thập ma) là đại từ nghi vấn dùng trong câu hỏi tên 你叫什么名字？."
+      "explanation": "什么 (shénme - Thập ma - Cái gì) là đại từ nghi vấn dùng trong câu hỏi tên 你叫什么名字？."
     },
     {
       "id": "l2_q2",
       "type": "multiple-choice",
       "clo": "clo2",
-      "question": "Cụm từ chữ Hán 对不起 có Pinyin và Nghĩa tiếng Việt chính xác là gì?",
+      "question": "Cụm từ chữ Hán 对不起 có Pinyin, Hán-Việt và Nghĩa tiếng Việt chính xác là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "没关系 (méi guānxi - Không sao)"
-        },
-        {
-          "id": "B",
-          "text": "不客气 (bú kèqi - Không có gì)"
-        },
-        {
-          "id": "C",
-          "text": "对不起 (duìbuqǐ - Xin lỗi)",
-          "isCorrect": true
-        },
-        {
-          "id": "D",
-          "text": "再见 (zàijiàn - Tạm biệt)"
-        }
+        { "id": "A", "text": "没关系 (méi guānxi - Một quan hệ - Không sao)" },
+        { "id": "B", "text": "不客气 (bú kèqi - Bất khách khí - Không có gì)" },
+        { "id": "C", "text": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi)", "isCorrect": true },
+        { "id": "D", "text": "再见 (zàijiàn - Tái kiến - Tạm biệt)" }
       ],
-      "explanation": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi) là cụm từ xin lỗi lịch sự."
+      "explanation": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi) là cụm từ xin lỗi lịch sự chuẩn văn hóa."
     },
     {
       "id": "l2_q3",
       "type": "multiple-choice",
       "clo": "clo3",
-      "question": "Từ chữ Hán 高兴 được giải nghĩa tiếng Việt là gì?",
+      "question": "Từ chữ Hán 高兴 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
       "options": [
-        {
-          "id": "A",
-          "text": "Quen biết"
-        },
-        {
-          "id": "B",
-          "text": "Vui mừng",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "Rất"
-        },
-        {
-          "id": "D",
-          "text": "Cũng"
-        }
+        { "id": "A", "text": "认识 (rènshi - Nhận thức - Quen biết / Nhận biết)" },
+        { "id": "B", "text": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi)", "isCorrect": true },
+        { "id": "C", "text": "很 (hěn - Hấn - Rất)" },
+        { "id": "D", "text": "也 (yě - Dã - Cũng)" }
       ],
-      "explanation": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi) là tính từ biểu thị cảm xúc."
+      "explanation": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi) là tính từ biểu thị cảm xúc vui vẻ khi gặp gỡ."
     },
     {
       "id": "l2_q4",
@@ -1378,52 +1339,105 @@ export const hskLessons = [
       "clo": "clo1",
       "question": "Cấu trúc câu hỏi tên nào dưới đây biểu đạt đúng trật tự từ trong tiếng Trung?",
       "options": [
-        {
-          "id": "A",
-          "text": "你叫名字什么？ (Nǐ jiào míngzi shénme?)"
-        },
-        {
-          "id": "B",
-          "text": "请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi?)",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "什么名字叫你？ (Shénme míngzi jiào nǐ?)"
-        },
-        {
-          "id": "D",
-          "text": "你名字叫什么请问？ (Nǐ míngzi jiào shénme qǐngwèn?)"
-        }
+        { "id": "A", "text": "你叫名字什么？ (Nǐ jiào míngzi shénme?)" },
+        { "id": "B", "text": "请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi? - Thỉnh vấn, nhĩ khiếu thập ma danh tự? - Xin hỏi, bạn tên là gì?)", "isCorrect": true },
+        { "id": "C", "text": "什么名字叫你？ (Shénme míngzi jiào nǐ?)" },
+        { "id": "D", "text": "你名字叫什么请问？ (Nǐ míngzi jiào shénme qǐngwèn?)" }
       ],
-      "explanation": "Trật tự từ chuẩn câu hỏi tên: [请问] + [你] + [叫] + [什么] + [名字]？."
+      "explanation": "Trật tự từ chuẩn câu hỏi tên: [Lời mời lịch sự 请问] + [Chủ ngữ 你] + [Động từ 叫] + [Đại từ nghi vấn 什么] + [Danh từ 名字]？."
     },
     {
       "id": "l2_q5",
       "type": "multiple-choice",
       "clo": "clo2",
-      "question": "Khi một đồng nghiệp va chạm nhẹ và thốt lên 对不起！, phản xạ đáp lời nào dưới đây chuẩn xác?",
+      "question": "Khi một đồng nghiệp va chạm nhẹ và thốt lên 对不起！ (duìbuqǐ! - Xin lỗi!), phản xạ đáp lời nào dưới đây là chuẩn xác nhất?",
       "options": [
-        {
-          "id": "A",
-          "text": "不客气"
-        },
-        {
-          "id": "B",
-          "text": "没关系",
-          "isCorrect": true
-        },
-        {
-          "id": "C",
-          "text": "再见"
-        },
-        {
-          "id": "D",
-          "text": "你好"
-        }
+        { "id": "A", "text": "不客气 (bú kèqi - Bất khách khí - Không có gì)" },
+        { "id": "B", "text": "没关系 (méi guānxi - Một quan hệ - Không sao)", "isCorrect": true },
+        { "id": "C", "text": "再见 (zàijiàn - Tái kiến - Tạm biệt)" },
+        { "id": "D", "text": "你好 (nǐ hǎo - Nhĩ hảo - Xin chào)" }
       ],
-      "explanation": "Lời xin lỗi 对不起 đi cặp với lời đáp tỏ ý không bận tâm 没关系."
+      "explanation": "Lời xin lỗi 对不起 (duìbuqǐ) đi cặp với lời đáp tỏ ý không bận tâm 没关系 (méi guānxi) hoặc 没事 (méishì). (不客气 dùng đáp lại 谢谢)."
+    },
+    {
+      "id": "l2_q6",
+      "type": "multiple-choice",
+      "clo": "clo3",
+      "question": "Trong câu bày tỏ niềm vui khi quen biết 很高兴认识你！ (Hěn gāoxìng rènshi nǐ!), từ 认识 đóng vai trò gì và mang nghĩa gì?",
+      "options": [
+        { "id": "A", "text": "Tính từ - Vui mừng" },
+        { "id": "B", "text": "Phó từ - Rất" },
+        { "id": "C", "text": "Động từ - Quen biết / Nhận biết", "isCorrect": true },
+        { "id": "D", "text": "Đại từ - Bạn" }
+      ],
+      "explanation": "认识 (rènshi - Nhận thức) là động từ mang nghĩa quen biết / làm quen với ai đó."
+    },
+    {
+      "id": "l2_q7",
+      "type": "fill-in-blanks",
+      "clo": "clo1",
+      "question": "Hãy chọn cặp từ thích hợp điền vào chỗ trống (1) và (2) để hoàn thành đoạn thoại làm quen:\nĐối tác A: 请问，你叫___(1)___名字？\nBạn B: ___(2)___叫李文。",
+      "options": [
+        { "id": "A", "text": "(1) 什么 (shénme) / (2) 我 (wǒ)", "isCorrect": true },
+        { "id": "B", "text": "(1) 我 (wǒ) / (2) 什么 (shénme)" },
+        { "id": "C", "text": "(1) 是 (shì) / (2) 不 (bù)" },
+        { "id": "D", "text": "(1) 您 (nín) / (2) 叫 (jiào)" }
+      ],
+      "explanation": "Chỗ trống (1) điền đại từ nghi vấn 什么 (shénme), chỗ trống (2) điền đại từ nhân xưng 我 (wǒ) → 我叫李文 (Tôi tên là Lý Văn)."
+    },
+    {
+      "id": "l2_q8",
+      "type": "fill-in-blanks",
+      "clo": "clo2",
+      "question": "Hãy chọn từ thích hợp điền vào chỗ trống để tạo câu phủ định danh tính:\nA: 你是老师吗？\nB: 我___是老师，我是学生。",
+      "options": [
+        { "id": "A", "text": "很 (hěn - Rất)" },
+        { "id": "B", "text": "也 (yě - Cũng)" },
+        { "id": "C", "text": "不 (bù - Không)", "isCorrect": true },
+        { "id": "D", "text": "好 (hǎo - Tốt)" }
+      ],
+      "explanation": "Điền phó từ phủ định 不 (bù) đứng trước 是 (shì) để tạo thành 不是 (bú shì - không phải là)."
+    },
+    {
+      "id": "l2_q9",
+      "type": "multiple-choice",
+      "clo": "clo3",
+      "question": "Hãy chọn câu đáp lời chuẩn xác nhất của người B khi người A nói câu xã giao lần đầu gặp mặt:\nNgười A: 很高兴认识你！\nNgười B: ___！",
+      "options": [
+        { "id": "A", "text": "我不高兴！ (Wǒ bù gāoxìng! - Tôi không vui!)" },
+        { "id": "B", "text": "我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)", "isCorrect": true },
+        { "id": "C", "text": "对不起，没关系！ (Duìbuqǐ, méi guānxi! - Xin lỗi, không sao!)" },
+        { "id": "D", "text": "你叫什么名字？ (Nǐ jiào shénme míngzi? - Bạn tên là gì?)" }
+      ],
+      "explanation": "Người B dùng phó từ 也 (yě - cũng) đứng trước 很高兴 để thể hiện sự đồng điệu cảm xúc 我也很高兴认识你！."
+    },
+    {
+      "id": "l2_q10",
+      "type": "rca",
+      "clo": "clo1",
+      "question": "Tình huống: Học viên A giới thiệu bản thân bằng câu: 我的名字是叫李文。 (Wǒ de míngzi shì jiào Lǐ Wén.).\nYêu cầu: Phân tích lỗi sai, chỉ ra nguyên nhân gốc rễ (RCA) và đưa ra phương án sửa chuẩn gọn nhất.",
+      "rcaError": "Dùng thừa động từ 是 (shì) đi liền với động từ 叫 (jiào) làm câu bị rườm rà.",
+      "rcaRootCause": "Học viên dịch thô từ tiếng Việt ('Tên của tôi là gọi là Lý Văn') hoặc nhầm lẫn cấu trúc 是 và 叫.",
+      "rcaFix": "Rút gọn về 1 trong 2 câu chuẩn: 我叫李文。 (Wǒ jiào Lǐ Wén. - Tôi tên là Lý Văn) hoặc 我的名字叫李文。 (Wǒ de míngzi jiào Lǐ Wén.)."
+    },
+    {
+      "id": "l2_q11",
+      "type": "rca",
+      "clo": "clo2",
+      "question": "Tình huống: Trong một sự kiện giao thương, học viên B nhận nhầm đối tác và nói 对不起！ (duìbuqǐ!), đối tác mỉm cười đáp 不客气！ (bú kèqi!).\nYêu cầu: Phân tích lỗi giao tiếp RCA trong phản ứng của đối tác và đưa ra phản xạ đúng.",
+      "rcaError": "Dùng 不客气 (bú kèqi - Đừng khách khí) để đáp lại lời xin lỗi 对不起.",
+      "rcaRootCause": "Nhầm lẫn bẫy đối thoại giữa Cảm ơn (谢谢 → 不客气) và Xin lỗi (对不起 → 没关系).",
+      "rcaFix": "Thay 不客气 bằng 没关系 (méi guānxi - Không sao) hoặc 没事 (méishì - Không có gì)."
+    },
+    {
+      "id": "l2_q12",
+      "type": "scenario",
+      "clo": "clo3",
+      "question": "Tình huống: Bạn đại diện cho doanh nghiệp XNK đón tiếp đối tác mới 白家月 (Bái Jiāyuè). Hãy xây dựng kịch bản thoại 3 bước hoàn chỉnh bao gồm: Hỏi tên → Xác nhận & Xin lỗi nếu nhầm → Chào xã giao vui mừng quen biết chuẩn 100% Closed Lexicon.",
+      "scenarioSteps": [
+        "Bước 1 (Hỏi tên & Giới thiệu):\nNhân sự XNK: 您好！请问，您叫什么名字？ (Nín hǎo! Qǐngwèn, nín jiào shénme míngzi? - Chào ngài! Xin hỏi ngài tên là gì?)\nĐối tác: 你好！我叫白家月。 (Nǐ hǎo! Wǒ jiào Bái Jiāyuè. - Xin chào! Tôi tên là Bạch Gia Nguyệt.)",
+        "Bước 2 (Xác nhận & Xã giao quen biết):\nNhân sự XNK: 白老师，您好！我是学生。很高兴认识你！ (Bái lǎoshī, nín hǎo! Wǒ shì xuéshēng. Hěn gāoxìng rènshi nǐ! - Chào cô Bạch! Tôi là học sinh. Rất vui được quen biết cô!)\nĐối tác: 我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)",
+        "Bước 3 (Cảm ơn & Kết thúc giao tế):\nNhân sự XNK: 谢谢白老师！再见！ (Xièxie Bái lǎoshī! Zàijiàn! - Cảm ơn cô Bạch! Tạm biệt!)\nĐối tác: 再见！ (Zàijiàn! - Tạm biệt!)"
+      ]
     }
-  ]
-}
 ];
