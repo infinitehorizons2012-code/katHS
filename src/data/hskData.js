@@ -421,29 +421,37 @@ export const hskLessons = [
     dialogues: [
       {
         id: "d1",
-        title: "Bài khóa 1: Lời chào thông thường",
-        context: "Trường học - Hai bạn học sinh gặp nhau",
+        title: "课文 1",
+        subtitle: "Bài khóa 1: NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1)",
+        context: "Văn cảnh: 开学第一天，在办公室里，王一飞和AI助教小语打招呼。(On the first day of school, in the office, Wang Yifei was greeting the AI assistant Xiaoyu).",
         lines: [
-          { speaker: "A (Li Na)", hanzi: "你好！", pinyin: "Nǐ hǎo!", vietnamese: "Xin chào!" },
-          { speaker: "B (Wang Ming)", hanzi: "你好！", pinyin: "Nǐ hǎo!", vietnamese: "Xin chào!" }
+          { speaker: "👤 王一飞", hanzi: "AI小语，你好！", pinyin: "AI Xiǎoyǔ, nǐ hǎo!", vietnamese: "Xin chào AI Tiểu Ngữ!" },
+          { speaker: "🤖 小语", hanzi: "王老师，你好！", pinyin: "Wáng lǎoshī, nǐ hǎo!", vietnamese: "Xin chào thầy/cô Vương!" }
         ]
       },
       {
         id: "d2",
-        title: "Bài khóa 2: Chào thầy cô & Chào mọi người",
-        context: "Trong lớp học - Học sinh chào thầy Vương",
+        title: "课文 2",
+        subtitle: "Bài khóa 2: NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2)",
+        context: "Văn cảnh: 开学第一天，课堂上，学生们学习打招呼用语。(On the first day of school, in class, the students were learning greeting expressions).",
+        tips: "Mẹo Tiểu Ngữ (小语助力 - Xiaoyu's Tip): “您”，敬称，对年长者或尊敬的人使用。 (\"您\" is an honorific pronoun used to address elders or individuals you respect).",
         lines: [
-          { speaker: "Học sinh", hanzi: "王老师，您好！", pinyin: "Wáng lǎoshī, nín hǎo!", vietnamese: "Em chào thầy Vương ạ!" },
-          { speaker: "Thầy giáo", hanzi: "同学们好！ / 大家好！", pinyin: "Tóngxuémen hǎo! / Dàjiā hǎo!", vietnamese: "Chào các em / Chào mọi người!" }
+          { speaker: "👤 王一飞", hanzi: "大家好！", pinyin: "Dàjiā hǎo!", vietnamese: "Chào mọi người!" },
+          { speaker: "👥 学生们", hanzi: "老师，您好！", pinyin: "Lǎoshī, nín hǎo!", vietnamese: "Chào thầy/cô!" },
+          { speaker: "🤖 小语", hanzi: "你们好！", pinyin: "Nǐmen hǎo!", vietnamese: "Chào các bạn!" },
+          { speaker: "👥 学生们", hanzi: "你好，小语！", pinyin: "Nǐ hǎo, Xiǎoyǔ!", vietnamese: "Chào Tiểu Ngữ!" }
         ]
       },
       {
         id: "d3",
-        title: "Bài khóa 3: Cảm ơn và Tạm biệt",
-        context: "Tan học - Giúp đỡ nhau",
+        title: "课文 3",
+        subtitle: "Bài khóa 3: NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3)",
+        context: "Văn cảnh: 开学第一天，课堂上，学生们学习致谢语、告别语。(On the first day of school, in class, the students were learning expressions of gratitude and farewell).",
         lines: [
-          { speaker: "A", hanzi: "谢谢你！", pinyin: "Xièxie nǐ!", vietnamese: "Cảm ơn bạn!" },
-          { speaker: "B", hanzi: "不客气！再见！", pinyin: "Bú kèqi! Zàijiàn!", vietnamese: "Không có gì! Tạm biệt!" }
+          { speaker: "👥 学生们", hanzi: "谢谢！", pinyin: "Xièxie!", vietnamese: "Cảm ơn!" },
+          { speaker: "🤖 小语", hanzi: "不客气！", pinyin: "Bú kèqi!", vietnamese: "Không có gì!" },
+          { speaker: "👤 王一飞", hanzi: "同学们，再见！", pinyin: "Tóngxuémen, zàijiàn!", vietnamese: "Chào tạm biệt các bạn học!" },
+          { speaker: "👥 学生们", hanzi: "老师，再见！", pinyin: "Lǎoshī, zàijiàn!", vietnamese: "Chào tạm biệt thầy/cô!" }
         ]
       }
     ],

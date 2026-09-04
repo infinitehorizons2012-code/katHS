@@ -3285,3 +3285,380 @@ body {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+/* --- DIALOGUE TAB --- */
+.dialogue-layout {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .dialogue-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.dialogue-main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.dialogue-sidebar {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .dialogue-sidebar {
+    width: 280px;
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+/* Sidebar TOC */
+.toc-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.toc-header {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.toc-header h3 {
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.toc-list {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.toc-item:hover {
+  background: #f1f5f9;
+}
+
+.toc-item.active {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.toc-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.toc-item.active .toc-index {
+  background: #2563eb;
+}
+
+.toc-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+.toc-item.active .toc-title {
+  color: #1d4ed8;
+}
+
+/* Main Card */
+.dialogue-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.dialogue-card-header {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  background: white;
+}
+
+.dialogue-card-header:hover {
+  background: #f8fafc;
+}
+
+.dialogue-title-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dialogue-icon-wrapper {
+  background: #2563eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogue-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.collapse-btn:hover {
+  background: #f1f5f9;
+}
+
+.dialogue-card-body {
+  padding: 1.5rem;
+}
+
+.dialogue-context-box {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.dialogue-subtitle {
+  font-style: italic;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.dialogue-context {
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.dialogue-tips {
+  background: #fdf4ff;
+  border-left: 3px solid #d946ef;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85rem;
+  color: #86198f;
+}
+
+.audio-player-mock {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.btn-play-mock {
+  background: none;
+  border: none;
+  color: #1e293b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audio-progress-bar {
+  flex: 1;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  position: relative;
+}
+
+.audio-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #64748b;
+  border-radius: 2px;
+}
+
+.dialogue-toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toolbar-btn:hover {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.toolbar-btn.active {
+  background: white;
+  color: #2563eb;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.dialogue-lines-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dialogue-line-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.speaker-name {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.dialogue-text-block {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.text-content-area {
+  flex: 1;
+}
+
+.pinyin-text {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 0.25rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.hanzi-text {
+  font-size: 1.75rem;
+  color: #0f172a;
+  line-height: 1.4;
+}
+
+.btn-play-line {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.btn-play-line:hover {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.dialogue-translation-section {
+  border-top: 2px dashed #e2e8f0;
+  padding-top: 1.5rem;
+}
+
+.translation-title {
+  color: #94a3b8;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.translation-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.translation-line {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  font-size: 0.95rem;
+}
+
+.translation-line .speaker-name {
+  color: #2563eb;
+  font-weight: 600;
+  min-width: fit-content;
+}
+
+.translation-line .vietnamese-text {
+  color: #334155;
+}
