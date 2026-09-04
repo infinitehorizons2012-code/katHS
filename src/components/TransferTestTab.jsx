@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { transferTestData } from '../data/transferTestData';
 import { CheckCircle, XCircle, Info, FileText } from 'lucide-react';
 
-export function TransferTestTab() {
+export function TransferTestTab({ lessonId = 'hsk1-lesson1' }) {
   const [activeLevel, setActiveLevel] = useState(1);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showExplanation, setShowExplanation] = useState({});
@@ -16,6 +16,8 @@ export function TransferTestTab() {
     setShowExplanation(prev => ({ ...prev, [questionId]: !prev[questionId] }));
   };
 
+  const currentTestData = transferTestData[lessonId] || [];
+
   return (
     <div className="tab-pane active fade-in transfer-test-container">
       <div className="tab-header">
@@ -24,7 +26,7 @@ export function TransferTestTab() {
       </div>
 
       <div className="level-tabs">
-        {transferTestData.map(levelData => (
+        {currentTestData.map(levelData => (
           <button
             key={levelData.level}
             className={`level-tab-btn ${activeLevel === levelData.level ? 'active' : ''}`}
@@ -36,7 +38,7 @@ export function TransferTestTab() {
       </div>
 
       <div className="transfer-test-levels">
-        {transferTestData.filter(l => l.level === activeLevel).map((levelData) => (
+        {currentTestData.filter(l => l.level === activeLevel).map((levelData) => (
           <div key={levelData.level} className="level-section">
             <div className="level-header">
               <div className="level-title-row">
