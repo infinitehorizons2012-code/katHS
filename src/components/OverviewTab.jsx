@@ -1175,7 +1175,521 @@ const Lesson2Overview = () => {
     </div>
   );
 };
+
+const Lesson3Overview = () => {
+  return (
+    <div className="tab-pane active fade-in overview-container">
+      <div className="overview-header-card">
+        <div className="course-title">
+          <BookOpen size={28} className="blue-icon" />
+          <h1>Bài học: Lesson 3 <span>(《新HSK教程1》第3课 我是中国人.pptx)</span></h1>
+        </div>
+        <div className="overview-meta-tags">
+          <div className="meta-tag blue-tag"><Users size={16} /><span><strong>Đối tượng:</strong> Người học từ số 0 (Zero-Based Learners)</span></div>
+          <div className="meta-tag purple-tag"><Target size={16} /><span><strong>Khung chuẩn:</strong> HSK 3.0 Level 1</span></div>
+        </div>
+      </div>
+
+      {/* SECTION 1 */}
+      <div className="overview-section">
+        <div className="section-title"><BrainCircuit size={24} className="purple-icon" /><h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2></div>
+        
+        {/* ===================== CLO 1 ===================== */}
+        <div className="clo-card fade-in">
+          <div className="clo-header blue-gradient">
+            <h3>📌 CLO 01: XÁC NHẬN QUỐC TỊCH & BIỂU ĐẠT MỐI QUAN HỆ SỞ HỮU VỚI "的"</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Áp dụng câu phán đoán 我是...人 (Wǒ shì... rén) để xác nhận quốc tịch (Trung Quốc 中国人, Pháp 法国人) và cấu trúc sở hữu [Định ngữ] + 的 + [Danh từ trung tâm] để giới thiệu mối quan hệ giáo viên/bạn học trong môi trường công sở FDI và đối ngoại.</p>
+          </div>
+          <div className="clo-body">
+            
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-01)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Bàn giao hồ sơ nhân sự / làm quen chuyên gia nước ngoài 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt) và 李文 (Lǐ Wén - Lý Văn) tại văn phòng công ty.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn chuẩn câu khẳng định quốc tịch <code>我是中国人。</code> và câu sở hữu <code>王老师是我的中文老师。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-01)</h4>
+                <p><strong>Tiểu năng lực:</strong> Ghép tên quốc gia với từ 人 (rén - người) để chỉ quốc tịch và đặt trợ từ sở hữu 的 (de - của) đúng vị trí.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 人, 的, 中国, 法国, 中文.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 1 - 17)</h4>
+              <p><strong>[MÔ-ĐUN 1: XÁC NHẬN QUỐC TỊCH "我是...人" & TRỢ TỪ SỞ HỮU "的"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Tự tin giới thiệu quốc tịch bản thân và biểu đạt mối quan hệ sở hữu đối tác/giáo viên.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 人 (rén) | 的 (de) | 中国 (Zhōngguó) | 法国 (Fǎguó) | 中文 (Zhōngwén)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 我是中国人。 | 王老师是我的中文老师。</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 在校园里，李文和白家月第一次相遇，两人继续聊天儿。(On campus, Li Wen and Bai Jiayue met for the first time and continued chatting).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👤 李文 (Lǐ Wén - Lý Văn):</strong><br/>
+                    我是中国人。 (Wǒ shì Zhōngguó rén. - Ngã thị Trung Quốc nhân. - Tôi là người Trung Quốc.)
+                  </div>
+                  <div>
+                    <strong>👤 白家月 (Bái Jiāyuè - Bạch Gia Nguyệt):</strong><br/>
+                    我是法国人。王老师是我的中文老师。 (Wǒ shì Fǎguó rén. Wáng lǎoshī shì wǒ de Zhōngwén lǎoshī. - Ngã thị Pháp Quốc nhân. Vương lão sư thị ngã đích Trung văn lão sư. - Tôi là người Pháp. Thầy Vương là giáo viên tiếng Trung của tôi.)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Đặt trợ từ sở hữu 的 (de) đúng vị trí.</li>
+                <li><strong>Bẫy lỗi:</strong> Học viên đặt ngược vị trí trợ từ 的 thành 中文老师的我是 hoặc bỏ sót 的 trong câu sở hữu.</li>
+                <li><strong>Root Cause:</strong> Nhầm lẫn trật tự danh từ bổ nghĩa trong tiếng Trung.</li>
+                <li><strong>Khắc phục:</strong> Ép công thức định hình: <code>[Chủ sở hữu] + 的 + [Danh từ trung tâm]</code>.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 5 từ vựng 人, 的, 中国, 法国, 中文</span>
+                <span className="step-badge">🌿 Thông hiểu: Nắm trật tự trợ từ sở hữu 的</span>
+                <span className="step-badge">🌸 Vận dụng: Giới thiệu quốc tịch và quan hệ sở hữu</span>
+                <span className="step-badge">🍎 Thành thục: Phản xạ tự nhiên trong giao tế</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>人</strong> (rén - Nhân - Người)</li>
+                  <li><strong>的</strong> (de - Đích - Trợ từ "của")</li>
+                  <li><strong>中国</strong> (Zhōngguó - Trung Quốc)</li>
+                  <li><strong>法国</strong> (Fǎguó - Nước Pháp)</li>
+                  <li><strong>中文</strong> (Zhōngwén - Tiếng Trung)</li>
+                  <li><strong>中国人</strong> (Người Trung Quốc)</li>
+                  <li><strong>法国人</strong> (Người Pháp)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 1: Câu Phán đoán Quốc tịch]</h5>
+                  <code>Khẳng định: [Chủ ngữ] + 是 + [Tên quốc gia] + 人</code><br/>
+                  <code>Phủ định: [Chủ ngữ] + 不是 + [Tên quốc gia] + 人</code>
+                </div>
+                <div className="grammar-card">
+                  <h5>[Công thức 2: Trợ từ Sở hữu "的"]</h5>
+                  <code>[Chủ sở hữu] + 的 + [Danh từ trung tâm]</code>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ===================== CLO 2 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header purple-gradient">
+            <h3>📌 CLO 02: TRUY VẤN DANH TÍNH, QUỐC TỊCH VỚI "这/谁/哪" VÀ GIỚI THIỆU MỐI QUAN HỆ</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Sử dụng đại từ chỉ thị 这 (zhè), đại từ nghi vấn 谁 (shéi) và 哪 (nǎ) để thực hiện các câu hỏi truy vấn danh tính 这是谁？ (Zhè shì shéi?) và quốc tịch 她是哪国人？ (Tā shì nǎ guó rén?).</p>
+          </div>
+          <div className="clo-body">
+            
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-02)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Xem ảnh giới thiệu nhân sự mới 安妮 (Ānnī) và 陈天中 (Chén Tiānzhōng) tại văn phòng.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Đặt đúng câu hỏi <code>这是谁？</code>, <code>她是哪国人？</code> và đáp chuẩn <code>她是泰国人。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-02)</h4>
+                <p><strong>Tiểu năng lực:</strong> Phân biệt đại từ chỉ thị 这, nghi vấn 谁, 哪 kết hợp danh từ 国 và đại từ 她.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 这, 谁, 女朋友, 哪, 国, 她, 泰国.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 18 - 31)</h4>
+              <p><strong>[MÔ-ĐUN 2: TRUY VẤN DANH TÍNH "这是谁" VÀ QUỐC TỊCH "你是哪国人"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Truy vấn danh tính đối tác qua hình ảnh và xác nhận quốc tịch đối tác.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 这 (zhè) | 谁 (shéi) | 女朋友 (nǚpéngyou) | 哪 (nǎ) | 国 (guó) | 她 (tā) | 泰国 (Tàiguó)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 这是谁？ → 她是哪国人？ → 她是泰国人。</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.5rem' }}>Văn cảnh: 在教室里，下课后，安妮在看陈天中手机里的照片。(After class, Annie was looking at the photos on Chen Tianzhong's cell phone).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div>
+                    <strong>👧 安妮 (Ānnī - An Ni):</strong><br/>
+                    这是谁？ (Zhè shì shéi? - Đây là ai?)
+                  </div>
+                  <div>
+                    <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
+                    这是我的女朋友。 (Zhè shì wǒ de nǚpéngyou. - Đây là bạn gái của tôi.)
+                  </div>
+                  <div>
+                    <strong>👧 安妮 (Ānnī - An Ni):</strong><br/>
+                    她是哪国人？ (Tā shì nǎ guó rén? - Cô ấy là người nước nào?)
+                  </div>
+                  <div>
+                    <strong>👤 陈天中 (Chén Tiānzhōng - Trần Thiên Trung):</strong><br/>
+                    她是泰国人。 (Tā shì Tàiguó rén. - Cô ấy là người Thái Lan.)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Đặt đúng vị trí đại từ nghi vấn 哪国人 đứng sau động từ 是.</li>
+                <li><strong>Bẫy lỗi:</strong> Dịch thô tiếng Việt đặt 哪 ở cuối câu 她是国人哪？ hoặc phát âm sai 谁.</li>
+                <li><strong>Root Cause:</strong> Chưa nắm trật tự đại từ nghi vấn trong câu tiếng Trung.</li>
+                <li><strong>Khắc phục:</strong> Khung phản xạ cố định: <code>[Chủ ngữ] + 是哪国人？</code>.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 7 từ vựng 这, 谁...</span>
+                <span className="step-badge">🌿 Thông hiểu: Hiểu trật tự đại từ 谁 và 哪国人</span>
+                <span className="step-badge">🌸 Vận dụng: Đặt câu hỏi truy vấn danh tính trôi chảy</span>
+                <span className="step-badge">🍎 Thành thục: Khai thác thông tin nhân sự tự nhiên</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>这</strong> (zhè - Đây)</li>
+                  <li><strong>谁</strong> (shéi - Ai)</li>
+                  <li><strong>女朋友</strong> (nǚpéngyou - Bạn gái)</li>
+                  <li><strong>哪</strong> (nǎ - Nào)</li>
+                  <li><strong>国</strong> (guó - Nước)</li>
+                  <li><strong>她</strong> (tā - Cô ấy)</li>
+                  <li><strong>泰国</strong> (Tàiguó - Thái Lan)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 3: Câu hỏi Truy vấn với "谁" và "哪"]</h5>
+                  <code>Hỏi danh tính: 这/他/她 + 是 + 谁？</code><br/>
+                  <code>Hỏi quốc tịch: [Chủ ngữ] + 是 + 哪 + 国 + 人？</code>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {/* ===================== CLO 3 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header green-gradient">
+            <h3>📌 CLO 03: GIAO TIẾP ĐIỆN THOẠI, ĐẶT CÂU HỎI NGHI VẤN "吗" VÀ ĐÁNH GIÁ MỨC ĐỘ</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Phản xạ từ mở đầu cuộc gọi 喂 (wèi), đặt câu hỏi nghi vấn Yes-No với trợ từ 吗 (ma) ở cuối câu và biểu đạt mức độ bằng phó từ 很 (hěn), 还 (hái), 太...了 (tài...le).</p>
+          </div>
+          <div className="clo-body">
+            
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-03)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Thực hiện cuộc gọi trao đổi công việc giữa Vương Nhất Tuyết và Vương Nhất Phi.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn <code>喂</code>, đặt câu hỏi đúng <code>你的工作忙吗？</code> và trả lời <code>很忙</code> / <code>我不太忙</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-03 & 04)</h4>
+                <p><strong>Tiểu năng lực:</strong> Sử dụng thán từ 喂, ghép trợ từ 吗 ở cuối câu và kết hợp các phó từ mức độ 很, 还, 太.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 喂, 姐姐, 工作, 还, 忙, 吗, 对, 太, 我们, 想.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 32 - 53)</h4>
+              <p><strong>[MÔ-ĐUN 3: GIAO TIẾP ĐIỆN THOẠI "喂", CÂU HỎI "吗" & PHÓ TỪ "太/很/还"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Thực thi cuộc gọi trao đổi công việc, thăm hỏi chuẩn tác phong.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 喂 | 工作 | 忙 | 吗 | 太 | 还 | 想</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 喂，你的工作忙吗？ → 我不太忙。我很想你们！</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Văn cảnh: 在家里，王一雪给王一飞打视频电话。(At home, Wang Yixue was making a video call to Wang Yifei).</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div><strong>👩 王一雪:</strong> 喂，一飞！</div>
+                  <div><strong>👤 王一飞:</strong> 姐姐！</div>
+                  <div><strong>👩 王一雪:</strong> 你工作还忙吗？</div>
+                  <div><strong>👤 王一飞:</strong> 对，还是很忙。你也很忙吗？</div>
+                  <div><strong>👩 王一雪:</strong> 我不太忙。我们很想你。</div>
+                  <div><strong>👤 王一飞:</strong> 我也想你们。</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Đặt trợ từ 吗 ở cuối mệnh đề.</li>
+                <li><strong>Bẫy lỗi:</strong> Nhầm lẫn giữa câu hỏi nghi vấn 吗 và đại từ 什么, đặt 吗 ở giữa câu.</li>
+                <li><strong>Khắc phục:</strong> Công thức cố định: <code>[Mệnh đề khẳng định] + 吗？</code>.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 10 từ vựng 喂, 姐姐...</span>
+                <span className="step-badge">🌿 Thông hiểu: Logic vị trí trợ từ 吗</span>
+                <span className="step-badge">🌸 Vận dụng: Phản xạ cuộc gọi thăm hỏi</span>
+                <span className="step-badge">🍎 Thành thục: Giao tiếp viễn thông công sở</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>喂</strong> (wèi - Alo)</li>
+                  <li><strong>工作</strong> (gōngzuò - Công việc)</li>
+                  <li><strong>还</strong> (hái - Còn / Vẫn)</li>
+                  <li><strong>忙</strong> (máng - Bận)</li>
+                  <li><strong>吗</strong> (ma - Không/À)</li>
+                  <li><strong>太...了</strong> (tài - Quá/Lắm)</li>
+                  <li><strong>想</strong> (xiǎng - Nhớ)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 4: Câu hỏi Nghi vấn Yes-No]</h5>
+                  <code>[Mệnh đề khẳng định] + 吗？</code>
+                </div>
+                <div className="grammar-card">
+                  <h5>[Công thức 5: Phó từ Mức độ]</h5>
+                  <code>很 + Tính từ (很忙)</code><br/>
+                  <code>不太 + Tính từ (不太忙)</code><br/>
+                  <code>还 + Tính từ (还忙)</code><br/>
+                  <code>太 + Tính từ + 了 (太好了)</code>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 2: MICRO-CREDENTIALS */}
+      <div className="overview-section mt-8">
+        <div className="section-title">
+          <Award size={24} className="orange-icon" />
+          <h2>PHẦN 2: CHỨNG CHỈ VI MÔ NỐI LIỀN THỊ TRƯỜNG LAO ĐỘNG (CREDENTIALS TO WORKFORCE)</h2>
+        </div>
+
+        <div className="table-responsive">
+          <table className="credentials-table">
+            <thead>
+              <tr>
+                <th>Huy hiệu Vi mô (Micro-Badge)</th>
+                <th>Tiêu chuẩn Kỹ năng</th>
+                <th>Tiêu chí Xác minh</th>
+                <th>Giá trị Ứng dụng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>MB-05: International Identity & Relationship Specialist</strong></td>
+                <td>Thành thục kỹ năng giới thiệu quốc tịch, truy vấn danh tính qua ảnh và biểu đạt sở hữu</td>
+                <td>Thực thi bài hội thoại 1 phút hỏi quốc tịch 你是哪国人 và xác nhận mối quan hệ</td>
+                <td>Đảm bảo tính chuẩn xác cho Lễ tân, HR khi đón tiếp các đoàn chuyên gia đa quốc gia.</td>
+              </tr>
+              <tr>
+                <td><strong>MB-06: Business Telecommunication & Courtesy Specialist</strong></td>
+                <td>Thành thục kỹ năng giao tiếp viễn thông, thăm hỏi công việc và phản xạ câu hỏi 吗</td>
+                <td>Thực hiện cuộc gọi thoại 45s dùng đúng 喂, 工作忙吗 và phó từ 很/还/不太</td>
+                <td>Đảm bảo năng lực liên lạc viễn thông, chăm sóc đối tác nội bộ trong doanh nghiệp FDI.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-8">
+          <h3 style={{ fontSize: '1.2rem', color: '#1e293b', marginBottom: '1rem', fontWeight: 'bold' }}>5.2 Ba Tình huống Ứng dụng Thực chiến tại Doanh nghiệp FDI</h3>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>🏢 Tình huống 1: Bộ phận Lễ tân Đón tiếp Chuyên gia Đa Quốc gia</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Lễ tân:</strong> 您好！请问，您是哪国人？ (Xin chào ngài! Xin hỏi, ngài là người nước nào?)</li>
+                <li><strong>Chuyên gia:</strong> 你好！我是法国人。 (Xin chào! Tôi là người Pháp.)</li>
+                <li><strong>Lễ tân:</strong> 这是您的老师吗？ (Đây là giáo viên của ngài phải không?)</li>
+                <li><strong>Chuyên gia:</strong> 对，他是我的老师，他是中国人。 (Đúng vậy, thầy ấy là giáo viên của tôi, là người Trung Quốc.)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>👥 Tình huống 2: HR Thực hiện Cuộc gọi Thăm hỏi Nhân sự Mới</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>HR Manager:</strong> 喂，安妮！你的工作忙吗？ (Alo, An Ni! Công việc của em có bận không?)</li>
+                <li><strong>Nhân viên:</strong> 王老师，你好！我不太忙。 (Chào thầy Vương! Em không bận lắm.)</li>
+                <li><strong>HR Manager:</strong> 太好了！ (Thật tốt quá!)</li>
+                <li><strong>Nhân viên:</strong> 谢谢王老师！ (Cảm ơn thầy Vương!)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>📦 Tình huống 3: Nhân sự XNK Trao đổi Quốc tịch</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Nhân sự XNK:</strong> 请问，这是谁？ (Xin hỏi, đây là ai?)</li>
+                <li><strong>Đại diện đối tác:</strong> 这是白家月，她是泰国人。 (Đây là Bạch Gia Nguyệt, cô ấy là người Thái Lan.)</li>
+                <li><strong>Nhân sự XNK:</strong> 她是你的女朋友吗？ (Cô ấy là bạn gái của anh phải không?)</li>
+                <li><strong>Đại diện đối tác:</strong> 不是，她是我的同学。 (Không phải, cô ấy là bạn học của tôi.)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 3: ADAPTIVE QUESTION BANK */}
+      <div className="overview-section mt-8 mb-8">
+        <div className="section-title">
+          <ScrollText size={24} className="red-icon" />
+          <h2>PHẦN 3: NGÂN HÀNG BÀI THI THÍCH ỨNG CHUẨN MA TRẬN 12 CÂU</h2>
+        </div>
+        
+        <div className="info-banner mb-6">
+          <ShieldCheck size={20} className="green-icon" />
+          <div>
+            <strong>Cấu trúc Ma trận Thống nhất:</strong> 4 Cấp độ Tiến trình Năng lực (Nhận biết → Thông hiểu → Vận dụng → Thành thục) × 3 Chuẩn Đầu Ra (CLO-1, CLO-2, CLO-3) = Đúng 12 Câu hỏi Thích ứng.<br/>
+            <strong>Rào cản tuyệt đối:</strong> 100% câu hỏi, đáp án tuân thủ Closed Lexicon (Bài 1 + Bài 2 + Bài 3 = 50 từ vựng cốt lõi).
+          </div>
+        </div>
+
+        <div className="table-responsive">
+          <table className="matrix-table">
+            <thead>
+              <tr>
+                <th>Cấp độ Tiến trình</th>
+                <th>Mã câu hỏi</th>
+                <th>Thuộc CLO</th>
+                <th>Dạng bài</th>
+                <th>Mục tiêu Đánh giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-1">🌱 Nhận biết</span></td>
+                <td>Câu 1.1</td><td>CLO-1</td><td>Trắc nghiệm</td><td>Nhận diện trợ từ sở hữu 的</td>
+              </tr>
+              <tr>
+                <td>Câu 1.2</td><td>CLO-2</td><td>Trắc nghiệm</td><td>Nhận diện đại từ nghi vấn chỉ người 谁</td>
+              </tr>
+              <tr>
+                <td>Câu 1.3</td><td>CLO-3</td><td>Trắc nghiệm</td><td>Nhận diện trợ từ nghi vấn 吗</td>
+              </tr>
+              
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-2">🌿 Thông hiểu</span></td>
+                <td>Câu 2.1</td><td>CLO-1</td><td>Trắc nghiệm</td><td>Thông hiểu vị trí danh từ trung tâm sau 的</td>
+              </tr>
+              <tr>
+                <td>Câu 2.2</td><td>CLO-2</td><td>Trắc nghiệm</td><td>Thông hiểu trật tự từ câu hỏi quốc tịch 你是哪国人</td>
+              </tr>
+              <tr>
+                <td>Câu 2.3</td><td>CLO-3</td><td>Trắc nghiệm</td><td>Thông hiểu cấu trúc phó từ cảm thán 太...了</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-3">🌸 Vận dụng</span></td>
+                <td>Câu 3.1</td><td>CLO-1</td><td>Điền từ</td><td>Vận dụng điền 是 và 我的 trong câu quốc tịch</td>
+              </tr>
+              <tr>
+                <td>Câu 3.2</td><td>CLO-2</td><td>Điền từ</td><td>Vận dụng điền đại từ chỉ thị 这 trong 这是谁</td>
+              </tr>
+              <tr>
+                <td>Câu 3.3</td><td>CLO-3</td><td>Chọn câu hỏi</td><td>Vận dụng câu hỏi thăm công việc 你的工作忙吗</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-4">🍎 Thành thục</span></td>
+                <td>Câu 4.1</td><td>CLO-1</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa lỗi bỏ sót danh từ 人</td>
+              </tr>
+              <tr>
+                <td>Câu 4.2</td><td>CLO-2</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa lỗi thiếu 国 trong 你是哪国人</td>
+              </tr>
+              <tr>
+                <td>Câu 4.3</td><td>CLO-3</td><td>Kịch bản thực chiến</td><td>Xây dựng kịch bản cuộc gọi viễn thông 3 bước</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="closed-lexicon-box mt-8 fade-in" style={{ background: '#fff1f2', border: '1px solid #fda4af', borderRadius: '8px', padding: '1.5rem' }}>
+          <h3 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem' }}>
+            <Lock size={20} /> 🔒 CLOSED LEXICON KHẾP KÍN & DANH MỤC CẤU TRÚC NGỮ PHÁP
+          </h3>
+          <p style={{ fontStyle: 'italic', marginBottom: '1rem', color: '#881337', fontSize: '0.95rem' }}>
+            <strong>Ghi chú bắt buộc:</strong> Ngân hàng đề thi phải chú ý tuân thủ tuyệt đối danh mục từ vựng và mẫu câu tích lũy (50 Đơn vị):
+          </p>
+
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.5rem' }}>1.1 Danh mục Tập đóng Từ vựng Tích lũy (50 Đơn vị)</h4>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', fontSize: '0.9rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng Bài 1 & Bài 2 (28 đơn vị):</p>
+                <p style={{ color: '#64748b', lineHeight: '1.5' }}>你, 好, 你好, 王, 老师, 王老师, 大家, 学生, 们, 您, 你们, 谢谢, 不客气, 同学, 再见, 请问, 叫, 什么, 名字, 我, 不, 是, 对不起, 没关系, 没事, 很, 高兴, 认识, 也.</p>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng bài mới (Bài 3 - 22 đơn vị):</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#4c0519', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <li><strong>人</strong> (rén - Người)</li>
+                  <li><strong>的</strong> (de - Của)</li>
+                  <li><strong>中国</strong> (Zhōngguó - Trung Quốc)</li>
+                  <li><strong>法国</strong> (Fǎguó - Pháp)</li>
+                  <li><strong>中文</strong> (Zhōngwén - Tiếng Trung)</li>
+                  <li><strong>这</strong> (zhè - Đây)</li>
+                  <li><strong>谁</strong> (shéi - Ai)</li>
+                  <li><strong>女朋友</strong> (nǚpéngyou - Bạn gái)</li>
+                  <li><strong>哪</strong> (nǎ - Nào)</li>
+                  <li><strong>国</strong> (guó - Nước)</li>
+                  <li><strong>她</strong> (tā - Cô ấy)</li>
+                  <li><strong>泰国</strong> (Tàiguó - Thái Lan)</li>
+                  <li><strong>喂</strong> (wèi - Alo)</li>
+                  <li><strong>姐姐</strong> (jiějie - Chị gái)</li>
+                  <li><strong>工作</strong> (gōngzuò - Công việc)</li>
+                  <li><strong>还</strong> (hái - Còn)</li>
+                  <li><strong>忙</strong> (máng - Bận)</li>
+                  <li><strong>吗</strong> (ma - Không/À)</li>
+                  <li><strong>对</strong> (duì - Đúng)</li>
+                  <li><strong>太</strong> (tài - Quá)</li>
+                  <li><strong>我们</strong> (wǒmen - Chúng tôi)</li>
+                  <li><strong>想</strong> (xiǎng - Nhớ)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export const OverviewTab = ({ lessonId }) => {
+  if (lessonId === 'hsk1-lesson3') return <Lesson3Overview />;
   if (lessonId === 'hsk1-lesson2') return <Lesson2Overview />;
   return <Lesson1Overview />;
 };
