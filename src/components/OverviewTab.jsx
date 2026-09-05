@@ -2169,12 +2169,48 @@ const Lesson4Overview = () => {
               </div>
             </div>
           </div>
+
+          <div>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.75rem' }}>1.2 Danh mục Cấu trúc Ngữ pháp Khép kín Bài 4</h4>
+            <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem', color: '#4c0519' }}>Tất cả các mô hình câu được giới hạn hoàn toàn trong các công thức toán học phẳng dưới đây:</p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 1: Câu "有" (Sở hữu) & Phủ định "没有"]</h5>
+                <code>Khẳng định: [Chủ ngữ] + 有 + [Số từ + Lượng từ + Danh từ]</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 我有两个孩子。 (Tôi có hai người con.)</p>
+                <code className="mt-2" style={{ display: 'block' }}>Phủ định: [Chủ ngữ] + 没有 + [Danh từ]</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 我没有哥哥。 (Tôi không có anh trai.)</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 2: Cấu trúc Hỏi Tỉnh lược "A...，B 呢？"]</h5>
+                <code>[Sự việc A] ， [Đối tượng B] + 呢？</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 我有两个哥哥，你呢？ (Tôi có hai người anh trai, còn bạn thì sao?)</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 3: Cấu trúc Hỏi & Liệt kê Gia đình]</h5>
+                <code>Hỏi: [Chủ ngữ] + 家 + 有 + 几 + 口 + 人？</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 你家有几口人？</p>
+                <code className="mt-2" style={{ display: 'block' }}>Trả lời: [Chủ ngữ] + 家有 + [Số] + 口人： A、B 和 C。</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 我家有四口人：爸爸、妈妈、妹妹和我。</p>
+              </div>
+
+              <div className="grammar-card" style={{ background: 'white' }}>
+                <h5 style={{ color: '#be185d' }}>[Công thức 4: Hỏi và Trả lời Tuổi tác với "几岁" và "多大"]</h5>
+                <code>Hỏi trẻ em (&lt;10 tuổi): [Chủ ngữ] + (今年) + 几岁？</code><br/>
+                <code>Hỏi người lớn: [Chủ ngữ] + (今年) + 多大？</code><br/>
+                <code>Trả lời: [Chủ ngữ] + (今年) + [Số từ] + 岁。</code>
+                <p className="mt-2" style={{ fontSize: '0.9rem' }}><strong>Ví dụ:</strong><br/>- 你儿子今年几岁？<br/>- 你女儿今年多大？<br/>- 他今年五岁。</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 
 export const OverviewTab = ({ lessonId }) => {
   if (lessonId === 'hsk1-lesson4') return <Lesson4Overview />;

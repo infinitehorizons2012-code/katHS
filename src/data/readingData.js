@@ -105,5 +105,41 @@ export const readingData = {
         { speaker: "Đại diện đối tác", text: "不是，她是我的同学。" }
       ]
     }
+  ],
+
+  "hsk1-lesson4": [
+    {
+      id: 1,
+      title: "Tình huống 1: Nhân sự HR Phỏng vấn Thu thập Thông tin Nhân khẩu Học",
+      context: "Quản lý HR phỏng vấn nhân sự mới 刘明 (Liú Míng) về quy mô gia đình và thành viên.",
+      dialogues: [
+        { speaker: "HR Manager", text: "刘明，请问你家有几口人？" },
+        { speaker: "Nhân viên", text: "我家有四口人：爸爸、妈妈、妹妹和我。" },
+        { speaker: "HR Manager", text: "你有几个孩子？" },
+        { speaker: "Nhân viên", text: "我有两个孩子。" }
+      ]
+    },
+    {
+      id: 2,
+      title: "Tình huống 2: Quản lý Công ty Gặp gỡ Gia đình Đồng nghiệp và Hỏi thăm Tuổi Trẻ em",
+      context: "Trưởng phòng gặp đồng nghiệp 王一雪 (Wáng Yīxuě) đi cùng hai con tại sự kiện gia đình công ty.",
+      dialogues: [
+        { speaker: "Trưởng phòng", text: "王老师，这是你儿子吗？他今年几岁？" },
+        { speaker: "Đồng nghiệp", text: "对，他今年五岁。" },
+        { speaker: "Trưởng phòng", text: "你女儿今年多大？" },
+        { speaker: "Đồng nghiệp", text: "她今年十二岁。" }
+      ]
+    },
+    {
+      id: 3,
+      title: "Tình huống 3: Nhân sự Xuất Nhập khẩu Thống kê Quy mô Đội ngũ Đối tác Giao thương",
+      context: "Nhân sự XNK trao đổi quy mô đại diện thương mại với đối tác 杨同乐 (Yáng Tónglè).",
+      dialogues: [
+        { speaker: "Nhân sự XNK", text: "杨老师，你们公司有多少个学生/人？" },
+        { speaker: "Đối tác", text: "我们有二十个学生。你有几个？" },
+        { speaker: "Nhân sự XNK", text: "我有两个。" },
+        { speaker: "Đối tác", text: "太好了！" }
+      ]
+    }
   ]
 };

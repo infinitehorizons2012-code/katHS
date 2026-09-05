@@ -1545,10 +1545,130 @@ export const hskLessons = [
     id: "hsk1-lesson4",
     title: "Bài 4: 我有两个孩子 (Tôi có hai người con)",
     clo: "CLO 4",
-    vocabulary: [],
-    sentences: [],
-    dialogues: [],
-    grammar: [],
+    vocabulary: [
+      { id: "v4-1", hanzi: "有", pinyin: "yǒu", vietnamese: "có", type: "Động từ" },
+      { id: "v4-2", hanzi: "多少", pinyin: "duōshao", vietnamese: "bao nhiêu", type: "Đại từ" },
+      { id: "v4-3", hanzi: "个", pinyin: "gè", vietnamese: "cái, người (lượng từ)", type: "Lượng từ" },
+      { id: "v4-4", hanzi: "两", pinyin: "liǎng", vietnamese: "hai (dùng với lượng từ)", type: "Số từ" },
+      { id: "v4-5", hanzi: "孩子", pinyin: "háizi", vietnamese: "con cái, đứa trẻ", type: "Danh từ" },
+      { id: "v4-6", hanzi: "哥哥", pinyin: "gēge", vietnamese: "anh trai", type: "Danh từ" },
+      { id: "v4-7", hanzi: "呢", pinyin: "ne", vietnamese: "thì sao", type: "Trợ từ" },
+      { id: "v4-8", hanzi: "没", pinyin: "méi", vietnamese: "không", type: "Phó từ" },
+      { id: "v4-9", hanzi: "没有", pinyin: "méiyǒu", vietnamese: "không có", type: "Động từ" },
+      { id: "v4-10", hanzi: "家", pinyin: "jiā", vietnamese: "nhà, gia đình", type: "Danh từ" },
+      { id: "v4-11", hanzi: "几", pinyin: "jǐ", vietnamese: "mấy, vài", type: "Đại từ" },
+      { id: "v4-12", hanzi: "口", pinyin: "kǒu", vietnamese: "người (lượng từ gia đình)", type: "Lượng từ" },
+      { id: "v4-13", hanzi: "爸爸", pinyin: "bàba", vietnamese: "bố", type: "Danh từ" },
+      { id: "v4-14", hanzi: "妈妈", pinyin: "māma", vietnamese: "mẹ", type: "Danh từ" },
+      { id: "v4-15", hanzi: "妹妹", pinyin: "mèimei", vietnamese: "em gái", type: "Danh từ" },
+      { id: "v4-16", hanzi: "和", pinyin: "hé", vietnamese: "và", type: "Liên từ" },
+      { id: "v4-17", hanzi: "儿子", pinyin: "érzi", vietnamese: "con trai", type: "Danh từ" },
+      { id: "v4-18", hanzi: "女儿", pinyin: "nǚ'ér", vietnamese: "con gái", type: "Danh từ" },
+      { id: "v4-19", hanzi: "岁", pinyin: "suì", vietnamese: "tuổi", type: "Lượng từ" },
+      { id: "v4-20", hanzi: "他", pinyin: "tā", vietnamese: "anh ấy, cậu ấy", type: "Đại từ" },
+      { id: "v4-21", hanzi: "今年", pinyin: "jīnnián", vietnamese: "năm nay", type: "Danh từ" },
+      { id: "v4-22", hanzi: "多大", pinyin: "duō dà", vietnamese: "bao nhiêu tuổi", type: "Đại từ" }
+    ],
+    sentences: [
+      { id: "s4-1", hanzi: "你家有多少人？", pinyin: "Nǐ jiā yǒu duōshao rén?", vietnamese: "Nhà bạn có bao nhiêu người?" },
+      { id: "s4-2", hanzi: "我有二十个学生，我有两个孩子。", pinyin: "Wǒ yǒu èrshí gè xuéshēng, wǒ yǒu liǎng gè háizi.", vietnamese: "Tôi có 20 học sinh, tôi có 2 người con." },
+      { id: "s4-3", hanzi: "我没有哥哥。", pinyin: "Wǒ méiyǒu gēge.", vietnamese: "Tôi không có anh trai." },
+      { id: "s4-4", hanzi: "我有两个哥哥，你呢？", pinyin: "Wǒ yǒu liǎng gè gēge, nǐ ne?", vietnamese: "Tôi có hai người anh trai, còn bạn thì sao?" },
+      { id: "s4-5", hanzi: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vietnamese: "Nhà bạn có mấy người?" },
+      { id: "s4-6", hanzi: "我家有四口人，爸爸、妈妈、妹妹和我。", pinyin: "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.", vietnamese: "Nhà tôi có bốn người, bố, mẹ, em gái và tôi." },
+      { id: "s4-7", hanzi: "你儿子今年几岁？", pinyin: "Nǐ érzi jīnnián jǐ suì?", vietnamese: "Con trai bạn năm nay mấy tuổi?" },
+      { id: "s4-8", hanzi: "他今年五岁。", pinyin: "Tā jīnnián wǔ suì.", vietnamese: "Cháu năm nay 5 tuổi." },
+      { id: "s4-9", hanzi: "你女儿今年多大？", pinyin: "Nǐ nǚ'ér jīnnián duō dà?", vietnamese: "Con gái bạn năm nay bao nhiêu tuổi?" }
+    ],
+    dialogues: [
+      {
+        id: "d4-1",
+        title: "课文 1: 在家里 (Ở nhà)",
+        participants: [
+          { name: "刘明", role: "Đồng nghiệp", avatar: "👤" },
+          { name: "王一雪", role: "Quản lý", avatar: "👩" }
+        ],
+        lines: [
+          { speaker: "刘明", hanzi: "一飞忙吗？", pinyin: "Yīfēi máng ma?", vietnamese: "Nhất Phi có bận không?" },
+          { speaker: "王一雪", hanzi: "她很忙。", pinyin: "Tā hěn máng.", vietnamese: "Cô ấy rất bận." },
+          { speaker: "刘明", hanzi: "她有多少个学生？", pinyin: "Tā yǒu duōshao gè xuéshēng?", vietnamese: "Cô ấy có bao nhiêu học sinh?" },
+          { speaker: "王一雪", hanzi: "她有二十个学生。", pinyin: "Tā yǒu èrshí gè xuéshēng.", vietnamese: "Cô ấy có 20 học sinh." }
+        ]
+      },
+      {
+        id: "d4-2",
+        title: "课文 2: 在公司里 (Ở công ty)",
+        participants: [
+          { name: "王一雪", role: "Đồng nghiệp A", avatar: "👩" },
+          { name: "杨同乐", role: "Đồng nghiệp B", avatar: "👤" }
+        ],
+        lines: [
+          { speaker: "王一雪", hanzi: "我有两个哥哥，你呢？", pinyin: "Wǒ yǒu liǎng gè gēge, nǐ ne?", vietnamese: "Tôi có hai người anh trai, còn bạn?" },
+          { speaker: "杨同乐", hanzi: "我没有哥哥。", pinyin: "Wǒ méiyǒu gēge.", vietnamese: "Tôi không có anh trai." },
+          { speaker: "王一雪", hanzi: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vietnamese: "Nhà bạn có mấy người?" },
+          { speaker: "杨同乐", hanzi: "我家有四口人，爸爸、妈妈、妹妹和我。", pinyin: "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.", vietnamese: "Nhà tôi có bốn người, bố, mẹ, em gái và tôi." }
+        ]
+      },
+      {
+        id: "d4-3",
+        title: "课文 3: 在街上 (Trên đường)",
+        participants: [
+          { name: "杨同乐", role: "Đồng nghiệp", avatar: "👤" },
+          { name: "王一雪", role: "Người mẹ", avatar: "👩" }
+        ],
+        lines: [
+          { speaker: "杨同乐", hanzi: "这是您儿子吗？", pinyin: "Zhè shì nín érzi ma?", vietnamese: "Đây là con trai chị phải không?" },
+          { speaker: "王一雪", hanzi: "是的。我有两个孩子，一个儿子，一个女儿。", pinyin: "Shì de. Wǒ yǒu liǎng gè háizi, yí gè érzi, yí gè nǚ'ér.", vietnamese: "Đúng vậy. Tôi có hai người con, một con trai, một con gái." },
+          { speaker: "杨同乐", hanzi: "您儿子几岁？", pinyin: "Nín érzi jǐ suì?", vietnamese: "Con trai chị mấy tuổi?" },
+          { speaker: "王一雪", hanzi: "他今年五岁。", pinyin: "Tā jīnnián wǔ suì.", vietnamese: "Cháu năm nay 5 tuổi." },
+          { speaker: "杨同乐", hanzi: "您女儿多大？", pinyin: "Nín nǚ'ér duō dà?", vietnamese: "Con gái chị bao nhiêu tuổi?" },
+          { speaker: "王一雪", hanzi: "她今年十二。", pinyin: "Tā jīnnián shí'èr.", vietnamese: "Cháu năm nay 12 tuổi." }
+        ]
+      }
+    ],
+    grammar: [
+      {
+        id: "g4-1",
+        title: "Câu chữ 有 (Sở hữu) & Phủ định 没有",
+        formula: "Khẳng định: S + 有 + [Số lượng] + Danh từ\nPhủ định: S + 没有 + Danh từ",
+        description: "Dùng để biểu thị sự sở hữu. Ở thể phủ định KHÔNG dùng số lượng.",
+        examples: [
+          { hanzi: "我有两个孩子。", pinyin: "Wǒ yǒu liǎng gè háizi.", vietnamese: "Tôi có hai đứa con." },
+          { hanzi: "我没有哥哥。", pinyin: "Wǒ méiyǒu gēge.", vietnamese: "Tôi không có anh trai." }
+        ]
+      },
+      {
+        id: "g4-2",
+        title: "Câu hỏi tỉnh lược với trợ từ 呢",
+        formula: "[Sự việc A]，[Đối tượng B] + 呢？",
+        description: "Dùng để hỏi ngược lại về vấn đề vừa được đề cập đối với một người/vật khác.",
+        examples: [
+          { hanzi: "我有两个哥哥，你呢？", pinyin: "Wǒ yǒu liǎng gè gēge, nǐ ne?", vietnamese: "Tôi có hai người anh trai, còn bạn thì sao?" },
+          { hanzi: "我是中国人，你呢？", pinyin: "Wǒ shì Zhōngguó rén, nǐ ne?", vietnamese: "Tôi là người Trung Quốc, còn bạn?" }
+        ]
+      },
+      {
+        id: "g4-3",
+        title: "Hỏi số lượng gia đình 几口人 & Liệt kê với 和",
+        formula: "Hỏi: S + 家有几口人？\nLiệt kê: A、B 和 C",
+        description: "Lượng từ 口 chuyên dùng đếm thành viên gia đình. Liên từ 和 (và) chỉ đứng trước danh từ cuối cùng trong chuỗi liệt kê.",
+        examples: [
+          { hanzi: "你家有几口人？", pinyin: "Nǐ jiā yǒu jǐ kǒu rén?", vietnamese: "Nhà bạn có mấy người?" },
+          { hanzi: "我家有四口人，爸爸、妈妈、妹妹和我。", pinyin: "Wǒ jiā yǒu sì kǒu rén, bàba, māma, mèimei hé wǒ.", vietnamese: "Nhà tôi có 4 người, bố, mẹ, em gái và tôi." }
+        ]
+      },
+      {
+        id: "g4-4",
+        title: "Hỏi và Trả lời Tuổi tác",
+        formula: "Trẻ em (<10 tuổi): S + 今年几岁？\nNgười lớn: S + 今年多大？\nTrả lời: S + 今年 + Số + 岁。",
+        description: "几岁 dùng cho trẻ em nhỏ tuổi, 多大 dùng cho người lớn hoặc thanh thiếu niên.",
+        examples: [
+          { hanzi: "你儿子今年几岁？", pinyin: "Nǐ érzi jīnnián jǐ suì?", vietnamese: "Con trai bạn năm nay mấy tuổi?" },
+          { hanzi: "你女儿今年多大？", pinyin: "Nǐ nǚ'ér jīnnián duō dà?", vietnamese: "Con gái bạn năm nay bao nhiêu tuổi?" },
+          { hanzi: "他今年五岁。", pinyin: "Tā jīnnián wǔ suì.", vietnamese: "Cháu năm nay 5 tuổi." }
+        ]
+      }
+    ],
     exercises: []
   }
 ];

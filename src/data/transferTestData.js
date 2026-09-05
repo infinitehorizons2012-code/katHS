@@ -478,5 +478,166 @@ export const transferTestData = {
         }
       ]
     }
+  ],
+
+  "hsk1-lesson4": [
+    {
+      level: 1,
+      title: "CẤP ĐỘ 1: NHẬN BIẾT (RECALL & IDENTIFICATION)",
+      goal: "Nhận diện chính xác Hán tự, Pinyin, Hán-Việt và Nghĩa tiếng Việt của các thành tố ngôn ngữ cốt lõi.",
+      questions: [
+        {
+          id: "1.1",
+          title: "Câu 1.1",
+          content: "Động từ chữ Hán nào dưới đây đại diện cho ý nghĩa sở hữu ('Có')?",
+          options: [
+            { label: "A", text: "是", isCorrect: false },
+            { label: "B", text: "有", isCorrect: true },
+            { label: "C", text: "在", isCorrect: false },
+            { label: "D", text: "叫", isCorrect: false }
+          ],
+          explanation: "有 (yǒu - Hữu - Có) là động từ biểu thị sự sở hữu."
+        },
+        {
+          id: "1.2",
+          title: "Câu 1.2",
+          content: "Lượng từ chữ Hán nào dưới đây chuyên dùng để đếm số lượng thành viên trong gia đình (几口人)?",
+          options: [
+            { label: "A", text: "个", isCorrect: false },
+            { label: "B", text: "口", isCorrect: true },
+            { label: "C", text: "岁", isCorrect: false },
+            { label: "D", text: "国", isCorrect: false }
+          ],
+          explanation: "口 (kǒu) là lượng từ chuyên dùng đếm thành viên gia đình (三口人, 几口人)."
+        },
+        {
+          id: "1.3",
+          title: "Câu 1.3",
+          content: "Từ chữ Hán 岁 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
+          options: [
+            { label: "A", text: "今年 - Năm nay", isCorrect: false },
+            { label: "B", text: "岁 - Tuổi / Đơn vị tuổi", isCorrect: true },
+            { label: "C", text: "儿子 - Con trai", isCorrect: false },
+            { label: "D", text: "女儿 - Con gái", isCorrect: false }
+          ],
+          explanation: "岁 (suì - Tuế - Tuổi) là lượng từ biểu thị đơn vị tuổi tác."
+        }
+      ]
+    },
+    {
+      level: 2,
+      title: "CẤP ĐỘ 2: THÔNG HIỂU (COMPREHENSION & STRUCTURAL LOGIC)",
+      goal: "Thông hiểu trật tự từ ngữ pháp và logic phân biệt giữa các số từ/lượng từ.",
+      questions: [
+        {
+          id: "2.1",
+          title: "Câu 2.1",
+          content: "Khi đếm số lượng 2 người con, cách sử dụng số từ nào dưới đây là chuẩn xác nhất trong tiếng Trung?",
+          options: [
+            { label: "A", text: "二个孩子", isCorrect: false },
+            { label: "B", text: "两个孩子", isCorrect: true },
+            { label: "C", text: "二孩子", isCorrect: false },
+            { label: "D", text: "两孩子", isCorrect: false }
+          ],
+          explanation: "Khi biểu đạt số lượng 2 đứng trước lượng từ 个, bắt buộc dùng 两 (两个孩子) thay vì 二."
+        },
+        {
+          id: "2.2",
+          title: "Câu 2.2",
+          content: "Trong câu liệt kê các thành viên gia đình 爸爸、妈妈、妹妹和我, liên từ 和 (hé - và) được đặt ở vị trí nào?",
+          options: [
+            { label: "A", text: "Đặt ở trước tất cả các danh từ", isCorrect: false },
+            { label: "B", text: "Đặt ở giữa danh từ kế cuối và danh từ cuối cùng", isCorrect: true },
+            { label: "C", text: "Đặt ở cuối câu", isCorrect: false },
+            { label: "D", text: "Đặt ở đầu câu", isCorrect: false }
+          ],
+          explanation: "Trong chuỗi liệt kê tiếng Trung, liên từ 和 chỉ đặt nối trước danh từ cuối cùng."
+        },
+        {
+          id: "2.3",
+          title: "Câu 2.3",
+          content: "Khi đặt câu hỏi tuổi cho trẻ nhỏ dưới 10 tuổi (ví dụ con trai 5 tuổi), cụm từ hỏi tuổi nào dưới đây là phù hợp nhất?",
+          options: [
+            { label: "A", text: "多大", isCorrect: false },
+            { label: "B", text: "几岁", isCorrect: true },
+            { label: "C", text: "多少", isCorrect: false },
+            { label: "D", text: "什么", isCorrect: false }
+          ],
+          explanation: "几岁 (jǐ suì) chuyên dùng đặt câu hỏi tuổi cho trẻ em dưới 10 tuổi (你儿子今年几岁？)."
+        }
+      ]
+    },
+    {
+      level: 3,
+      title: "CẤP ĐỘ 3: VẬN DỤNG (APPLICATION & CONTEXTUALIZING)",
+      goal: "Vận dụng linh hoạt các cấu trúc ngữ pháp để hoàn thành đoạn thoại và sắp xếp tiến trình giao tiếp.",
+      questions: [
+        {
+          id: "3.1",
+          title: "Câu 3.1",
+          content: "Hãy chọn cặp từ thích hợp điền vào chỗ trống (1) và (2) để hoàn thành đoạn thoại báo cáo quy mô:\nA: 你家有多少人？\nB: 我___(1)___二十个学生，我有___(2)___个孩子。",
+          options: [
+            { label: "A", text: "(1) 有 / (2) 两", isCorrect: true },
+            { label: "B", text: "(1) 是 / (2) 二", isCorrect: false },
+            { label: "C", text: "(1) 没 / (2) 两", isCorrect: false },
+            { label: "D", text: "(1) 有 / (2) 二", isCorrect: false }
+          ],
+          explanation: "(1) điền động từ sở hữu 有, (2) điền số từ chỉ số lượng 两 (两个孩子)."
+        },
+        {
+          id: "3.2",
+          title: "Câu 3.2",
+          content: "Hãy chọn từ thích hợp điền vào chỗ trống để tạo câu hỏi tỉnh lược ngữ cảnh:\nA: 我有两个哥哥，你___？\nB: 我没有哥哥。",
+          options: [
+            { label: "A", text: "吗", isCorrect: false },
+            { label: "B", text: "呢", isCorrect: true },
+            { label: "C", text: "啊", isCorrect: false },
+            { label: "D", text: "吧", isCorrect: false }
+          ],
+          explanation: "Điền trợ từ ngữ khí 呢 ở cuối câu để hỏi tỉnh lược ngữ cảnh vừa nhắc 你呢？ (còn bạn thì sao?)."
+        },
+        {
+          id: "3.3",
+          title: "Câu 3.3",
+          content: "Hãy chọn từ thích hợp điền vào chỗ trống trong câu hỏi tuổi thiếu niên 12 tuổi:\nA: 你女儿今年___？\nB: 她今年十二岁。",
+          options: [
+            { label: "A", text: "几岁", isCorrect: false },
+            { label: "B", text: "多大", isCorrect: true },
+            { label: "C", text: "多少", isCorrect: false },
+            { label: "D", text: "几口", isCorrect: false }
+          ],
+          explanation: "Với trẻ trên 10 tuổi (12 tuổi), dùng cụm từ hỏi tuổi 多大 (你女儿今年多大？)."
+        }
+      ]
+    },
+    {
+      level: 4,
+      title: "CẤP ĐỘ 4: THÀNH THỤC (MASTERY & REAL-WORLD PROBLEM SOLVING)",
+      goal: "Phân tích lỗi sai RCA (Root Cause Analysis) và giải quyết các tình huống thực chiến doanh nghiệp.",
+      isEssay: true,
+      questions: [
+        {
+          id: "4.1",
+          title: "Câu 4.1",
+          content: "Tình huống: Học viên A nói câu phủ định sở hữu: 我没有二个哥哥。 (Wǒ méiyǒu èr gè gēge.).\nYêu cầu: Phân tích lỗi sai, chỉ ra nguyên nhân gốc rễ (RCA) và đưa ra phương án sửa chuẩn xác.",
+          answerTitle: "BÁO CÁO RCA:",
+          answerContent: "**Lỗi sai**: Dùng số từ 二 trước lượng từ 个 (二个 → sai) và thừa số lượng khi phủ định sở hữu.\n**Root Cause**: Học viên dịch thô từ tiếng Việt ('Tôi không có 2 người anh') và nhầm lẫn số lượng 两.\n**Phương án sửa**: Câu phủ định sở hữu chuẩn không kèm số lượng: 我没有哥哥。 (Wǒ méiyǒu gēge. - Tôi không có anh trai.) hoặc nếu khẳng định có 2 anh trai thì dùng 我有两个哥哥。."
+        },
+        {
+          id: "4.2",
+          title: "Câu 4.2",
+          content: "Tình huống: Trong phỏng vấn HR, học viên B nói: 我家有四个人：爸爸和妈妈和妹妹和我。\nYêu cầu: Phân tích lỗi sai RCA và đưa ra câu sửa chuẩn mực.",
+          answerTitle: "BÁO CÁO RCA:",
+          answerContent: "**Lỗi sai**: Dùng sai lượng từ gia đình (四个人 → phải dùng 四口人) và lặp lại liên từ 和 trùng lặp giữa các danh từ.\n**Root Cause**: Chưa nắm lượng từ đặc thù 口 cho thành viên gia đình và thói quen liệt kê liên từ tiếng Việt.\n**Phương án sửa**: Thay 个 bằng 口 và sửa ngắt phẩy: 我家有四口人：爸爸、妈妈、妹妹和我。."
+        },
+        {
+          id: "4.3",
+          title: "Câu 4.3",
+          content: "Tình huống: Bạn là Nhân sự Lễ tân gặp đối tác 王一雪 (Wáng Yīxuě) đi cùng hai con (con trai 5 tuổi, con gái 12 tuổi). Hãy xây dựng kịch bản thoại 3 bước hoàn chỉnh chuẩn 100% Closed Lexicon.",
+          answerTitle: "KỊCH BẢN GIẢI QUYẾT TÌNH HUỐNG THỰC CHÍNH:",
+          answerContent: "**Bước 1 (Hỏi thăm con trai <10 tuổi)**:\nLễ tân: 王老师，这是你儿子吗？他今年几岁？ (Wáng lǎoshī, zhè shì nǐ érzi ma? Tā jīnnián jǐ suì? - Thầy Vương, đây là con trai thầy phải không? Cháu năm nay mấy tuổi?)\nĐối tác: 对，他今年五岁。 (Duì, tā jīnnián wǔ suì. - Đúng vậy, cháu năm nay 5 tuổi.)\n\n**Bước 2 (Hỏi thăm con gái >10 tuổi)**:\nLễ tân: 你女儿今年多大？ (Nǐ nǚ'ér jīnnián duō dà? - Con gái thầy năm nay bao nhiêu tuổi?)\nĐối tác: 她今年十二岁。 (Tā jīnnián shí'èr suì. - Cháu năm nay 12 tuổi.)\n\n**Bước 3 (Xã giao khen ngợi & Chúc tụng)**:\nLễ tân: 你有两个孩子，太好了！再见！ (Nǐ yǒu liǎng gè háizi, tài hǎo le! Zàijiàn! - Thầy có hai người con, thật tốt quá! Tạm biệt!)\nĐối tác: 谢谢！再见！ (Xièxie! Zàijiàn! - Cảm ơn! Tạm biệt!)"
+        }
+      ]
+    }
   ]
 };
