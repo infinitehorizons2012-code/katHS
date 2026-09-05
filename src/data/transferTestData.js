@@ -182,10 +182,10 @@ export const transferTestData = {
           title: "Câu 1.2",
           content: "Cụm từ chữ Hán 对不起 có Pinyin, Hán-Việt và Nghĩa tiếng Việt chính xác là gì?",
           options: [
-            { label: "A", text: "没关系", isCorrect: false },
-            { label: "B", text: "不客气", isCorrect: false },
-            { label: "C", text: "对不起", "isCorrect": true },
-            { label: "D", text: "再见", isCorrect: false }
+            { label: "A", text: "méi guānxi - Một quan hệ - Không sao", isCorrect: false },
+            { label: "B", text: "bú kèqi - Bất khách khí - Không có gì", isCorrect: false },
+            { label: "C", text: "duìbuqǐ - Đối bất khởi - Xin lỗi", "isCorrect": true },
+            { label: "D", text: "zàijiàn - Tái kiến - Tạm biệt", isCorrect: false }
           ],
           explanation: "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi) là cụm từ xin lỗi lịch sự chuẩn văn hóa."
         },
@@ -194,10 +194,10 @@ export const transferTestData = {
           title: "Câu 1.3",
           content: "Từ chữ Hán 高兴 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
           options: [
-            { label: "A", text: "认识", isCorrect: false },
-            { label: "B", text: "高兴", "isCorrect": true },
-            { label: "C", text: "很", isCorrect: false },
-            { label: "D", text: "也", isCorrect: false }
+            { label: "A", text: "rènshi - Nhận thức - Quen biết / Nhận biết", isCorrect: false },
+            { label: "B", text: "gāoxìng - Cao hưng - Vui mừng / Phấn khởi", "isCorrect": true },
+            { label: "C", text: "hěn - Hấn - Rất", isCorrect: false },
+            { label: "D", text: "yě - Dã - Cũng", isCorrect: false }
           ],
           explanation: "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi) là tính từ biểu thị cảm xúc vui vẻ khi gặp gỡ."
         }

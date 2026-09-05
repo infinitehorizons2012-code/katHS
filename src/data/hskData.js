@@ -1300,10 +1300,10 @@ export const hskLessons = [
       "clo": "clo1",
       "question": "Từ chữ Hán nào dưới đây đại diện cho đại từ nghi vấn mang nghĩa 'Cái gì'?",
       "options": [
-        { "id": "A", "text": "名字 (míngzi - Danh tự - Tên)" },
-        { "id": "B", "text": "什么 (shénme - Thập ma - Cái gì)", "isCorrect": true },
-        { "id": "C", "text": "叫 (jiào - Khiếu - Gọi là / Tên là)" },
-        { "id": "D", "text": "请问 (qǐngwèn - Thỉnh vấn - Xin hỏi)" }
+        { "id": "A", "text": "名字" },
+        { "id": "B", "text": "什么", "isCorrect": true },
+        { "id": "C", "text": "叫" },
+        { "id": "D", "text": "请问" }
       ],
       "explanation": "什么 (shénme - Thập ma - Cái gì) là đại từ nghi vấn dùng trong câu hỏi tên 你叫什么名字？."
     },
@@ -1313,10 +1313,10 @@ export const hskLessons = [
       "clo": "clo2",
       "question": "Cụm từ chữ Hán 对不起 có Pinyin, Hán-Việt và Nghĩa tiếng Việt chính xác là gì?",
       "options": [
-        { "id": "A", "text": "没关系 (méi guānxi - Một quan hệ - Không sao)" },
-        { "id": "B", "text": "不客气 (bú kèqi - Bất khách khí - Không có gì)" },
-        { "id": "C", "text": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi)", "isCorrect": true },
-        { "id": "D", "text": "再见 (zàijiàn - Tái kiến - Tạm biệt)" }
+        { "id": "A", "text": "méi guānxi - Một quan hệ - Không sao" },
+        { "id": "B", "text": "bú kèqi - Bất khách khí - Không có gì" },
+        { "id": "C", "text": "duìbuqǐ - Đối bất khởi - Xin lỗi", "isCorrect": true },
+        { "id": "D", "text": "zàijiàn - Tái kiến - Tạm biệt" }
       ],
       "explanation": "对不起 (duìbuqǐ - Đối bất khởi - Xin lỗi) là cụm từ xin lỗi lịch sự chuẩn văn hóa."
     },
@@ -1326,10 +1326,10 @@ export const hskLessons = [
       "clo": "clo3",
       "question": "Từ chữ Hán 高兴 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
       "options": [
-        { "id": "A", "text": "认识 (rènshi - Nhận thức - Quen biết / Nhận biết)" },
-        { "id": "B", "text": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi)", "isCorrect": true },
-        { "id": "C", "text": "很 (hěn - Hấn - Rất)" },
-        { "id": "D", "text": "也 (yě - Dã - Cũng)" }
+        { "id": "A", "text": "rènshi - Nhận thức - Quen biết / Nhận biết" },
+        { "id": "B", "text": "gāoxìng - Cao hưng - Vui mừng / Phấn khởi", "isCorrect": true },
+        { "id": "C", "text": "hěn - Hấn - Rất" },
+        { "id": "D", "text": "yě - Dã - Cũng" }
       ],
       "explanation": "高兴 (gāoxìng - Cao hưng - Vui mừng / Phấn khởi) là tính từ biểu thị cảm xúc vui vẻ khi gặp gỡ."
     },
@@ -1339,10 +1339,10 @@ export const hskLessons = [
       "clo": "clo1",
       "question": "Cấu trúc câu hỏi tên nào dưới đây biểu đạt đúng trật tự từ trong tiếng Trung?",
       "options": [
-        { "id": "A", "text": "你叫名字什么？ (Nǐ jiào míngzi shénme?)" },
-        { "id": "B", "text": "请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi? - Thỉnh vấn, nhĩ khiếu thập ma danh tự? - Xin hỏi, bạn tên là gì?)", "isCorrect": true },
-        { "id": "C", "text": "什么名字叫你？ (Shénme míngzi jiào nǐ?)" },
-        { "id": "D", "text": "你名字叫什么请问？ (Nǐ míngzi jiào shénme qǐngwèn?)" }
+        { "id": "A", "text": "你叫名字什么？" },
+        { "id": "B", "text": "请问，你叫什么名字？", "isCorrect": true },
+        { "id": "C", "text": "什么名字叫你？" },
+        { "id": "D", "text": "你名字叫什么请问？" }
       ],
       "explanation": "Trật tự từ chuẩn câu hỏi tên: [Lời mời lịch sự 请问] + [Chủ ngữ 你] + [Động từ 叫] + [Đại từ nghi vấn 什么] + [Danh từ 名字]？."
     },
@@ -1352,10 +1352,10 @@ export const hskLessons = [
       "clo": "clo2",
       "question": "Khi một đồng nghiệp va chạm nhẹ và thốt lên 对不起！ (duìbuqǐ! - Xin lỗi!), phản xạ đáp lời nào dưới đây là chuẩn xác nhất?",
       "options": [
-        { "id": "A", "text": "不客气 (bú kèqi - Bất khách khí - Không có gì)" },
-        { "id": "B", "text": "没关系 (méi guānxi - Một quan hệ - Không sao)", "isCorrect": true },
-        { "id": "C", "text": "再见 (zàijiàn - Tái kiến - Tạm biệt)" },
-        { "id": "D", "text": "你好 (nǐ hǎo - Nhĩ hảo - Xin chào)" }
+        { "id": "A", "text": "不客气" },
+        { "id": "B", "text": "没关系", "isCorrect": true },
+        { "id": "C", "text": "再见" },
+        { "id": "D", "text": "你好" }
       ],
       "explanation": "Lời xin lỗi 对不起 (duìbuqǐ) đi cặp với lời đáp tỏ ý không bận tâm 没关系 (méi guānxi) hoặc 没事 (méishì). (不客气 dùng đáp lại 谢谢)."
     },
@@ -1378,10 +1378,10 @@ export const hskLessons = [
       "clo": "clo1",
       "question": "Hãy chọn cặp từ thích hợp điền vào chỗ trống (1) và (2) để hoàn thành đoạn thoại làm quen:\nĐối tác A: 请问，你叫___(1)___名字？\nBạn B: ___(2)___叫李文。",
       "options": [
-        { "id": "A", "text": "(1) 什么 (shénme) / (2) 我 (wǒ)", "isCorrect": true },
-        { "id": "B", "text": "(1) 我 (wǒ) / (2) 什么 (shénme)" },
-        { "id": "C", "text": "(1) 是 (shì) / (2) 不 (bù)" },
-        { "id": "D", "text": "(1) 您 (nín) / (2) 叫 (jiào)" }
+        { "id": "A", "text": "(1) 什么 / (2) 我", "isCorrect": true },
+        { "id": "B", "text": "(1) 我 / (2) 什么" },
+        { "id": "C", "text": "(1) 是 / (2) 不" },
+        { "id": "D", "text": "(1) 您 / (2) 叫" }
       ],
       "explanation": "Chỗ trống (1) điền đại từ nghi vấn 什么 (shénme), chỗ trống (2) điền đại từ nhân xưng 我 (wǒ) → 我叫李文 (Tôi tên là Lý Văn)."
     },
@@ -1404,10 +1404,10 @@ export const hskLessons = [
       "clo": "clo3",
       "question": "Hãy chọn câu đáp lời chuẩn xác nhất của người B khi người A nói câu xã giao lần đầu gặp mặt:\nNgười A: 很高兴认识你！\nNgười B: ___！",
       "options": [
-        { "id": "A", "text": "我不高兴！ (Wǒ bù gāoxìng! - Tôi không vui!)" },
-        { "id": "B", "text": "我也很高兴认识你！ (Wǒ yě hěn gāoxìng rènshi nǐ! - Tôi cũng rất vui được quen biết bạn!)", "isCorrect": true },
-        { "id": "C", "text": "对不起，没关系！ (Duìbuqǐ, méi guānxi! - Xin lỗi, không sao!)" },
-        { "id": "D", "text": "你叫什么名字？ (Nǐ jiào shénme míngzi? - Bạn tên là gì?)" }
+        { "id": "A", "text": "我不高兴！" },
+        { "id": "B", "text": "我也很高兴认识你！", "isCorrect": true },
+        { "id": "C", "text": "对不起，没关系！" },
+        { "id": "D", "text": "你叫什么名字？" }
       ],
       "explanation": "Người B dùng phó từ 也 (yě - cũng) đứng trước 很高兴 để thể hiện sự đồng điệu cảm xúc 我也很高兴认识你！."
     },
