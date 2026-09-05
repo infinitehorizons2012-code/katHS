@@ -882,32 +882,7 @@ export const hskLessons = [
         ]
       }
     ],
-    exercises: [
-      {
-        id: "q1",
-        type: "multiple-choice",
-        question: "Từ nào mang âm Hán Việt là 'Lão sư', nghĩa là 'Giáo viên / Thầy cô'?",
-        options: [
-          { id: "A", text: "同学 (tóngxué)" },
-          { id: "B", text: "老师 (lǎoshī)", isCorrect: true },
-          { id: "C", text: "学生 (xuéshēng)" },
-          { id: "D", text: "大家 (dàjiā)" }
-        ],
-        explanation: "'老师' (lǎoshī) nghĩa là Giáo viên / Thầy cô giáo."
-      },
-      {
-        id: "q2",
-        type: "multiple-choice",
-        question: "Khi ai đó cảm ơn '谢谢' (xièxie), bạn đáp lại như thế nào?",
-        options: [
-          { id: "A", text: "你好！" },
-          { id: "B", text: "不客气！", isCorrect: true },
-          { id: "C", text: "再见！" },
-          { id: "D", text: "您好！" }
-        ],
-        explanation: "'不客气' (bú kèqi - Bất khách khí) nghĩa là 'Không có gì / Đừng khách khí'."
-      }
-    ]
+    exercises: []
   }
   ,{
   "id": "hsk1-lesson2",
