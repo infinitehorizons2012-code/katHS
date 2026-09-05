@@ -1540,5 +1540,15 @@ export const hskLessons = [
       }
     ],
     exercises: []
+  },
+  {
+    id: "hsk1-lesson4",
+    title: "Bài 4: 我有两个孩子 (Tôi có hai người con)",
+    clo: "CLO 4",
+    vocabulary: [],
+    sentences: [],
+    dialogues: [],
+    grammar: [],
+    exercises: []
   }
 ];
