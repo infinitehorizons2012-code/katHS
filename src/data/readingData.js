@@ -70,5 +70,40 @@ export const readingData = {
         { speaker: "Đối tác", text: "我也很高兴认识你！" }
       ]
     }
+  ],
+  "hsk1-lesson3": [
+    {
+      id: 1,
+      title: "Tình huống 1: Bộ phận Lễ tân / Trợ lý Doanh nghiệp FDI Đón tiếp Chuyên gia Đa Quốc gia",
+      context: "Lễ tân công ty làm thủ tục đăng ký ra vào cho đoàn chuyên gia quốc tế mới đến.",
+      dialogues: [
+        { speaker: "Lễ tân", text: "您好！请问，您是哪国人？" },
+        { speaker: "Chuyên gia", text: "你好！我是法国人。" },
+        { speaker: "Lễ tân", text: "这是您的老师吗？" },
+        { speaker: "Chuyên gia", text: "对，他是我的老师，他是中国人。" }
+      ]
+    },
+    {
+      id: 2,
+      title: "Tình huống 2: Quản lý Nhân sự (HR) Thực hiện Cuộc gọi Thăm hỏi Nhân sự Mới",
+      context: "Quản lý HR gọi điện trao đổi tình hình công việc với nhân viên mới 安妮 (Ānnī).",
+      dialogues: [
+        { speaker: "HR Manager", text: "喂，安妮！你的工作忙吗？" },
+        { speaker: "Nhân viên", text: "王老师，你好！我不太忙。" },
+        { speaker: "HR Manager", text: "太好了！" },
+        { speaker: "Nhân viên", text: "谢谢王老师！" }
+      ]
+    },
+    {
+      id: 3,
+      title: "Tình huống 3: Nhân sự Xuất Nhập khẩu Trao đổi Quốc tịch Chứng từ Hàng hóa Đối tác",
+      context: "Nhân sự XNK kiểm tra danh tính đại diện thương mại đối tác Thái Lan 白家月 (Bái Jiāyuè).",
+      dialogues: [
+        { speaker: "Nhân sự XNK", text: "请问，这是谁？" },
+        { speaker: "Đại diện đối tác", text: "这是白家月，她是泰国人。" },
+        { speaker: "Nhân sự XNK", text: "她是你的女朋友吗？" },
+        { speaker: "Đại diện đối tác", text: "不是，她是我的同学。" }
+      ]
+    }
   ]
 };

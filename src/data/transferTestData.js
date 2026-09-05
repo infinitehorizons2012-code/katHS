@@ -318,5 +318,165 @@ export const transferTestData = {
         }
       ]
     }
+  ],
+  "hsk1-lesson3": [
+    {
+      level: 1,
+      title: "CẤP ĐỘ 1: NHẬN BIẾT (RECALL & IDENTIFICATION)",
+      goal: "Nhận diện chính xác Hán tự, Pinyin, Hán-Việt và Nghĩa tiếng Việt của các thành tố ngôn ngữ cốt lõi.",
+      questions: [
+        {
+          id: "1.1",
+          title: "Câu 1.1",
+          content: "Từ chữ Hán nào dưới đây đại diện cho trợ từ sở hữu biểu thị quan hệ 'Của'?",
+          options: [
+            { label: "A", text: "人", isCorrect: false },
+            { label: "B", text: "的", isCorrect: true },
+            { label: "C", text: "国", isCorrect: false },
+            { label: "D", text: "是", isCorrect: false }
+          ],
+          explanation: "的 (de - Đích - Của) là trợ từ sở hữu đặt giữa định ngữ và danh từ trung tâm."
+        },
+        {
+          id: "1.2",
+          title: "Câu 1.2",
+          content: "Từ chữ Hán 谁 được phiên âm Pinyin, Hán-Việt và giải nghĩa tiếng Việt là gì?",
+          options: [
+            { label: "A", text: "zhè - Giá - Đây", isCorrect: false },
+            { label: "B", text: "nǎ - Nả - Nào", isCorrect: false },
+            { label: "C", text: "shéi/shuí - Thùy - Ai", isCorrect: true },
+            { label: "D", text: "tā - Tha - Cô ấy", isCorrect: false }
+          ],
+          explanation: "谁 (shéi/shuí - Thùy - Ai) là đại từ nghi vấn chỉ người dùng trong câu hỏi danh tính 这是谁？."
+        },
+        {
+          id: "1.3",
+          title: "Câu 1.3",
+          content: "Trợ từ nghi vấn chữ Hán nào dưới đây đứng ở cuối câu để tạo thành câu hỏi Yes-No ('Không / À')?",
+          options: [
+            { label: "A", text: "吗", isCorrect: true },
+            { label: "B", text: "喂", isCorrect: false },
+            { label: "C", text: "太", isCorrect: false },
+            { label: "D", text: "还", isCorrect: false }
+          ],
+          explanation: "吗 (ma - Ma - Không/À) là trợ từ nghi vấn thường đứng ở cuối câu hỏi Yes-No."
+        }
+      ]
+    },
+    {
+      level: 2,
+      title: "CẤP ĐỘ 2: THÔNG HIỂU (COMPREHENSION & STRUCTURAL LOGIC)",
+      goal: "Thông hiểu trật tự từ ngữ pháp và logic vị trí của các từ loại.",
+      questions: [
+        {
+          id: "2.1",
+          title: "Câu 2.1",
+          content: "Trong cụm từ sở hữu 白家月的中文老师 (Bái Jiāyuè de Zhōngwén lǎoshī), từ nào đóng vai trò là 'Danh từ trung tâm'?",
+          options: [
+            { label: "A", text: "白家月", isCorrect: false },
+            { label: "B", text: "的", isCorrect: false },
+            { label: "C", text: "中文", isCorrect: false },
+            { label: "D", text: "老师", isCorrect: true }
+          ],
+          explanation: "老师 (lǎoshī) là danh từ trung tâm đứng sau trợ từ sở hữu 的, được bổ nghĩa bởi sở hữu chủ 白家月 và định ngữ 中文."
+        },
+        {
+          id: "2.2",
+          title: "Câu 2.2",
+          content: "Cấu trúc câu hỏi quốc tịch nào dưới đây biểu đạt đúng trật tự từ tiếng Trung?",
+          options: [
+            { label: "A", text: "你是国人哪？", isCorrect: false },
+            { label: "B", text: "你是哪国人？", isCorrect: true },
+            { label: "C", text: "哪国人是你？", isCorrect: false },
+            { label: "D", text: "你哪是国人？", isCorrect: false }
+          ],
+          explanation: "Trật tự từ câu hỏi quốc tịch chuẩn: [Chủ ngữ 你] + [Động từ 是] + [Đại từ 哪] + [Danh từ 国] + [Danh từ 人]？."
+        },
+        {
+          id: "2.3",
+          title: "Câu 2.3",
+          content: "Cụm từ biểu đạt mức độ cảm thán nào dưới đây tuân thủ đúng cấu trúc 太...了?",
+          options: [
+            { label: "A", text: "太好！", isCorrect: false },
+            { label: "B", text: "好太了！", isCorrect: false },
+            { label: "C", text: "太好了！", isCorrect: true },
+            { label: "D", text: "了太好！", isCorrect: false }
+          ],
+          explanation: "Cấu trúc phó từ cảm thán chuẩn: 太 + [Tính từ] + 了 → 太好了！ (Thật tốt quá!)."
+        }
+      ]
+    },
+    {
+      level: 3,
+      title: "CẤP ĐỘ 3: VẬN DỤNG (APPLICATION & CONTEXTUALIZING)",
+      goal: "Vận dụng linh hoạt các cấu trúc ngữ pháp để hoàn thành đoạn thoại và sắp xếp tiến trình giao tiếp.",
+      questions: [
+        {
+          id: "3.1",
+          title: "Câu 3.1",
+          content: "Hãy chọn cặp từ thích hợp điền vào chỗ trống (1) và (2) để hoàn thành đoạn thoại giới thiệu quốc tịch:\nA: 你是哪国人？ (Nǐ shì nǎ guó rén?)\nB: 我___(1)___法国人。王老师是___(2)___中文老师。",
+          options: [
+            { label: "A", text: "(1) 是 / (2) 我", isCorrect: false },
+            { label: "B", text: "(1) 人 / (2) 的", isCorrect: false },
+            { label: "C", text: "(1) 是 / (2) 我的", isCorrect: true },
+            { label: "D", text: "(1) 的 / (2) 是", isCorrect: false }
+          ],
+          explanation: "(1) điền động từ phán đoán 是 (我是法国人), (2) điền cụm định ngữ sở hữu 我的 (我的中文老师)."
+        },
+        {
+          id: "3.2",
+          title: "Câu 3.2",
+          content: "Hãy chọn từ thích hợp điền vào chỗ trống để tạo câu hỏi danh tính qua bức ảnh:\nA: ___是谁？\nB: 这是我的女朋友。",
+          options: [
+            { label: "A", text: "这", isCorrect: true },
+            { label: "B", text: "哪", isCorrect: false },
+            { label: "C", text: "吗", isCorrect: false },
+            { label: "D", text: "人", isCorrect: false }
+          ],
+          explanation: "Điền đại từ chỉ thị 这 (zhè - đây) để đặt câu hỏi chỉ định đối tượng 这是谁？ (Đây là ai?)."
+        },
+        {
+          id: "3.3",
+          title: "Câu 3.3",
+          content: "Hãy chọn câu hỏi thích hợp điền vào chỗ trống trong đoạn thoại viễn thông:\nA: 喂，王老师！你___？\nB: 我不忙。我很想你们！",
+          options: [
+            { label: "A", text: "叫什么名字", isCorrect: false },
+            { label: "B", text: "是哪国人", isCorrect: false },
+            { label: "C", text: "的工作忙吗", isCorrect: true },
+            { label: "D", text: "很高兴", isCorrect: false }
+          ],
+          explanation: "Điền 的工作忙吗 để hoàn thành câu hỏi thăm tình hình công việc 你的工作忙吗？ (Công việc của thầy có bận không?)."
+        }
+      ]
+    },
+    {
+      level: 4,
+      title: "CẤP ĐỘ 4: THÀNH THỤC (MASTERY & REAL-WORLD PROBLEM SOLVING)",
+      goal: "Phân tích lỗi sai RCA (Root Cause Analysis) và giải quyết các tình huống thực chiến doanh nghiệp.",
+      isEssay: true,
+      questions: [
+        {
+          id: "4.1",
+          title: "Câu 4.1",
+          content: "Tình huống: Học viên A nói câu giới thiệu: 我是中国。 (Wǒ shì Zhōngguó.).\nYêu cầu: Phân tích lỗi sai, chỉ ra nguyên nhân gốc rễ (RCA) và đưa ra phương án sửa chuẩn xác.",
+          answerTitle: "BÁO CÁO RCA:",
+          answerContent: "**Lỗi sai**: Quên danh từ chỉ người 人 (rén) ở cuối câu, khiến câu mang nghĩa 'Tôi là nước Trung Quốc'.\n**Root Cause**: Học viên thiếu phản xạ ghép từ 国 + 人 khi biểu đạt quốc tịch.\n**Phương án sửa**: Bổ sung 人 ở cuối câu → 我是中国人。 (Wǒ shì Zhōngguó rén. - Tôi là người Trung Quốc.)."
+        },
+        {
+          id: "4.2",
+          title: "Câu 4.2",
+          content: "Tình huống: Trong cuộc họp đối ngoại, học viên B hỏi đại diện đối tác: 你是哪人？ (Nǐ shì nǎ rén?).\nYêu cầu: Phân tích lỗi sai RCA và đưa ra câu sửa chuẩn ngữ pháp.",
+          answerTitle: "BÁO CÁO RCA:",
+          answerContent: "**Lỗi sai**: Thiếu danh từ 国 (guó - nước) trong cụm đại từ nghi vấn hỏi quốc tịch.\n**Root Cause**: Học viên dịch thô từ câu hỏi nơi chốn/người phương nào trong tiếng Việt ('Bạn là người đâu/nào?').\n**Phương án sửa**: Bổ sung 国 vào giữa 哪 và 人 → 你是哪国人？ (Nǐ shì nǎ guó rén? - Bạn là người nước nào?)."
+        },
+        {
+          id: "4.3",
+          title: "Câu 4.3",
+          content: "Tình huống: Bạn là Nhân sự Lễ tân thực hiện cuộc gọi video xác minh danh tính và tình trạng làm việc của chuyên gia đối tác Thái Lan 白家月 (Bái Jiāyuè). Hãy xây dựng kịch bản thoại 3 bước hoàn chỉnh chuẩn 100% Closed Lexicon.",
+          answerTitle: "KỊCH BẢN GIẢI QUYẾT TÌNH HUỐNG THỰC CHÍNH:",
+          answerContent: "**Bước 1 (Alo & Hỏi tên/Quốc tịch)**:\nLễ tân: 喂！请问，您是白家月吗？ (Wèi! Qǐngwèn, nín shì Bái Jiāyuè ma? - Alo! Xin hỏi ngài là Bạch Gia Nguyệt phải không?)\nĐối tác: 对，我是白家月。我是泰国人。 (Duì, wǒ shì Bái Jiāyuè. Wǒ shì Tàiguó rén. - Đúng vậy, tôi là Bạch Gia Nguyệt. Tôi là người Thái Lan.)\n\n**Bước 2 (Hỏi tình hình công việc & Mức độ)**:\nLễ tân: 白老师，您现在 busy 吗？ / 您的工作忙吗？ (Bái lǎoshī, nín de gōngzuò máng ma? - Cô Bạch, công việc của cô có bận không?)\nĐối tác: 我不太忙。 (Wǒ bú tài máng. - Tôi không bận lắm.)\n\n**Bước 3 (Xã giao quen biết & Kết thúc cuộc gọi)**:\nLễ tân: 很高兴认识你！再见！ (Hěn gāoxìng rènshi nǐ! Zàijiàn! - Rất vui được quen biết cô! Tạm biệt!)\nĐối tác: 我也很高兴！再见！ (Wǒ yě hěn gāoxìng! Zàijiàn! - Tôi cũng rất vui! Tạm biệt!)"
+        }
+      ]
+    }
   ]
 };

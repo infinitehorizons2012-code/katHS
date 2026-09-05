@@ -1442,4 +1442,128 @@ export const hskLessons = [
     }
   ]
 }
+,
+  {
+    id: 'hsk1-lesson3',
+    lessonNumber: 3,
+    titleHanzi: '我是中国人',
+    titleVietnamese: 'Tôi là người Trung Quốc',
+    description: 'Xác nhận quốc tịch, sở hữu với 的, và câu hỏi nghi vấn 吗',
+    vocabulary: [
+      { id: 'v29', clo: 'clo1', hanzi: '人', pinyin: 'rén', type: 'Danh từ', meaning: 'Người', hskLevel: 1 },
+      { id: 'v30', clo: 'clo1', hanzi: '的', pinyin: 'de', type: 'Trợ từ', meaning: 'Của (sở hữu)', hskLevel: 1 },
+      { id: 'v31', clo: 'clo1', hanzi: '中国', pinyin: 'Zhōngguó', type: 'Danh từ', meaning: 'Nước Trung Quốc', hskLevel: 1 },
+      { id: 'v32', clo: 'clo1', hanzi: '法国', pinyin: 'Fǎguó', type: 'Danh từ', meaning: 'Nước Pháp', hskLevel: 1 },
+      { id: 'v33', clo: 'clo1', hanzi: '中文', pinyin: 'Zhōngwén', type: 'Danh từ', meaning: 'Tiếng Trung', hskLevel: 1 },
+      { id: 'v34', clo: 'clo2', hanzi: '这', pinyin: 'zhè', type: 'Đại từ', meaning: 'Đây / Này', hskLevel: 1 },
+      { id: 'v35', clo: 'clo2', hanzi: '谁', pinyin: 'shéi/shuí', type: 'Đại từ', meaning: 'Ai', hskLevel: 1 },
+      { id: 'v36', clo: 'clo2', hanzi: '女朋友', pinyin: 'nǚpéngyou', type: 'Danh từ', meaning: 'Bạn gái', hskLevel: 1 },
+      { id: 'v37', clo: 'clo2', hanzi: '哪', pinyin: 'nǎ', type: 'Đại từ', meaning: 'Nào / Đâu', hskLevel: 1 },
+      { id: 'v38', clo: 'clo2', hanzi: '国', pinyin: 'guó', type: 'Danh từ', meaning: 'Nước / Quốc gia', hskLevel: 1 },
+      { id: 'v39', clo: 'clo2', hanzi: '她', pinyin: 'tā', type: 'Đại từ', meaning: 'Cô ấy / Bà ấy', hskLevel: 1 },
+      { id: 'v40', clo: 'clo2', hanzi: '泰国', pinyin: 'Tàiguó', type: 'Danh từ', meaning: 'Nước Thái Lan', hskLevel: 1 },
+      { id: 'v41', clo: 'clo3', hanzi: '喂', pinyin: 'wèi', type: 'Thán từ', meaning: 'Alo / Kìa', hskLevel: 1 },
+      { id: 'v42', clo: 'clo3', hanzi: '姐姐', pinyin: 'jiějie', type: 'Danh từ', meaning: 'Chị gái', hskLevel: 1 },
+      { id: 'v43', clo: 'clo3', hanzi: '工作', pinyin: 'gōngzuò', type: 'Danh từ/Động từ', meaning: 'Công việc / Làm việc', hskLevel: 1 },
+      { id: 'v44', clo: 'clo3', hanzi: '还', pinyin: 'hái', type: 'Phó từ', meaning: 'Còn / Vẫn', hskLevel: 1 },
+      { id: 'v45', clo: 'clo3', hanzi: '忙', pinyin: 'máng', type: 'Tính từ', meaning: 'Bận / Bận rộn', hskLevel: 1 },
+      { id: 'v46', clo: 'clo3', hanzi: '吗', pinyin: 'ma', type: 'Trợ từ', meaning: 'Không/À (nghi vấn)', hskLevel: 1 },
+      { id: 'v47', clo: 'clo3', hanzi: '对', pinyin: 'duì', type: 'Tính từ', meaning: 'Đúng / Đúng vậy', hskLevel: 1 },
+      { id: 'v48', clo: 'clo3', hanzi: '太', pinyin: 'tài', type: 'Phó từ', meaning: 'Quá / Lắm', hskLevel: 1 },
+      { id: 'v49', clo: 'clo3', hanzi: '我们', pinyin: 'wǒmen', type: 'Đại từ', meaning: 'Chúng tôi / Chúng ta', hskLevel: 1 },
+      { id: 'v50', clo: 'clo3', hanzi: '想', pinyin: 'xiǎng', type: 'Động từ', meaning: 'Nhớ / Muốn', hskLevel: 1 }
+    ],
+    sentences: [
+      { id: 's1', clo: 'clo1', hanzi: '我是中国人。', pinyin: 'Wǒ shì Zhōngguó rén.', vietnamese: 'Tôi là người Trung Quốc.', context: 'Xác nhận quốc tịch' },
+      { id: 's2', clo: 'clo1', hanzi: '王老师是我的中文老师。', pinyin: 'Wáng lǎoshī shì wǒ de Zhōngwén lǎoshī.', vietnamese: 'Thầy Vương là giáo viên tiếng Trung của tôi.', context: 'Biểu đạt sở hữu' },
+      { id: 's3', clo: 'clo2', hanzi: '这是谁？', pinyin: 'Zhè shì shéi?', vietnamese: 'Đây là ai?', context: 'Truy vấn danh tính' },
+      { id: 's4', clo: 'clo2', hanzi: '她是哪国人？', pinyin: 'Tā shì nǎ guó rén?', vietnamese: 'Cô ấy là người nước nào?', context: 'Hỏi quốc tịch' },
+      { id: 's5', clo: 'clo3', hanzi: '喂，你的工作忙吗？', pinyin: 'Wèi, nǐ de gōngzuò máng ma?', vietnamese: 'Alo, công việc của bạn bận không?', context: 'Gọi điện thoại, hỏi thăm' },
+      { id: 's6', clo: 'clo3', hanzi: '我不太忙。我很想你们。', pinyin: 'Wǒ bú tài máng. Wǒ hěn xiǎng nǐmen.', vietnamese: 'Tôi không bận lắm. Tôi rất nhớ mọi người.', context: 'Phó từ mức độ' }
+    ],
+    grammar: [
+      {
+        id: 'g1', clo: 'clo1', title: 'Câu phán đoán quốc tịch với 是',
+        structure: 'Chủ ngữ + 是 + [Tên quốc gia] + 人',
+        explanation: 'Sử dụng cấu trúc này để giới thiệu quốc tịch. Để phủ định, thêm 不 trước 是.',
+        examples: [
+          { hanzi: '我是中国人。', pinyin: 'Wǒ shì Zhōngguó rén.', vietnamese: 'Tôi là người Trung Quốc.' },
+          { hanzi: '我不是法国人。', pinyin: 'Wǒ bú shì Fǎguó rén.', vietnamese: 'Tôi không phải là người Pháp.' }
+        ]
+      },
+      {
+        id: 'g2', clo: 'clo1', title: 'Trợ từ sở hữu 的',
+        structure: 'Chủ sở hữu + 的 + Danh từ trung tâm',
+        explanation: 'Dùng để biểu thị mối quan hệ sở hữu. Lưu ý: Khi xưng hô thân mật với người thân hoặc đồng nghiệp, có thể lược bỏ 的 (ví dụ: 我老师).',
+        examples: [
+          { hanzi: '我的老师', pinyin: 'wǒ de lǎoshī', vietnamese: 'giáo viên của tôi' },
+          { hanzi: '白家月的中文老师', pinyin: 'Bái Jiāyuè de Zhōngwén lǎoshī', vietnamese: 'giáo viên tiếng Trung của Bạch Gia Nguyệt' }
+        ]
+      },
+      {
+        id: 'g3', clo: 'clo2', title: 'Câu hỏi nghi vấn với 谁 và 哪',
+        structure: '这 / 他 / 她 + 是 + 谁？ | Chủ ngữ + 是 + 哪 + 国 + 人？',
+        explanation: 'Sử dụng đại từ 谁 (shéi) để hỏi "Ai", và 哪 (nǎ) kết hợp với 国人 để hỏi quốc tịch.',
+        examples: [
+          { hanzi: '这是谁？', pinyin: 'Zhè shì shéi?', vietnamese: 'Đây là ai?' },
+          { hanzi: '你是哪国人？', pinyin: 'Nǐ shì nǎ guó rén?', vietnamese: 'Bạn là người nước nào?' }
+        ]
+      },
+      {
+        id: 'g4', clo: 'clo3', title: 'Câu hỏi Yes-No với trợ từ 吗',
+        structure: 'Mệnh đề khẳng định + 吗？',
+        explanation: 'Thêm 吗 vào cuối câu khẳng định để biến nó thành câu hỏi.',
+        examples: [
+          { hanzi: '你忙吗？', pinyin: 'Nǐ máng ma?', vietnamese: 'Bạn bận không?' },
+          { hanzi: '他是中国人吗？', pinyin: 'Tā shì Zhōngguó rén ma?', vietnamese: 'Anh ấy là người Trung Quốc phải không?' }
+        ]
+      },
+      {
+        id: 'g5', clo: 'clo3', title: 'Phó từ mức độ 太...了, 很, 还',
+        structure: 'Phó từ + Tính từ (+ 了)',
+        explanation: '很 (rất), 不太 (không... lắm), 还 (vẫn/còn), 太...了 (quá/lắm). Dùng để chỉ mức độ của tính từ.',
+        examples: [
+          { hanzi: '很忙', pinyin: 'hěn máng', vietnamese: 'rất bận' },
+          { hanzi: '太好了！', pinyin: 'tài hǎo le!', vietnamese: 'thật tốt quá!' },
+          { hanzi: '我还忙。', pinyin: 'wǒ hái máng.', vietnamese: 'tôi vẫn bận.' }
+        ]
+      }
+    ],
+    dialogues: [
+      {
+        id: 'd1', clo: 'clo1',
+        title: 'Bài khóa 1: Trên khuôn viên trường',
+        context: 'Lý Văn và Bạch Gia Nguyệt gặp nhau lần đầu và tiếp tục trò chuyện.',
+        lines: [
+          { speaker: '李文', hanzi: '我是中国人。', pinyin: 'Wǒ shì Zhōngguó rén.', vietnamese: 'Tôi là người Trung Quốc.' },
+          { speaker: '白家月', hanzi: '我是法国人。王老师是我的中文老师。', pinyin: 'Wǒ shì Fǎguó rén. Wáng lǎoshī shì wǒ de Zhōngwén lǎoshī.', vietnamese: 'Tôi là người Pháp. Thầy Vương là giáo viên tiếng Trung của tôi.' }
+        ]
+      },
+      {
+        id: 'd2', clo: 'clo2',
+        title: 'Bài khóa 2: Trong lớp học',
+        context: 'Sau giờ học, An Ni đang xem ảnh trong điện thoại của Trần Thiên Trung.',
+        lines: [
+          { speaker: '安妮', hanzi: '这是谁？', pinyin: 'Zhè shì shéi?', vietnamese: 'Đây là ai?' },
+          { speaker: '陈天中', hanzi: '这是我的女朋友。', pinyin: 'Zhè shì wǒ de nǚpéngyou.', vietnamese: 'Đây là bạn gái của tôi.' },
+          { speaker: '安妮', hanzi: '她是哪国人？', pinyin: 'Tā shì nǎ guó rén?', vietnamese: 'Cô ấy là người nước nào?' },
+          { speaker: '陈天中', hanzi: '她是泰国人。', pinyin: 'Tā shì Tàiguó rén.', vietnamese: 'Cô ấy là người Thái Lan.' }
+        ]
+      },
+      {
+        id: 'd3', clo: 'clo3',
+        title: 'Bài khóa 3: Ở nhà',
+        context: 'Vương Nhất Tuyết gọi điện video cho Vương Nhất Phi.',
+        lines: [
+          { speaker: '王一雪', hanzi: '喂，一飞！', pinyin: 'Wèi, Yīfēi!', vietnamese: 'Alo, Nhất Phi!' },
+          { speaker: '王一飞', hanzi: '姐姐！', pinyin: 'Jiějie!', vietnamese: 'Chị ơi!' },
+          { speaker: '王一雪', hanzi: '你工作还忙吗？', pinyin: 'Nǐ gōngzuò hái máng ma?', vietnamese: 'Công việc của em còn bận không?' },
+          { speaker: '王一飞', hanzi: '对，还是很忙。你也很忙吗？', pinyin: 'Duì, hái hěn máng. Nǐ yě hěn máng ma?', vietnamese: 'Đúng vậy, vẫn rất bận. Chị cũng rất bận à?' },
+          { speaker: '王一雪', hanzi: '我不太忙。我们很想你。', pinyin: 'Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.', vietnamese: 'Chị không bận lắm. Chúng chị rất nhớ em.' },
+          { speaker: '王一飞', hanzi: '我也想你们。', pinyin: 'Wǒ yě xiǎng nǐmen.', vietnamese: 'Em cũng nhớ mọi người.' }
+        ]
+      }
+    ],
+    exercises: []
+  }
 ];
