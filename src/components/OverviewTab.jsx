@@ -1688,7 +1688,496 @@ const Lesson3Overview = () => {
 };
 
 
+
+const Lesson4Overview = () => {
+  return (
+    <div className="tab-pane active fade-in overview-container">
+      <div className="overview-header-card">
+        <div className="course-title">
+          <BookOpen size={28} className="blue-icon" />
+          <h1>Bài học: Lesson 4 <span>(《新HSK教程1》第4课 我有两个孩子.pptx)</span></h1>
+        </div>
+        <div className="overview-meta-tags">
+          <div className="meta-tag blue-tag"><Users size={16} /><span><strong>Đối tượng:</strong> Người học từ số 0 (Zero-Based Learners)</span></div>
+          <div className="meta-tag purple-tag"><Target size={16} /><span><strong>Khung chuẩn:</strong> HSK 3.0 Level 1</span></div>
+        </div>
+      </div>
+
+      {/* SECTION 1 */}
+      <div className="overview-section">
+        <div className="section-title"><BrainCircuit size={24} className="purple-icon" /><h2>PHẦN 1: MA TRẬN PHÂN TÍCH TỔNG HỢP THEO CLO (MẮT XÍCH CHUẨN ĐẦU RA 1-1)</h2></div>
+        
+        {/* ===================== CLO 1 ===================== */}
+        <div className="clo-card fade-in">
+          <div className="clo-header blue-gradient">
+            <h3>📌 CLO 01: BIỂU ĐẠT SỞ HỮU VỚI CÂU "有/没有" VÀ HỎI SỐ LƯỢNG "多少/个"</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt động từ biểu thị sở hữu 有 (yǒu - có) và dạng phủ định 没有 / 没 (méiyǒu / méi - không có); sử dụng thành thạo từ nghi vấn số lượng 多少 (duōshao - bao nhiêu) và lượng từ danh thể 个 (gè - cái/chiếc/người) trong môi trường công sở FDI và quản trị nhân sự.</p>
+          </div>
+          <div className="clo-body">
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-01)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Báo cáo quy mô nhân sự / gia cảnh cá nhân giữa đồng nghiệp 刘明 (Liú Míng - Lưu Minh) và quản lý 王一雪 (Wáng Yīxuě - Vương Nhất Tuyết) tại văn phòng.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Phát ngôn chuẩn câu hỏi quy mô <code>你家有多少人？</code> và trả lời đúng cấu trúc sở hữu <code>我有二十个学生，我有两个孩子。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-01)</h4>
+                <p><strong>Tiểu năng lực:</strong> Ghép phó từ nghi vấn 多少 với lượng từ 个 và động từ 有; phân biệt số từ 两 dùng trước lượng từ thay vì 二.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 有, 多少, 个, 两, 孩子.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 1 - 14)</h4>
+              <p><strong>[MÔ-ĐUN 1: CÂU SỞ HỮU "有/没有", HỎI SỐ LƯỢNG "多少" VÀ LƯỢNG TỪ "个"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Tự tin báo cáo số lượng nhân sự, học viên và quy mô gia đình chuẩn xác.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 有 (yǒu) | 多少 (duōshao) | 个 (gè) | 两 (liǎng) | 孩子 (háizi)</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 你家有多少人？ → 我有二十个学生，我有两个孩子。</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 1 (TEXT 1 - 课文 1):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Bối cảnh: 在家里，刘明和王一雪在聊天儿。(Ở nhà, Lưu Minh và Vương Nhất Tuyết đang trò chuyện.)</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div><strong>刘明:</strong> 一飞忙吗？ (Nhất Phi có bận không?)</div>
+                  <div><strong>王一雪:</strong> 她很忙。 (Cô ấy rất bận.)</div>
+                  <div><strong>刘明:</strong> 她有多少个学生？ (Cô ấy có bao nhiêu học sinh?)</div>
+                  <div><strong>王一雪:</strong> 她有二十个学生。 (Cô ấy có 20 học sinh.)</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Sử dụng số từ 两 đứng trước lượng từ 个 (二个 → 两个).</li>
+                <li><strong>Bẫy lỗi:</strong> Học viên quen miệng dùng 二个 (èr gè) khi đếm số lượng 2 người/cái.</li>
+                <li><strong>Root Cause:</strong> Nhầm lẫn giữa số đếm thứ tự 二 và số lượng từ 两.</li>
+                <li><strong>Khắc phục:</strong> Ép công thức cố định: <code>两 + Lượng từ (个/口) + Danh từ</code>.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 5 từ vựng 有, 多少, 个, 两, 孩子</span>
+                <span className="step-badge">🌿 Thông hiểu: Nắm quy tắc dùng 两 trước lượng từ</span>
+                <span className="step-badge">🌸 Vận dụng: Báo cáo số lượng thành viên</span>
+                <span className="step-badge">🍎 Thành thục: Thống kê số lượng nhân sự</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>有</strong> (yǒu - Có)</li>
+                  <li><strong>多少</strong> (duōshao - Bao nhiêu)</li>
+                  <li><strong>个</strong> (gè - Lượng từ cái/người)</li>
+                  <li><strong>两</strong> (liǎng - Hai / 2)</li>
+                  <li><strong>孩子</strong> (háizi - Con cái)</li>
+                  <li><strong>刘明</strong> (Liú Míng - Lưu Minh)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 1: Câu "有" & Phủ định "没有"]</h5>
+                  <code>Khẳng định: [Chủ ngữ] + 有 + [Số từ + Lượng từ + Danh từ]</code><br/>
+                  <span style={{ fontSize: '0.85rem' }}>- 我有两个孩子。 (Tôi có 2 con.)</span><br/>
+                  <code>Phủ định: [Chủ ngữ] + 没有/没 + [Danh từ]</code><br/>
+                  <span style={{ fontSize: '0.85rem' }}>- 我没有哥哥。 (Tôi không có anh trai.)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ===================== CLO 2 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header purple-gradient">
+            <h3>📌 CLO 02: HỎI TỈNH LƯỢC VỚI "呢", HỎI THÀNH VIÊN GIA ĐÌNH VỚI "几/口" VÀ LIÊN TỪ "和"</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Sử dụng trợ từ ngữ khí hỏi tỉnh lược 呢 (ne), đại từ nghi vấn 几 (jǐ) kết hợp lượng từ 口 (kǒu) và liên từ 和 (hé) để hỏi và liệt kê thành viên gia đình.</p>
+          </div>
+          <div className="clo-body">
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-02)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Trao đổi thông tin gia cảnh khi nghỉ giải lao tại công ty giữa 王一雪 và 杨同乐.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Đặt đúng câu hỏi <code>你有两个哥哥，你呢？</code>, <code>你家有几口人？</code> và liệt kê <code>我家有四口人：爸爸、妈妈、妹妹和我。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-02)</h4>
+                <p><strong>Tiểu năng lực:</strong> Đặt trợ từ 呢 ở cuối câu, dùng lượng từ 口 cho gia đình và nối danh từ cuối bằng liên từ 和.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 哥哥, 呢, 没有, 家, 几, 口, 爸爸, 妈妈, 妹妹, 和.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 15 - 38)</h4>
+              <p><strong>[MÔ-ĐUN 2: HỎI TỈNH LƯỢC "A..., B呢？", HỎI GIA ĐÌNH "几口人" VÀ LIÊN TỪ "和"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Truy vấn thông tin đồng nghiệp lịch sự và giới thiệu thành viên gia đình trôi chảy.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 哥哥 | 呢 | 没有 | 家 | 几 | 口 | 爸爸 | 妈妈 | 妹妹 | 和</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 我有两个哥哥，你呢？ → 我没有哥哥。 → 你家有几口人？</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 2 (TEXT 2 - 课文 2):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Bối cảnh: 在公司里，王一雪和杨同乐休息时聊天儿。(Ở công ty, Vương Nhất Tuyết và Dương Đồng Lạc trò chuyện lúc nghỉ giải lao.)</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div><strong>王一雪:</strong> 我有两个哥哥，你呢？ (Tôi có hai người anh trai, còn bạn?)</div>
+                  <div><strong>杨同乐:</strong> 我没有哥哥。 (Tôi không có anh trai.)</div>
+                  <div><strong>王一雪:</strong> 你家有几口人？ (Nhà bạn có mấy người?)</div>
+                  <div><strong>杨同乐:</strong> 我家有四口人，爸爸、妈妈、妹妹和我。 (Nhà tôi có bốn người, bố, mẹ, em gái và tôi.)</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Đặt liên từ 和 ở vị trí nối danh từ cuối cùng.</li>
+                <li><strong>Bẫy lỗi:</strong> Lặp lại liên từ 和 như tiếng Việt (爸爸和妈妈和妹妹和我).</li>
+                <li><strong>Root Cause:</strong> Thói quen liệt kê liên từ trùng lặp.</li>
+                <li><strong>Khắc phục:</strong> Quy tắc liệt kê: <code>[Danh từ 1]、[Danh từ 2] 和 [Danh từ cuối]</code>.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 10 từ vựng 哥哥, 呢...</span>
+                <span className="step-badge">🌿 Thông hiểu: Logic câu hỏi tỉnh lược 呢</span>
+                <span className="step-badge">🌸 Vận dụng: Liệt kê thành viên gia đình chính xác</span>
+                <span className="step-badge">🍎 Thành thục: Giao tiếp xã giao công sở</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>哥哥</strong> (gēge - Anh trai)</li>
+                  <li><strong>呢</strong> (ne - Còn... thì sao?)</li>
+                  <li><strong>没有</strong> (méiyǒu - Không có)</li>
+                  <li><strong>家</strong> (jiā - Nhà)</li>
+                  <li><strong>几</strong> (jǐ - Mấy)</li>
+                  <li><strong>口</strong> (kǒu - Lượng từ gia đình)</li>
+                  <li><strong>爸爸</strong> (bàba - Bố)</li>
+                  <li><strong>妈妈</strong> (māma - Mẹ)</li>
+                  <li><strong>妹妹</strong> (mèimei - Em gái)</li>
+                  <li><strong>和</strong> (hé - Và)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card mb-2">
+                  <h5>[Công thức 2: Cấu trúc Hỏi Tỉnh lược]</h5>
+                  <code>[Sự việc A] ， [Đối tượng B] + 呢？</code><br/>
+                  <span style={{ fontSize: '0.85rem' }}>- 我有两个哥哥，你呢？</span>
+                </div>
+                <div className="grammar-card">
+                  <h5>[Công thức 3: Liệt kê Gia đình]</h5>
+                  <code>Hỏi: [Chủ ngữ] + 家 + 有 + 几 + 口 + 人？</code><br/>
+                  <code>Trả lời: [Chủ ngữ] + 家有 + [Số] + 口人： A、B 和 C。</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ===================== CLO 3 ===================== */}
+        <div className="clo-card fade-in mt-6">
+          <div className="clo-header green-gradient">
+            <h3>📌 CLO 03: HỎI VÀ TRẢ LỜI TUỔI TÁC VỚI "几岁" / "多大" VÀ TỪ CHỈ CON CÁI</h3>
+            <p><strong>Chuẩn Đầu Ra:</strong> Phân biệt câu hỏi tuổi cho trẻ em dưới 10 tuổi 几岁 và người lớn 多大; trả lời tuổi bằng số từ + lượng từ 岁; sử dụng thành thạo từ chỉ con cái 儿子, 女儿.</p>
+          </div>
+          <div className="clo-body">
+            <div className="info-grid">
+              <div className="info-box">
+                <h4 className="info-box-title"><Target size={16} /> Tình huống & Thước đo (TASK-03)</h4>
+                <p><strong>Tình huống Giao tiếp:</strong> Gặp gỡ tình cờ trên đường giữa Vương Nhất Tuyết và Dương Đồng Lạc khi đang đi cùng con nhỏ.</p>
+                <p><strong>Rubric Chấp nhận:</strong> Đặt đúng câu hỏi <code>你儿子今年几岁？</code>, <code>你女儿今年多大？</code> và trả lời <code>他今年五岁。</code> / <code>她今年十二岁。</code>.</p>
+              </div>
+              <div className="info-box">
+                <h4 className="info-box-title"><GraduationCap size={16} /> Giải phẫu Năng lực (Skill-03 & 04)</h4>
+                <p><strong>Tiểu năng lực:</strong> Phân biệt ngữ cảnh chọn 几岁 vs 多大, sử dụng lượng từ tuổi 岁 và từ chỉ thời gian 今年.</p>
+                <p><strong>Thành tố (100% Closed Lexicon):</strong> 儿子, 女儿, 岁, 他, 今年, 多, 大.</p>
+              </div>
+            </div>
+
+            <div className="module-box mt-4">
+              <h4 className="info-box-title"><Layers size={16} /> Mô-đun Học tập (Curriculum JIT - Slides 39 - 56)</h4>
+              <p><strong>[MÔ-ĐUN 3: HỎI VÀ TRẢ LỜI TUỔI TÁC "几岁 / 多大" VÀ CON CÁI "儿子 / 女儿"]</strong></p>
+              <ul>
+                <li><strong>Đầu ra:</strong> Hỏi và trả lời tuổi tác người thân, con cái chuẩn mực.</li>
+                <li><strong>Kiến thức cốt lõi:</strong> 儿子 | 女儿 | 岁 | 今年 | 多 | 大</li>
+                <li><strong>Mẫu câu ứng dụng:</strong> 你儿子今年几岁？ → 他今年五岁。 → 你女儿今年多大？</li>
+              </ul>
+              <div className="dialogue-preview mt-3 pt-3" style={{ borderTop: '1px dashed #fbcfe8' }}>
+                <h5 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '0.5rem', fontSize: '0.95rem' }}>NỘI DUNG BÀI KHÓA 3 (TEXT 3 - 课文 3):</h5>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', marginBottom: '0.75rem' }}>Bối cảnh: 在街上，王一雪带着儿子偶遇杨同乐。(Trên đường, Vương Nhất Tuyết dẫn theo con trai tình cờ gặp Dương Đồng Lạc.)</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem' }}>
+                  <div><strong>杨同乐:</strong> 这是您儿子吗？ (Đây là con trai chị phải không?)</div>
+                  <div><strong>王一雪:</strong> 是的。我有两个孩子，一个儿子，一个女儿。 (Đúng vậy. Tôi có hai người con, một trai, một gái.)</div>
+                  <div><strong>杨同乐:</strong> 您儿子几岁？ (Con trai chị mấy tuổi?)</div>
+                  <div><strong>王一雪:</strong> 他今年五岁。 (Cháu năm nay 5 tuổi.)</div>
+                  <div><strong>杨同乐:</strong> 您女儿多大？ (Con gái chị bao nhiêu tuổi?)</div>
+                  <div><strong>王一雪:</strong> 她今年十二。 (Cháu năm nay 12 tuổi.)</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="rca-box mt-4">
+              <h4 className="info-box-title"><ShieldCheck size={16} /> RCA Bẫy lỗi & Phương án khắc phục</h4>
+              <ul>
+                <li><strong>Đơn vị kiểm tra:</strong> Phân biệt câu hỏi tuổi 几岁 (dưới 10 tuổi) vs 多大 (trên 10 tuổi).</li>
+                <li><strong>Bẫy lỗi:</strong> Dùng 几岁 hỏi tuổi người lớn.</li>
+                <li><strong>Khắc phục:</strong> Trẻ nhỏ &lt;10 tuổi dùng 几岁, người lớn dùng 多大.</li>
+              </ul>
+            </div>
+
+            <div className="competency-box mt-4">
+              <h4 className="info-box-title"><CheckCircle2 size={16} /> Tiến trình Năng lực</h4>
+              <div className="steps-container">
+                <span className="step-badge">🌱 Nhận biết: Thuộc 7 từ vựng 儿子, 女儿, 岁...</span>
+                <span className="step-badge">🌿 Thông hiểu: Phân biệt 几岁 và 多大</span>
+                <span className="step-badge">🌸 Vận dụng: Phản xạ hỏi và trả lời tuổi</span>
+                <span className="step-badge">🍎 Thành thục: Thăm hỏi gia cảnh công sở khéo léo</span>
+              </div>
+            </div>
+
+            <div className="info-grid mt-4">
+              <div className="info-box vocab-list-box">
+                <h4 className="info-box-title"><BookType size={16} /> Danh mục Từ vựng tích lũy</h4>
+                <ul>
+                  <li><strong>儿子</strong> (érzi - Con trai)</li>
+                  <li><strong>女儿</strong> (nǚ'ér - Con gái)</li>
+                  <li><strong>岁</strong> (suì - Tuổi)</li>
+                  <li><strong>他</strong> (tā - Anh ấy)</li>
+                  <li><strong>今年</strong> (jīnnián - Năm nay)</li>
+                  <li><strong>多</strong> (duō - Bao nhiêu)</li>
+                  <li><strong>大</strong> (dà - Tuổi lớn)</li>
+                </ul>
+              </div>
+              <div className="info-box grammar-list-box">
+                <h4 className="info-box-title"><Code size={16} /> Cấu trúc Ngữ pháp</h4>
+                <div className="grammar-card">
+                  <h5>[Công thức 4: Hỏi và Trả lời Tuổi tác]</h5>
+                  <code>Hỏi trẻ con: [Chủ ngữ] + 今年 + 几岁？</code><br/>
+                  <span style={{ fontSize: '0.85rem' }}>- 你儿子今年几岁？</span><br/>
+                  <code>Hỏi người lớn: [Chủ ngữ] + 今年 + 多大？</code><br/>
+                  <span style={{ fontSize: '0.85rem' }}>- 你女儿今年多大？</span><br/>
+                  <code>Trả lời: [Chủ ngữ] + 今年 + [Số] + 岁。</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 2: MICRO-CREDENTIALS */}
+      <div className="overview-section mt-8">
+        <div className="section-title">
+          <Award size={24} className="orange-icon" />
+          <h2>PHẦN 2: CHỨNG CHỈ VI MÔ NỐI LIỀN THỊ TRƯỜNG LAO ĐỘNG (CREDENTIALS TO WORKFORCE)</h2>
+        </div>
+
+        <div className="table-responsive">
+          <table className="credentials-table">
+            <thead>
+              <tr>
+                <th>Huy hiệu Vi mô (Micro-Badge)</th>
+                <th>Tiêu chuẩn Kỹ năng</th>
+                <th>Tiêu chí Xác minh</th>
+                <th>Giá trị Ứng dụng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>MB-07: Family & Scale Assessment Specialist</strong></td>
+                <td>Thành thục kỹ năng báo cáo quy mô nhân sự 有多少人, biểu đạt sở hữu 有/没有 và đếm 两</td>
+                <td>Thực thi bài nói 1 phút thống kê số lượng dùng đúng 有/没有 và 两</td>
+                <td>Đảm bảo chính xác cho HR, Quản lý kho, Sales khi thống kê số lượng.</td>
+              </tr>
+              <tr>
+                <td><strong>MB-08: Demographic & Age Inquirer</strong></td>
+                <td>Thành thục hỏi gia đình 几口人, liệt kê 和 và phân biệt tuổi 几岁/多大</td>
+                <td>Đóng vai thoại hỏi gia cảnh dùng đúng 几岁/多大</td>
+                <td>Năng lực thăm hỏi xã giao, phỏng vấn tuyển dụng HR.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-8">
+          <h3 style={{ fontSize: '1.2rem', color: '#1e293b', marginBottom: '1rem', fontWeight: 'bold' }}>5.2 Ba Tình huống Ứng dụng Thực chiến tại Doanh nghiệp FDI</h3>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>🏢 Tình huống 1: Nhân sự HR Phỏng vấn Thu thập Thông tin Nhân khẩu Học</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>HR Manager:</strong> 刘明，请问你家有几口人？ (Lưu Minh, xin hỏi nhà bạn có mấy người?)</li>
+                <li><strong>Nhân viên:</strong> 我家有四口人：爸爸、妈妈、妹妹和我。 (Nhà tôi có 4 người: bố, mẹ, em gái và tôi.)</li>
+                <li><strong>HR Manager:</strong> 你有几个孩子？ (Bạn có mấy người con?)</li>
+                <li><strong>Nhân viên:</strong> 我有两个孩子。 (Tôi có hai người con.)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>👥 Tình huống 2: Quản lý Công ty Gặp gỡ Gia đình Đồng nghiệp và Hỏi thăm Tuổi</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Trưởng phòng:</strong> 王老师，这是你儿子吗？他今年几岁？ (Thầy Vương, đây là con trai thầy phải không? Cháu năm nay mấy tuổi?)</li>
+                <li><strong>Đồng nghiệp:</strong> 对，他今年五岁。 (Đúng vậy, cháu năm nay 5 tuổi.)</li>
+                <li><strong>Trưởng phòng:</strong> 你女儿今年多大？ (Con gái thầy năm nay bao nhiêu tuổi?)</li>
+                <li><strong>Đồng nghiệp:</strong> 她今年十二岁。 (Cháu năm nay 12 tuổi.)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="scenario-card mb-4" style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '1.5rem' }}>
+            <h4 style={{ color: '#0f172a', fontWeight: 'bold', marginBottom: '0.5rem' }}>📦 Tình huống 3: Nhân sự XNK Thống kê Quy mô Đội ngũ Đối tác Giao thương</h4>
+            <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #cbd5e1' }}>
+              <p style={{ fontWeight: 'bold', marginBottom: '0.5rem', color: '#334155' }}>Chuỗi hội thoại chuẩn (100% Closed Lexicon):</p>
+              <ul style={{ listStyleType: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <li><strong>Nhân sự XNK:</strong> 杨老师，你们公司有多少个学生/人？ (Thầy Dương, công ty các thầy có bao nhiêu người?)</li>
+                <li><strong>Đối tác:</strong> 我们有二十个学生。你有几个？ (Chúng tôi có 20 học sinh. Bạn có mấy người?)</li>
+                <li><strong>Nhân sự XNK:</strong> 我有两个。 (Tôi có 2 người.)</li>
+                <li><strong>Đối tác:</strong> 太好了！ (Thật tốt quá!)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SECTION 3: ADAPTIVE QUESTION BANK */}
+      <div className="overview-section mt-8 mb-8">
+        <div className="section-title">
+          <ScrollText size={24} className="red-icon" />
+          <h2>PHẦN 3: NGÂN HÀNG BÀI THI THÍCH ỨNG CHUẨN MA TRẬN 12 CÂU</h2>
+        </div>
+        
+        <div className="info-banner mb-6">
+          <ShieldCheck size={20} className="green-icon" />
+          <div>
+            <strong>Cấu trúc Ma trận Thống nhất:</strong> 4 Cấp độ Tiến trình Năng lực (Nhận biết → Thông hiểu → Vận dụng → Thành thục) × 3 Chuẩn Đầu Ra (CLO-1, CLO-2, CLO-3) = Đúng 12 Câu hỏi Thích ứng.<br/>
+            <strong>Rào cản tuyệt đối:</strong> 100% câu hỏi, đáp án tuân thủ Closed Lexicon (70 từ vựng cốt lõi).
+          </div>
+        </div>
+
+        <div className="table-responsive">
+          <table className="matrix-table">
+            <thead>
+              <tr>
+                <th>Cấp độ Tiến trình</th>
+                <th>Mã câu hỏi</th>
+                <th>Thuộc CLO</th>
+                <th>Dạng bài</th>
+                <th>Mục tiêu Đánh giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-1">🌱 Nhận biết</span></td>
+                <td>Câu 1.1</td><td>CLO-1</td><td>Trắc nghiệm</td><td>Nhận diện động từ sở hữu 有</td>
+              </tr>
+              <tr>
+                <td>Câu 1.2</td><td>CLO-2</td><td>Trắc nghiệm</td><td>Nhận diện lượng từ gia đình 口</td>
+              </tr>
+              <tr>
+                <td>Câu 1.3</td><td>CLO-3</td><td>Trắc nghiệm</td><td>Nhận diện lượng từ tuổi 岁</td>
+              </tr>
+              
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-2">🌿 Thông hiểu</span></td>
+                <td>Câu 2.1</td><td>CLO-1</td><td>Trắc nghiệm</td><td>Thông hiểu quy tắc dùng 两 trước lượng từ 个</td>
+              </tr>
+              <tr>
+                <td>Câu 2.2</td><td>CLO-2</td><td>Trắc nghiệm</td><td>Thông hiểu vị trí liên từ 和 trong chuỗi liệt kê</td>
+              </tr>
+              <tr>
+                <td>Câu 2.3</td><td>CLO-3</td><td>Trắc nghiệm</td><td>Thông hiểu cụm từ hỏi tuổi trẻ em 几岁</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-3">🌸 Vận dụng</span></td>
+                <td>Câu 3.1</td><td>CLO-1</td><td>Điền từ</td><td>Vận dụng điền 有 và 两 trong báo cáo quy mô</td>
+              </tr>
+              <tr>
+                <td>Câu 3.2</td><td>CLO-2</td><td>Điền từ</td><td>Vận dụng điền trợ từ hỏi tỉnh lược 呢</td>
+              </tr>
+              <tr>
+                <td>Câu 3.3</td><td>CLO-3</td><td>Điền từ</td><td>Vận dụng điền cụm hỏi tuổi người lớn 多大</td>
+              </tr>
+
+              <tr>
+                <td rowSpan="3" className="level-cell"><span className="level-badge level-4">🍎 Thành thục</span></td>
+                <td>Câu 4.1</td><td>CLO-1</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa lỗi dùng 二个 và thừa số lượng</td>
+              </tr>
+              <tr>
+                <td>Câu 4.2</td><td>CLO-2</td><td>Phân tích RCA</td><td>Chẩn đoán & sửa lỗi sai lượng từ 个 → 口 và 和</td>
+              </tr>
+              <tr>
+                <td>Câu 4.3</td><td>CLO-3</td><td>Kịch bản thực chiến</td><td>Xây dựng kịch bản thăm hỏi tuổi tác và gia cảnh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="closed-lexicon-box mt-8 fade-in" style={{ background: '#fff1f2', border: '1px solid #fda4af', borderRadius: '8px', padding: '1.5rem' }}>
+          <h3 style={{ color: '#be185d', fontWeight: 'bold', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem' }}>
+            <Lock size={20} /> 🔒 CLOSED LEXICON KHẾP KÍN & DANH MỤC CẤU TRÚC NGỮ PHÁP
+          </h3>
+          
+          <div style={{ marginBottom: '1.5rem' }}>
+            <h4 style={{ color: '#9f1239', fontWeight: 'bold', marginBottom: '0.5rem' }}>1.1 Danh mục Tập đóng Từ vựng Tích lũy (70 Đơn vị)</h4>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', fontSize: '0.9rem' }}>
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng Bài 1-3 (50 đơn vị):</p>
+                <p style={{ color: '#64748b', lineHeight: '1.5' }}>你, 好, 你好, 王, 老师, 王老师, 大家, 学生, 们, 您, 你们, 谢谢, 不客气, 同学, 再见, 请问, 叫, 什么, 名字, 我, 不, 是, 对不起, 没关系, 没事, 很, 高兴, 认识, 也, 人, 的, 中国, 法国, 中文, 这, 谁, 女朋友, 哪, 国, 她, 泰国, 喂, 姐姐, 工作, 还, 忙, 吗, 对, 太, 我们, 想.</p>
+              </div>
+
+              <div style={{ background: 'white', padding: '1rem', borderRadius: '6px', border: '1px dashed #fecdd3' }}>
+                <p style={{ fontWeight: 'bold', color: '#be185d', marginBottom: '0.5rem', borderBottom: '1px solid #ffe4e6', paddingBottom: '0.25rem' }}>Từ vựng bài mới (Bài 4 - 20 đơn vị):</p>
+                <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#4c0519', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
+                  <li><strong>有</strong> (yǒu - Có)</li>
+                  <li><strong>多少</strong> (duōshao - Bao nhiêu)</li>
+                  <li><strong>个</strong> (gè - Lượng từ)</li>
+                  <li><strong>两</strong> (liǎng - Hai)</li>
+                  <li><strong>哥哥</strong> (gēge - Anh trai)</li>
+                  <li><strong>呢</strong> (ne - Thì sao)</li>
+                  <li><strong>没有</strong> (méiyǒu - Không có)</li>
+                  <li><strong>家</strong> (jiā - Nhà)</li>
+                  <li><strong>几</strong> (jǐ - Mấy)</li>
+                  <li><strong>口</strong> (kǒu - Lượng từ gia đình)</li>
+                  <li><strong>爸爸</strong> (bàba - Bố)</li>
+                  <li><strong>妈妈</strong> (māma - Mẹ)</li>
+                  <li><strong>妹妹</strong> (mèimei - Em gái)</li>
+                  <li><strong>和</strong> (hé - Và)</li>
+                  <li><strong>儿子</strong> (érzi - Con trai)</li>
+                  <li><strong>孩子</strong> (háizi - Con cái)</li>
+                  <li><strong>女儿</strong> (nǚ'ér - Con gái)</li>
+                  <li><strong>岁</strong> (suì - Tuổi)</li>
+                  <li><strong>他</strong> (tā - Anh ấy)</li>
+                  <li><strong>今年</strong> (jīnnián - Năm nay)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
 export const OverviewTab = ({ lessonId }) => {
+  if (lessonId === 'hsk1-lesson4') return <Lesson4Overview />;
   if (lessonId === 'hsk1-lesson3') return <Lesson3Overview />;
   if (lessonId === 'hsk1-lesson2') return <Lesson2Overview />;
   return <Lesson1Overview />;
